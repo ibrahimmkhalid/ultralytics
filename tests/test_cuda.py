@@ -1,4 +1,4 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 from itertools import product
 from pathlib import Path
@@ -7,10 +7,10 @@ import pytest
 import torch
 
 from tests import CUDA_DEVICE_COUNT, CUDA_IS_AVAILABLE, MODEL, SOURCE
-from sfdt_ibrahim import YOLO
-from sfdt_ibrahim.cfg import TASK2DATA, TASK2MODEL, TASKS
-from sfdt_ibrahim.utils import ASSETS, WEIGHTS_DIR
-from sfdt_ibrahim.utils.checks import check_amp
+from ultralytics import YOLO
+from ultralytics.cfg import TASK2DATA, TASK2MODEL, TASKS
+from ultralytics.utils import ASSETS, WEIGHTS_DIR
+from ultralytics.utils.checks import check_amp
 
 
 def test_checks():
@@ -27,7 +27,7 @@ def test_amp():
 
 
 @pytest.mark.slow
-@pytest.mark.skipif(True, reason="CUDA export tests disabled pending additional SFDT_Ibrahim GPU server availability")
+@pytest.mark.skipif(True, reason="CUDA export tests disabled pending additional Ultralytics GPU server availability")
 @pytest.mark.skipif(not CUDA_IS_AVAILABLE, reason="CUDA is not available")
 @pytest.mark.parametrize(
     "task, dynamic, int8, half, batch",
@@ -93,7 +93,7 @@ def test_predict_multiple_devices():
 @pytest.mark.skipif(not CUDA_IS_AVAILABLE, reason="CUDA is not available")
 def test_autobatch():
     """Check optimal batch size for YOLO model training using autobatch utility."""
-    from sfdt_ibrahim.utils.autobatch import check_train_batch_size
+    from ultralytics.utils.autobatch import check_train_batch_size
 
     check_train_batch_size(YOLO(MODEL).model.cuda(), imgsz=128, amp=True)
 
@@ -102,7 +102,7 @@ def test_autobatch():
 @pytest.mark.skipif(not CUDA_IS_AVAILABLE, reason="CUDA is not available")
 def test_utils_benchmarks():
     """Profile YOLO models for performance benchmarks."""
-    from sfdt_ibrahim.utils.benchmarks import ProfileModels
+    from ultralytics.utils.benchmarks import ProfileModels
 
     # Pre-export a dynamic engine model to use dynamic inference
     YOLO(MODEL).export(format="engine", imgsz=32, dynamic=True, batch=1)
@@ -112,8 +112,8 @@ def test_utils_benchmarks():
 @pytest.mark.skipif(not CUDA_IS_AVAILABLE, reason="CUDA is not available")
 def test_predict_sam():
     """Test SAM model predictions using different prompts, including bounding boxes and point annotations."""
-    from sfdt_ibrahim import SAM
-    from sfdt_ibrahim.models.sam import Predictor as SAMPredictor
+    from ultralytics import SAM
+    from ultralytics.models.sam import Predictor as SAMPredictor
 
     # Load a model
     model = SAM(WEIGHTS_DIR / "sam2.1_b.pt")

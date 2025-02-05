@@ -1,14 +1,14 @@
 ---
 comments: true
-description: Learn how to manage and optimize queues using SFDT_Ibrahim YOLO11 to reduce wait times and increase efficiency in various real-world applications.
-keywords: queue management, YOLO11, SFDT_Ibrahim, reduce wait times, efficiency, customer satisfaction, retail, airports, healthcare, banks
+description: Learn how to manage and optimize queues using Ultralytics YOLO11 to reduce wait times and increase efficiency in various real-world applications.
+keywords: queue management, YOLO11, Ultralytics, reduce wait times, efficiency, customer satisfaction, retail, airports, healthcare, banks
 ---
 
-# Queue Management using SFDT_Ibrahim YOLO11 🚀
+# Queue Management using Ultralytics YOLO11 🚀
 
 ## What is Queue Management?
 
-Queue management using [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim/) involves organizing and controlling lines of people or vehicles to reduce wait times and enhance efficiency. It's about optimizing queues to improve customer satisfaction and system performance in various settings like retail, banks, airports, and healthcare facilities.
+Queue management using [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics/) involves organizing and controlling lines of people or vehicles to reduce wait times and enhance efficiency. It's about optimizing queues to improve customer satisfaction and system performance in various settings like retail, banks, airports, and healthcare facilities.
 
 <p align="center">
   <br>
@@ -18,7 +18,7 @@ Queue management using [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfd
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> How to Implement Queue Management with SFDT_Ibrahim YOLO11 | Airport and Metro Station
+  <strong>Watch:</strong> How to Implement Queue Management with Ultralytics YOLO11 | Airport and Metro Station
 </p>
 
 ## Advantages of Queue Management?
@@ -30,8 +30,8 @@ Queue management using [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfd
 
 |                                                                                            Logistics                                                                                            |                                                                            Retail                                                                             |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![Queue management at airport ticket counter using SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/docs/releases/download/0/queue-management-airport-ticket-counter-sfdt_ibrahim-yolov8.avif) | ![Queue monitoring in crowd using SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/docs/releases/download/0/queue-monitoring-crowd-sfdt_ibrahim-yolov8.avif) |
-|                                                               Queue management at airport ticket counter Using SFDT_Ibrahim YOLO11                                                               |                                                         Queue monitoring in crowd SFDT_Ibrahim YOLO11                                                          |
+| ![Queue management at airport ticket counter using Ultralytics YOLO11](https://github.com/ultralytics/docs/releases/download/0/queue-management-airport-ticket-counter-ultralytics-yolov8.avif) | ![Queue monitoring in crowd using Ultralytics YOLO11](https://github.com/ultralytics/docs/releases/download/0/queue-monitoring-crowd-ultralytics-yolov8.avif) |
+|                                                               Queue management at airport ticket counter Using Ultralytics YOLO11                                                               |                                                         Queue monitoring in crowd Ultralytics YOLO11                                                          |
 
 !!! example "Queue Management using YOLO11 Example"
 
@@ -53,7 +53,7 @@ Queue management using [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfd
         ```python
         import cv2
 
-        from sfdt_ibrahim import solutions
+        from ultralytics import solutions
 
         cap = cv2.VideoCapture("Path/to/video/file.mp4")
 
@@ -94,7 +94,7 @@ Queue management using [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfd
 
 | Name         | Type   | Default                    | Description                                          |
 | ------------ | ------ | -------------------------- | ---------------------------------------------------- |
-| `model`      | `str`  | `None`                     | Path to SFDT_Ibrahim YOLO Model File                  |
+| `model`      | `str`  | `None`                     | Path to Ultralytics YOLO Model File                  |
 | `region`     | `list` | `[(20, 400), (1260, 400)]` | List of points defining the queue region.            |
 | `line_width` | `int`  | `2`                        | Line thickness for bounding boxes.                   |
 | `show`       | `bool` | `False`                    | Flag to control whether to display the video stream. |
@@ -105,9 +105,9 @@ Queue management using [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfd
 
 ## FAQ
 
-### How can I use SFDT_Ibrahim YOLO11 for real-time queue management?
+### How can I use Ultralytics YOLO11 for real-time queue management?
 
-To use SFDT_Ibrahim YOLO11 for real-time queue management, you can follow these steps:
+To use Ultralytics YOLO11 for real-time queue management, you can follow these steps:
 
 1. Load the YOLO11 model with `YOLO("yolo11n.pt")`.
 2. Capture the video feed using `cv2.VideoCapture`.
@@ -119,7 +119,7 @@ Here's a minimal example:
 ```python
 import cv2
 
-from sfdt_ibrahim import solutions
+from ultralytics import solutions
 
 cap = cv2.VideoCapture("path/to/video.mp4")
 queue_region = [(20, 400), (1080, 400), (1080, 360), (20, 360)]
@@ -142,33 +142,33 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-Leveraging SFDT_Ibrahim [HUB](https://docs.sfdt_ibrahim.com/hub/) can streamline this process by providing a user-friendly platform for deploying and managing your queue management solution.
+Leveraging Ultralytics [HUB](https://docs.ultralytics.com/hub/) can streamline this process by providing a user-friendly platform for deploying and managing your queue management solution.
 
-### What are the key advantages of using SFDT_Ibrahim YOLO11 for queue management?
+### What are the key advantages of using Ultralytics YOLO11 for queue management?
 
-Using SFDT_Ibrahim YOLO11 for queue management offers several benefits:
+Using Ultralytics YOLO11 for queue management offers several benefits:
 
 - **Plummeting Waiting Times:** Efficiently organizes queues, reducing customer wait times and boosting satisfaction.
 - **Enhancing Efficiency:** Analyzes queue data to optimize staff deployment and operations, thereby reducing costs.
 - **Real-time Alerts:** Provides real-time notifications for long queues, enabling quick intervention.
 - **Scalability:** Easily scalable across different environments like retail, airports, and healthcare.
 
-For more details, explore our [Queue Management](https://docs.sfdt_ibrahim.com/reference/solutions/queue_management/) solutions.
+For more details, explore our [Queue Management](https://docs.ultralytics.com/reference/solutions/queue_management/) solutions.
 
-### Why should I choose SFDT_Ibrahim YOLO11 over competitors like [TensorFlow](https://www.sfdt_ibrahim.com/glossary/tensorflow) or Detectron2 for queue management?
+### Why should I choose Ultralytics YOLO11 over competitors like [TensorFlow](https://www.ultralytics.com/glossary/tensorflow) or Detectron2 for queue management?
 
-SFDT_Ibrahim YOLO11 has several advantages over TensorFlow and Detectron2 for queue management:
+Ultralytics YOLO11 has several advantages over TensorFlow and Detectron2 for queue management:
 
 - **Real-time Performance:** YOLO11 is known for its real-time detection capabilities, offering faster processing speeds.
-- **Ease of Use:** SFDT_Ibrahim provides a user-friendly experience, from training to deployment, via [SFDT_Ibrahim HUB](https://docs.sfdt_ibrahim.com/hub/).
+- **Ease of Use:** Ultralytics provides a user-friendly experience, from training to deployment, via [Ultralytics HUB](https://docs.ultralytics.com/hub/).
 - **Pretrained Models:** Access to a range of pretrained models, minimizing the time needed for setup.
 - **Community Support:** Extensive documentation and active community support make problem-solving easier.
 
-Learn how to get started with [SFDT_Ibrahim YOLO](https://docs.sfdt_ibrahim.com/quickstart/).
+Learn how to get started with [Ultralytics YOLO](https://docs.ultralytics.com/quickstart/).
 
-### Can SFDT_Ibrahim YOLO11 handle multiple types of queues, such as in airports and retail?
+### Can Ultralytics YOLO11 handle multiple types of queues, such as in airports and retail?
 
-Yes, SFDT_Ibrahim YOLO11 can manage various types of queues, including those in airports and retail environments. By configuring the QueueManager with specific regions and settings, YOLO11 can adapt to different queue layouts and densities.
+Yes, Ultralytics YOLO11 can manage various types of queues, including those in airports and retail environments. By configuring the QueueManager with specific regions and settings, YOLO11 can adapt to different queue layouts and densities.
 
 Example for airports:
 
@@ -183,13 +183,13 @@ queue_airport = solutions.QueueManager(
 
 For more information on diverse applications, check out our [Real World Applications](#real-world-applications) section.
 
-### What are some real-world applications of SFDT_Ibrahim YOLO11 in queue management?
+### What are some real-world applications of Ultralytics YOLO11 in queue management?
 
-SFDT_Ibrahim YOLO11 is used in various real-world applications for queue management:
+Ultralytics YOLO11 is used in various real-world applications for queue management:
 
 - **Retail:** Monitors checkout lines to reduce wait times and improve customer satisfaction.
 - **Airports:** Manages queues at ticket counters and security checkpoints for a smoother passenger experience.
 - **Healthcare:** Optimizes patient flow in clinics and hospitals.
 - **Banks:** Enhances customer service by managing queues efficiently in banks.
 
-Check our [blog on real-world queue management](https://www.sfdt_ibrahim.com/blog/revolutionizing-queue-management-with-sfdt_ibrahim-yolov8-and-openvino) to learn more.
+Check our [blog on real-world queue management](https://www.ultralytics.com/blog/revolutionizing-queue-management-with-ultralytics-yolov8-and-openvino) to learn more.

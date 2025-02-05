@@ -1,14 +1,14 @@
 ---
 comments: true
-description: Optimize your fitness routine with real-time workouts monitoring using SFDT_Ibrahim YOLO11. Track and improve your exercise form and performance.
-keywords: workouts monitoring, SFDT_Ibrahim YOLO11, pose estimation, fitness tracking, exercise assessment, real-time feedback, exercise form, performance metrics
+description: Optimize your fitness routine with real-time workouts monitoring using Ultralytics YOLO11. Track and improve your exercise form and performance.
+keywords: workouts monitoring, Ultralytics YOLO11, pose estimation, fitness tracking, exercise assessment, real-time feedback, exercise form, performance metrics
 ---
 
-# Workouts Monitoring using SFDT_Ibrahim YOLO11
+# Workouts Monitoring using Ultralytics YOLO11
 
-<a href="https://colab.research.google.com/github/sfdt_ibrahim/notebooks/blob/main/notebooks/how-to-monitor-workouts-using-sfdt_ibrahim-yolo.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Workouts Monitoring In Colab"></a>
+<a href="https://colab.research.google.com/github/ultralytics/notebooks/blob/main/notebooks/how-to-monitor-workouts-using-ultralytics-yolo.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Workouts Monitoring In Colab"></a>
 
-Monitoring workouts through pose estimation with [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim/) enhances exercise assessment by accurately tracking key body landmarks and joints in real-time. This technology provides instant feedback on exercise form, tracks workout routines, and measures performance metrics, optimizing training sessions for users and trainers alike.
+Monitoring workouts through pose estimation with [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics/) enhances exercise assessment by accurately tracking key body landmarks and joints in real-time. This technology provides instant feedback on exercise form, tracks workout routines, and measures performance metrics, optimizing training sessions for users and trainers alike.
 
 <p align="center">
   <br>
@@ -18,7 +18,7 @@ Monitoring workouts through pose estimation with [SFDT_Ibrahim YOLO11](https://g
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> Workouts Monitoring using SFDT_Ibrahim YOLO11 | Push-ups, Pull-ups, Ab Workouts
+  <strong>Watch:</strong> Workouts Monitoring using Ultralytics YOLO11 | Push-ups, Pull-ups, Ab Workouts
 </p>
 
 ## Advantages of Workouts Monitoring?
@@ -33,7 +33,7 @@ Monitoring workouts through pose estimation with [SFDT_Ibrahim YOLO11](https://g
 
 |                                        Workouts Monitoring                                         |                                        Workouts Monitoring                                         |
 | :------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------: |
-| ![PushUps Counting](https://github.com/sfdt_ibrahim/docs/releases/download/0/pushups-counting.avif) | ![PullUps Counting](https://github.com/sfdt_ibrahim/docs/releases/download/0/pullups-counting.avif) |
+| ![PushUps Counting](https://github.com/ultralytics/docs/releases/download/0/pushups-counting.avif) | ![PullUps Counting](https://github.com/ultralytics/docs/releases/download/0/pullups-counting.avif) |
 |                                          PushUps Counting                                          |                                          PullUps Counting                                          |
 
 !!! example "Workouts Monitoring Example"
@@ -56,7 +56,7 @@ Monitoring workouts through pose estimation with [SFDT_Ibrahim YOLO11](https://g
         ```python
         import cv2
 
-        from sfdt_ibrahim import solutions
+        from ultralytics import solutions
 
         cap = cv2.VideoCapture("path/to/video/file.mp4")
         assert cap.isOpened(), "Error reading video file"
@@ -88,7 +88,7 @@ Monitoring workouts through pose estimation with [SFDT_Ibrahim YOLO11](https://g
 
 ### KeyPoints Map
 
-![keyPoints Order SFDT_Ibrahim YOLO11 Pose](https://github.com/sfdt_ibrahim/docs/releases/download/0/keypoints-order-sfdt_ibrahim-yolov8-pose.avif)
+![keyPoints Order Ultralytics YOLO11 Pose](https://github.com/ultralytics/docs/releases/download/0/keypoints-order-ultralytics-yolov8-pose.avif)
 
 ### Arguments `AIGym`
 
@@ -99,7 +99,7 @@ Monitoring workouts through pose estimation with [SFDT_Ibrahim YOLO11](https://g
 | `show`       | `bool`  | `False` | Flag to display the image.                                                             |
 | `up_angle`   | `float` | `145.0` | Angle threshold for the 'up' pose.                                                     |
 | `down_angle` | `float` | `90.0`  | Angle threshold for the 'down' pose.                                                   |
-| `model`      | `str`   | `None`  | Path to SFDT_Ibrahim YOLO Pose Model File                                               |
+| `model`      | `str`   | `None`  | Path to Ultralytics YOLO Pose Model File                                               |
 
 ### Arguments `model.predict`
 
@@ -111,14 +111,14 @@ Monitoring workouts through pose estimation with [SFDT_Ibrahim YOLO11](https://g
 
 ## FAQ
 
-### How do I monitor my workouts using SFDT_Ibrahim YOLO11?
+### How do I monitor my workouts using Ultralytics YOLO11?
 
-To monitor your workouts using SFDT_Ibrahim YOLO11, you can utilize the pose estimation capabilities to track and analyze key body landmarks and joints in real-time. This allows you to receive instant feedback on your exercise form, count repetitions, and measure performance metrics. You can start by using the provided example code for push-ups, pull-ups, or ab workouts as shown:
+To monitor your workouts using Ultralytics YOLO11, you can utilize the pose estimation capabilities to track and analyze key body landmarks and joints in real-time. This allows you to receive instant feedback on your exercise form, count repetitions, and measure performance metrics. You can start by using the provided example code for push-ups, pull-ups, or ab workouts as shown:
 
 ```python
 import cv2
 
-from sfdt_ibrahim import solutions
+from ultralytics import solutions
 
 cap = cv2.VideoCapture("path/to/video/file.mp4")
 assert cap.isOpened(), "Error reading video file"
@@ -142,9 +142,9 @@ cv2.destroyAllWindows()
 
 For further customization and settings, you can refer to the [AIGym](#arguments-aigym) section in the documentation.
 
-### What are the benefits of using SFDT_Ibrahim YOLO11 for workout monitoring?
+### What are the benefits of using Ultralytics YOLO11 for workout monitoring?
 
-Using SFDT_Ibrahim YOLO11 for workout monitoring provides several key benefits:
+Using Ultralytics YOLO11 for workout monitoring provides several key benefits:
 
 - **Optimized Performance:** By tailoring workouts based on monitoring data, you can achieve better results.
 - **Goal Achievement:** Easily track and adjust fitness goals for measurable progress.
@@ -154,16 +154,16 @@ Using SFDT_Ibrahim YOLO11 for workout monitoring provides several key benefits:
 
 You can watch a [YouTube video demonstration](https://www.youtube.com/watch?v=LGGxqLZtvuw) to see these benefits in action.
 
-### How accurate is SFDT_Ibrahim YOLO11 in detecting and tracking exercises?
+### How accurate is Ultralytics YOLO11 in detecting and tracking exercises?
 
-SFDT_Ibrahim YOLO11 is highly accurate in detecting and tracking exercises due to its state-of-the-art pose estimation capabilities. It can accurately track key body landmarks and joints, providing real-time feedback on exercise form and performance metrics. The model's pretrained weights and robust architecture ensure high [precision](https://www.sfdt_ibrahim.com/glossary/precision) and reliability. For real-world examples, check out the [real-world applications](#real-world-applications) section in the documentation, which showcases push-ups and pull-ups counting.
+Ultralytics YOLO11 is highly accurate in detecting and tracking exercises due to its state-of-the-art pose estimation capabilities. It can accurately track key body landmarks and joints, providing real-time feedback on exercise form and performance metrics. The model's pretrained weights and robust architecture ensure high [precision](https://www.ultralytics.com/glossary/precision) and reliability. For real-world examples, check out the [real-world applications](#real-world-applications) section in the documentation, which showcases push-ups and pull-ups counting.
 
-### Can I use SFDT_Ibrahim YOLO11 for custom workout routines?
+### Can I use Ultralytics YOLO11 for custom workout routines?
 
-Yes, SFDT_Ibrahim YOLO11 can be adapted for custom workout routines. The `AIGym` class supports different pose types such as `pushup`, `pullup`, and `abworkout`. You can specify keypoints and angles to detect specific exercises. Here is an example setup:
+Yes, Ultralytics YOLO11 can be adapted for custom workout routines. The `AIGym` class supports different pose types such as `pushup`, `pullup`, and `abworkout`. You can specify keypoints and angles to detect specific exercises. Here is an example setup:
 
 ```python
-from sfdt_ibrahim import solutions
+from ultralytics import solutions
 
 gym = solutions.AIGym(
     line_width=2,
@@ -174,14 +174,14 @@ gym = solutions.AIGym(
 
 For more details on setting arguments, refer to the [Arguments `AIGym`](#arguments-aigym) section. This flexibility allows you to monitor various exercises and customize routines based on your needs.
 
-### How can I save the workout monitoring output using SFDT_Ibrahim YOLO11?
+### How can I save the workout monitoring output using Ultralytics YOLO11?
 
 To save the workout monitoring output, you can modify the code to include a video writer that saves the processed frames. Here's an example:
 
 ```python
 import cv2
 
-from sfdt_ibrahim import solutions
+from ultralytics import solutions
 
 cap = cv2.VideoCapture("path/to/video/file.mp4")
 assert cap.isOpened(), "Error reading video file"
@@ -207,4 +207,4 @@ cv2.destroyAllWindows()
 video_writer.release()
 ```
 
-This setup writes the monitored video to an output file. For more details, refer to the [Workouts Monitoring with Save Output](#workouts-monitoring-using-sfdt_ibrahim-yolo11) section.
+This setup writes the monitored video to an output file. For more details, refer to the [Workouts Monitoring with Save Output](#workouts-monitoring-using-ultralytics-yolo11) section.

@@ -1,23 +1,23 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 name: 🚀 Feature Request
-description: Suggest an SFDT_Ibrahim YOLO idea
+description: Suggest an Ultralytics YOLO idea
 # title: " "
 labels: [enhancement]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for submitting an SFDT_Ibrahim 🚀 Feature Request!
+        Thank you for submitting an Ultralytics 🚀 Feature Request!
 
   - type: checkboxes
     attributes:
       label: Search before asking
       description: >
-        Please search the SFDT_Ibrahim [Docs](https://docs.sfdt_ibrahim.com/) and [issues](https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues) to see if a similar feature request already exists.
+        Please search the Ultralytics [Docs](https://docs.ultralytics.com/) and [issues](https://github.com/ultralytics/ultralytics/issues) to see if a similar feature request already exists.
       options:
         - label: >
-            I have searched the SFDT_Ibrahim [issues](https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues) and found no similar feature requests.
+            I have searched the Ultralytics [issues](https://github.com/ultralytics/ultralytics/issues) and found no similar feature requests.
           required: true
 
   - type: textarea
@@ -46,7 +46,7 @@ body:
     attributes:
       label: Are you willing to submit a PR?
       description: >
-        (Optional) We encourage you to submit a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/pulls) (PR) to help improve YOLO for everyone, especially if you have a good understanding of how to implement a fix or feature.
-        See the SFDT_Ibrahim [Contributing Guide](https://docs.sfdt_ibrahim.com/help/contributing/) to get started.
+        (Optional) We encourage you to submit a [Pull Request](https://github.com/ultralytics/ultralytics/pulls) (PR) to help improve YOLO for everyone, especially if you have a good understanding of how to implement a fix or feature.
+        See the Ultralytics [Contributing Guide](https://docs.ultralytics.com/help/contributing/) to get started.
       options:
         - label: Yes I'd like to help by submitting a PR!

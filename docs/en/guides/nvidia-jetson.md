@@ -1,13 +1,13 @@
 ---
 comments: true
-description: Learn to deploy SFDT_Ibrahim YOLO11 on NVIDIA Jetson devices with our detailed guide. Explore performance benchmarks and maximize AI capabilities.
-keywords: SFDT_Ibrahim, YOLO11, NVIDIA Jetson, JetPack, AI deployment, performance benchmarks, embedded systems, deep learning, TensorRT, computer vision
+description: Learn to deploy Ultralytics YOLO11 on NVIDIA Jetson devices with our detailed guide. Explore performance benchmarks and maximize AI capabilities.
+keywords: Ultralytics, YOLO11, NVIDIA Jetson, JetPack, AI deployment, performance benchmarks, embedded systems, deep learning, TensorRT, computer vision
 benchmark_version: 8.3.51
 ---
 
-# Quick Start Guide: NVIDIA Jetson with SFDT_Ibrahim YOLO11
+# Quick Start Guide: NVIDIA Jetson with Ultralytics YOLO11
 
-This comprehensive guide provides a detailed walkthrough for deploying SFDT_Ibrahim YOLO11 on [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) devices. Additionally, it showcases performance benchmarks to demonstrate the capabilities of YOLO11 on these small and powerful devices.
+This comprehensive guide provides a detailed walkthrough for deploying Ultralytics YOLO11 on [NVIDIA Jetson](https://www.nvidia.com/en-us/autonomous-machines/embedded-systems/) devices. Additionally, it showcases performance benchmarks to demonstrate the capabilities of YOLO11 on these small and powerful devices.
 
 !!! tip "New product support"
 
@@ -21,10 +21,10 @@ This comprehensive guide provides a detailed walkthrough for deploying SFDT_Ibra
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> How to Setup NVIDIA Jetson with SFDT_Ibrahim YOLO11
+  <strong>Watch:</strong> How to Setup NVIDIA Jetson with Ultralytics YOLO11
 </p>
 
-<img width="1024" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/nvidia-jetson-ecosystem.avif" alt="NVIDIA Jetson Ecosystem">
+<img width="1024" src="https://github.com/ultralytics/docs/releases/download/0/nvidia-jetson-ecosystem.avif" alt="NVIDIA Jetson Ecosystem">
 
 !!! note
 
@@ -32,7 +32,7 @@ This comprehensive guide provides a detailed walkthrough for deploying SFDT_Ibra
 
 ## What is NVIDIA Jetson?
 
-NVIDIA Jetson is a series of embedded computing boards designed to bring accelerated AI (artificial intelligence) computing to edge devices. These compact and powerful devices are built around NVIDIA's GPU architecture and are capable of running complex AI algorithms and [deep learning](https://www.sfdt_ibrahim.com/glossary/deep-learning-dl) models directly on the device, without needing to rely on [cloud computing](https://www.sfdt_ibrahim.com/glossary/cloud-computing) resources. Jetson boards are often used in robotics, autonomous vehicles, industrial automation, and other applications where AI inference needs to be performed locally with low latency and high efficiency. Additionally, these boards are based on the ARM64 architecture and runs on lower power compared to traditional GPU computing devices.
+NVIDIA Jetson is a series of embedded computing boards designed to bring accelerated AI (artificial intelligence) computing to edge devices. These compact and powerful devices are built around NVIDIA's GPU architecture and are capable of running complex AI algorithms and [deep learning](https://www.ultralytics.com/glossary/deep-learning-dl) models directly on the device, without needing to rely on [cloud computing](https://www.ultralytics.com/glossary/cloud-computing) resources. Jetson boards are often used in robotics, autonomous vehicles, industrial automation, and other applications where AI inference needs to be performed locally with low latency and high efficiency. Additionally, these boards are based on the ARM64 architecture and runs on lower power compared to traditional GPU computing devices.
 
 ## NVIDIA Jetson Series Comparison
 
@@ -51,7 +51,7 @@ For a more detailed comparison table, please visit the **Technical Specification
 
 ## What is NVIDIA JetPack?
 
-[NVIDIA JetPack SDK](https://developer.nvidia.com/embedded/jetpack) powering the Jetson modules is the most comprehensive solution and provides full development environment for building end-to-end accelerated AI applications and shortens time to market. JetPack includes Jetson Linux with bootloader, Linux kernel, Ubuntu desktop environment, and a complete set of libraries for acceleration of GPU computing, multimedia, graphics, and [computer vision](https://www.sfdt_ibrahim.com/glossary/computer-vision-cv). It also includes samples, documentation, and developer tools for both host computer and developer kit, and supports higher level SDKs such as DeepStream for streaming video analytics, Isaac for robotics, and Riva for conversational AI.
+[NVIDIA JetPack SDK](https://developer.nvidia.com/embedded/jetpack) powering the Jetson modules is the most comprehensive solution and provides full development environment for building end-to-end accelerated AI applications and shortens time to market. JetPack includes Jetson Linux with bootloader, Linux kernel, Ubuntu desktop environment, and a complete set of libraries for acceleration of GPU computing, multimedia, graphics, and [computer vision](https://www.ultralytics.com/glossary/computer-vision-cv). It also includes samples, documentation, and developer tools for both host computer and developer kit, and supports higher level SDKs such as DeepStream for streaming video analytics, Isaac for robotics, and Riva for conversational AI.
 
 ## Flash JetPack to NVIDIA Jetson
 
@@ -82,26 +82,26 @@ The below table highlights NVIDIA JetPack versions supported by different NVIDIA
 
 ## Quick Start with Docker
 
-The fastest way to get started with SFDT_Ibrahim YOLO11 on NVIDIA Jetson is to run with pre-built docker images for Jetson. Refer to the table above and choose the JetPack version according to the Jetson device you own.
+The fastest way to get started with Ultralytics YOLO11 on NVIDIA Jetson is to run with pre-built docker images for Jetson. Refer to the table above and choose the JetPack version according to the Jetson device you own.
 
 === "JetPack 4"
 
     ```bash
-    t=sfdt_ibrahim/sfdt_ibrahim:latest-jetson-jetpack4
+    t=ultralytics/ultralytics:latest-jetson-jetpack4
     sudo docker pull $t && sudo docker run -it --ipc=host --runtime=nvidia $t
     ```
 
 === "JetPack 5"
 
     ```bash
-    t=sfdt_ibrahim/sfdt_ibrahim:latest-jetson-jetpack5
+    t=ultralytics/ultralytics:latest-jetson-jetpack5
     sudo docker pull $t && sudo docker run -it --ipc=host --runtime=nvidia $t
     ```
 
 === "JetPack 6"
 
     ```bash
-    t=sfdt_ibrahim/sfdt_ibrahim:latest-jetson-jetpack6
+    t=ultralytics/ultralytics:latest-jetson-jetpack6
     sudo docker pull $t && sudo docker run -it --ipc=host --runtime=nvidia $t
     ```
 
@@ -113,9 +113,9 @@ For a native installation without Docker, please refer to the steps below.
 
 ### Run on JetPack 6.1
 
-#### Install SFDT_Ibrahim Package
+#### Install Ultralytics Package
 
-Here we will install SFDT_Ibrahim package on the Jetson with optional dependencies so that we can export the [PyTorch](https://www.sfdt_ibrahim.com/glossary/pytorch) models to other different formats. We will mainly focus on [NVIDIA TensorRT exports](../integrations/tensorrt.md) because TensorRT will make sure we can get the maximum performance out of the Jetson devices.
+Here we will install Ultralytics package on the Jetson with optional dependencies so that we can export the [PyTorch](https://www.ultralytics.com/glossary/pytorch) models to other different formats. We will mainly focus on [NVIDIA TensorRT exports](../integrations/tensorrt.md) because TensorRT will make sure we can get the maximum performance out of the Jetson devices.
 
 1. Update packages list, install pip and upgrade to latest
 
@@ -125,10 +125,10 @@ Here we will install SFDT_Ibrahim package on the Jetson with optional dependenci
     pip install -U pip
     ```
 
-2. Install `sfdt_ibrahim` pip package with optional dependencies
+2. Install `ultralytics` pip package with optional dependencies
 
     ```bash
-    pip install sfdt_ibrahim[export]
+    pip install ultralytics[export]
     ```
 
 3. Reboot the device
@@ -139,13 +139,13 @@ Here we will install SFDT_Ibrahim package on the Jetson with optional dependenci
 
 #### Install PyTorch and Torchvision
 
-The above sfdt_ibrahim installation will install Torch and Torchvision. However, these 2 packages installed via pip are not compatible to run on Jetson platform which is based on ARM64 architecture. Therefore, we need to manually install pre-built PyTorch pip wheel and compile/ install Torchvision from source.
+The above ultralytics installation will install Torch and Torchvision. However, these 2 packages installed via pip are not compatible to run on Jetson platform which is based on ARM64 architecture. Therefore, we need to manually install pre-built PyTorch pip wheel and compile/ install Torchvision from source.
 
 Install `torch 2.5.0` and `torchvision 0.20` according to JP6.1
 
 ```bash
-pip install https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/torch-2.5.0a0+872d972e41.nv24.08-cp310-cp310-linux_aarch64.whl
-pip install https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/torchvision-0.20.0a0+afc54f7-cp310-cp310-linux_aarch64.whl
+pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/torch-2.5.0a0+872d972e41.nv24.08-cp310-cp310-linux_aarch64.whl
+pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/torchvision-0.20.0a0+afc54f7-cp310-cp310-linux_aarch64.whl
 ```
 
 !!! note
@@ -168,7 +168,7 @@ The [onnxruntime-gpu](https://pypi.org/project/onnxruntime-gpu/) package hosted 
 All different `onnxruntime-gpu` packages corresponding to different JetPack and Python versions are listed [here](https://elinux.org/Jetson_Zoo#ONNX_Runtime). However, here we will download and install `onnxruntime-gpu 1.20.0` with `Python3.10` support.
 
 ```bash
-pip install https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/onnxruntime_gpu-1.20.0-cp310-cp310-linux_aarch64.whl
+pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/onnxruntime_gpu-1.20.0-cp310-cp310-linux_aarch64.whl
 ```
 
 !!! note
@@ -179,9 +179,9 @@ pip install https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/onnx
 
 ### Run on JetPack 5.1.2
 
-#### Install SFDT_Ibrahim Package
+#### Install Ultralytics Package
 
-Here we will install SFDT_Ibrahim package on the Jetson with optional dependencies so that we can export the PyTorch models to other different formats. We will mainly focus on [NVIDIA TensorRT exports](../integrations/tensorrt.md) because TensorRT will make sure we can get the maximum performance out of the Jetson devices.
+Here we will install Ultralytics package on the Jetson with optional dependencies so that we can export the PyTorch models to other different formats. We will mainly focus on [NVIDIA TensorRT exports](../integrations/tensorrt.md) because TensorRT will make sure we can get the maximum performance out of the Jetson devices.
 
 1. Update packages list, install pip and upgrade to latest
 
@@ -191,10 +191,10 @@ Here we will install SFDT_Ibrahim package on the Jetson with optional dependenci
     pip install -U pip
     ```
 
-2. Install `sfdt_ibrahim` pip package with optional dependencies
+2. Install `ultralytics` pip package with optional dependencies
 
     ```bash
-    pip install sfdt_ibrahim[export]
+    pip install ultralytics[export]
     ```
 
 3. Reboot the device
@@ -205,7 +205,7 @@ Here we will install SFDT_Ibrahim package on the Jetson with optional dependenci
 
 #### Install PyTorch and Torchvision
 
-The above sfdt_ibrahim installation will install Torch and Torchvision. However, these 2 packages installed via pip are not compatible to run on Jetson platform which is based on ARM64 architecture. Therefore, we need to manually install pre-built PyTorch pip wheel and compile/ install Torchvision from source.
+The above ultralytics installation will install Torch and Torchvision. However, these 2 packages installed via pip are not compatible to run on Jetson platform which is based on ARM64 architecture. Therefore, we need to manually install pre-built PyTorch pip wheel and compile/ install Torchvision from source.
 
 1. Uninstall currently installed PyTorch and Torchvision
 
@@ -216,8 +216,8 @@ The above sfdt_ibrahim installation will install Torch and Torchvision. However,
 2. Install `torch 2.1.0` and `torchvision 0.16.2` according to JP5.1.2
 
     ```bash
-    pip install https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
-    pip install https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/torchvision-0.16.2+c6f3977-cp38-cp38-linux_aarch64.whl
+    pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/torch-2.1.0a0+41361538.nv23.06-cp38-cp38-linux_aarch64.whl
+    pip install https://github.com/ultralytics/assets/releases/download/v0.0.0/torchvision-0.16.2+c6f3977-cp38-cp38-linux_aarch64.whl
     ```
 
 !!! note
@@ -243,7 +243,7 @@ pip install onnxruntime_gpu-1.17.0-cp38-cp38-linux_aarch64.whl
 
 ## Use TensorRT on NVIDIA Jetson
 
-Out of all the model export formats supported by SFDT_Ibrahim, TensorRT delivers the best inference performance when working with NVIDIA Jetson devices and our recommendation is to use TensorRT with Jetson. We also have a detailed document on TensorRT [here](../integrations/tensorrt.md).
+Out of all the model export formats supported by Ultralytics, TensorRT delivers the best inference performance when working with NVIDIA Jetson devices and our recommendation is to use TensorRT with Jetson. We also have a detailed document on TensorRT [here](../integrations/tensorrt.md).
 
 ### Convert Model to TensorRT and Run Inference
 
@@ -254,7 +254,7 @@ The YOLO11n model in PyTorch format is converted to TensorRT to run inference wi
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a YOLO11n PyTorch model
         model = YOLO("yolo11n.pt")
@@ -266,7 +266,7 @@ The YOLO11n model in PyTorch format is converted to TensorRT to run inference wi
         trt_model = YOLO("yolo11n.engine")
 
         # Run inference
-        results = trt_model("https://sfdt_ibrahim.com/images/bus.jpg")
+        results = trt_model("https://ultralytics.com/images/bus.jpg")
         ```
 
     === "CLI"
@@ -276,7 +276,7 @@ The YOLO11n model in PyTorch format is converted to TensorRT to run inference wi
         yolo export model=yolo11n.pt format=engine  # creates 'yolo11n.engine'
 
         # Run inference with the exported model
-        yolo predict model=yolo11n.engine source='https://sfdt_ibrahim.com/images/bus.jpg'
+        yolo predict model=yolo11n.engine source='https://ultralytics.com/images/bus.jpg'
         ```
 
 !!! note
@@ -299,7 +299,7 @@ The following Jetson devices are equipped with DLA hardware:
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a YOLO11n PyTorch model
         model = YOLO("yolo11n.pt")
@@ -311,7 +311,7 @@ The following Jetson devices are equipped with DLA hardware:
         trt_model = YOLO("yolo11n.engine")
 
         # Run inference
-        results = trt_model("https://sfdt_ibrahim.com/images/bus.jpg")
+        results = trt_model("https://ultralytics.com/images/bus.jpg")
         ```
 
     === "CLI"
@@ -321,7 +321,7 @@ The following Jetson devices are equipped with DLA hardware:
         yolo export model=yolo11n.pt format=engine device="dla:0" half=True  # dla:0 or dla:1 corresponds to the DLA cores
 
         # Run inference with the exported model on the DLA
-        yolo predict model=yolo11n.engine source='https://sfdt_ibrahim.com/images/bus.jpg'
+        yolo predict model=yolo11n.engine source='https://ultralytics.com/images/bus.jpg'
         ```
 
 !!! note
@@ -330,7 +330,7 @@ The following Jetson devices are equipped with DLA hardware:
 
 ## NVIDIA Jetson Orin YOLO11 Benchmarks
 
-YOLO11 benchmarks were run by the SFDT_Ibrahim team on 10 different model formats measuring speed and [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy): PyTorch, TorchScript, ONNX, OpenVINO, TensorRT, TF SavedModel, TF GraphDef, TF Lite, PaddlePaddle, NCNN. Benchmarks were run on both NVIDIA Jetson Orin Nano Super Developer Kit and Seeed Studio reComputer J4012 powered by Jetson Orin NX 16GB device at FP32 [precision](https://www.sfdt_ibrahim.com/glossary/precision) with default input image size of 640.
+YOLO11 benchmarks were run by the Ultralytics team on 10 different model formats measuring speed and [accuracy](https://www.ultralytics.com/glossary/accuracy): PyTorch, TorchScript, ONNX, OpenVINO, TensorRT, TF SavedModel, TF GraphDef, TF Lite, PaddlePaddle, NCNN. Benchmarks were run on both NVIDIA Jetson Orin Nano Super Developer Kit and Seeed Studio reComputer J4012 powered by Jetson Orin NX 16GB device at FP32 [precision](https://www.ultralytics.com/glossary/precision) with default input image size of 640.
 
 ### Comparison Charts
 
@@ -339,15 +339,15 @@ Even though all model exports are working with NVIDIA Jetson, we have only inclu
 #### NVIDIA Jetson Orin Nano Super Developer Kit
 
 <figure style="text-align: center;">
-    <img src="https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/jetson-orin-nano-super-benchmarks.avif" alt="Jetson Orin Nano Super Benchmarks">
-    <figcaption style="font-style: italic; color: gray;">Benchmarked with SFDT_Ibrahim {{ benchmark_version }}</figcaption>
+    <img src="https://github.com/ultralytics/assets/releases/download/v0.0.0/jetson-orin-nano-super-benchmarks.avif" alt="Jetson Orin Nano Super Benchmarks">
+    <figcaption style="font-style: italic; color: gray;">Benchmarked with Ultralytics {{ benchmark_version }}</figcaption>
 </figure>
 
 #### NVIDIA Jetson Orin NX 16GB
 
 <figure style="text-align: center;">
-    <img src="https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/jetson-orin-nx-16-benchmarks.avif" alt="Jetson Orin NX 16GB Benchmarks">
-    <figcaption style="font-style: italic; color: gray;">Benchmarked with SFDT_Ibrahim {{ benchmark_version }}</figcaption>
+    <img src="https://github.com/ultralytics/assets/releases/download/v0.0.0/jetson-orin-nx-16-benchmarks.avif" alt="Jetson Orin NX 16GB Benchmarks">
+    <figcaption style="font-style: italic; color: gray;">Benchmarked with Ultralytics {{ benchmark_version }}</figcaption>
 </figure>
 
 ### Detailed Comparison Tables
@@ -448,7 +448,7 @@ The below table represents the benchmark results for five different models (YOLO
         | MNN             | ✅      | 217.3             | 0.8308      | 1242.97                |
         | NCNN            | ✅      | 217.3             | 0.8304      | 850.05                 |
 
-    Benchmarked with SFDT_Ibrahim {{ benchmark_version }}
+    Benchmarked with Ultralytics {{ benchmark_version }}
 
 #### NVIDIA Jetson Orin NX 16GB
 
@@ -544,20 +544,20 @@ The below table represents the benchmark results for five different models (YOLO
         | MNN             | ✅      | 217.3             | 0.8289      | 827.13                 |
         | NCNN            | ✅      | 217.3             | 0.8304      | 490.29                 |
 
-    Benchmarked with SFDT_Ibrahim {{ benchmark_version }}
+    Benchmarked with Ultralytics {{ benchmark_version }}
 
 [Explore more benchmarking efforts by Seeed Studio](https://www.seeedstudio.com/blog/2023/03/30/yolov8-performance-benchmarks-on-nvidia-jetson-devices) running on different versions of NVIDIA Jetson hardware.
 
 ## Reproduce Our Results
 
-To reproduce the above SFDT_Ibrahim benchmarks on all export [formats](../modes/export.md) run this code:
+To reproduce the above Ultralytics benchmarks on all export [formats](../modes/export.md) run this code:
 
 !!! example
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a YOLO11n PyTorch model
         model = YOLO("yolo11n.pt")
@@ -606,17 +606,17 @@ When using NVIDIA Jetson, there are a couple of best practices to follow in orde
     jtop
     ```
 
-<img width="1024" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/jetson-stats-application.avif" alt="Jetson Stats">
+<img width="1024" src="https://github.com/ultralytics/docs/releases/download/0/jetson-stats-application.avif" alt="Jetson Stats">
 
 ## Next Steps
 
-Congratulations on successfully setting up YOLO11 on your NVIDIA Jetson! For further learning and support, visit more guide at [SFDT_Ibrahim YOLO11 Docs](../index.md)!
+Congratulations on successfully setting up YOLO11 on your NVIDIA Jetson! For further learning and support, visit more guide at [Ultralytics YOLO11 Docs](../index.md)!
 
 ## FAQ
 
-### How do I deploy SFDT_Ibrahim YOLO11 on NVIDIA Jetson devices?
+### How do I deploy Ultralytics YOLO11 on NVIDIA Jetson devices?
 
-Deploying SFDT_Ibrahim YOLO11 on NVIDIA Jetson devices is a straightforward process. First, flash your Jetson device with the NVIDIA JetPack SDK. Then, either use a pre-built Docker image for quick setup or manually install the required packages. Detailed steps for each approach can be found in sections [Quick Start with Docker](#quick-start-with-docker) and [Start with Native Installation](#start-with-native-installation).
+Deploying Ultralytics YOLO11 on NVIDIA Jetson devices is a straightforward process. First, flash your Jetson device with the NVIDIA JetPack SDK. Then, either use a pre-built Docker image for quick setup or manually install the required packages. Detailed steps for each approach can be found in sections [Quick Start with Docker](#quick-start-with-docker) and [Start with Native Installation](#start-with-native-installation).
 
 ### What performance benchmarks can I expect from YOLO11 models on NVIDIA Jetson devices?
 

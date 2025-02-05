@@ -86,7 +86,7 @@ if (WIN32)
             $<TARGET_FILE_DIR:${PROJECT_NAME}>)
 endif ()
 
-# Download https://raw.githubusercontent.com/sfdt_ibrahim/sfdt_ibrahim/main/sfdt_ibrahim/cfg/datasets/coco.yaml
+# Download https://raw.githubusercontent.com/ultralytics/ultralytics/main/ultralytics/cfg/datasets/coco.yaml
 # and put it in the same folder of the executable file
 configure_file(coco.yaml ${CMAKE_CURRENT_BINARY_DIR}/coco.yaml COPYONLY)
 

@@ -1,23 +1,23 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 name: ❓ Question
-description: Ask an SFDT_Ibrahim YOLO question
+description: Ask an Ultralytics YOLO question
 # title: " "
 labels: [question]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for asking an SFDT_Ibrahim YOLO ❓ Question!
+        Thank you for asking an Ultralytics YOLO ❓ Question!
 
   - type: checkboxes
     attributes:
       label: Search before asking
       description: >
-        Please search the SFDT_Ibrahim [Docs](https://docs.sfdt_ibrahim.com/), [issues](https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues) and [discussions](https://github.com/orgs/sfdt_ibrahim/discussions) to see if a similar question already exists.
+        Please search the Ultralytics [Docs](https://docs.ultralytics.com/), [issues](https://github.com/ultralytics/ultralytics/issues) and [discussions](https://github.com/orgs/ultralytics/discussions) to see if a similar question already exists.
       options:
         - label: >
-            I have searched the SFDT_Ibrahim YOLO [issues](https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues) and [discussions](https://github.com/orgs/sfdt_ibrahim/discussions) and found no similar questions.
+            I have searched the Ultralytics YOLO [issues](https://github.com/ultralytics/ultralytics/issues) and [discussions](https://github.com/orgs/ultralytics/discussions) and found no similar questions.
           required: true
 
   - type: textarea

@@ -1,14 +1,14 @@
 ---
 comments: true
 description: Explore the DOTA dataset for object detection in aerial images, featuring 1.7M Oriented Bounding Boxes across 18 categories. Ideal for aerial image analysis.
-keywords: DOTA dataset, object detection, aerial images, oriented bounding boxes, OBB, DOTA v1.0, DOTA v1.5, DOTA v2.0, multiscale detection, SFDT_Ibrahim
+keywords: DOTA dataset, object detection, aerial images, oriented bounding boxes, OBB, DOTA v1.0, DOTA v1.5, DOTA v2.0, multiscale detection, Ultralytics
 ---
 
 # DOTA Dataset with OBB
 
-[DOTA](https://captain-whu.github.io/DOTA/index.html) stands as a specialized dataset, emphasizing [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) in aerial images. Originating from the DOTA series of datasets, it offers annotated images capturing a diverse array of aerial scenes with Oriented Bounding Boxes (OBB).
+[DOTA](https://captain-whu.github.io/DOTA/index.html) stands as a specialized dataset, emphasizing [object detection](https://www.ultralytics.com/glossary/object-detection) in aerial images. Originating from the DOTA series of datasets, it offers annotated images capturing a diverse array of aerial scenes with Oriented Bounding Boxes (OBB).
 
-![DOTA classes visual](https://github.com/sfdt_ibrahim/docs/releases/download/0/dota-classes-visual.avif)
+![DOTA classes visual](https://github.com/ultralytics/docs/releases/download/0/dota-classes-visual.avif)
 
 ## Key Features
 
@@ -58,12 +58,12 @@ DOTA serves as a benchmark for training and evaluating models specifically tailo
 
 ## Dataset YAML
 
-Typically, datasets incorporate a YAML (Yet Another Markup Language) file detailing the dataset's configuration. For DOTA v1 and DOTA v1.5, SFDT_Ibrahim provides `DOTAv1.yaml` and `DOTAv1.5.yaml` files. For additional details on these as well as DOTA v2 please consult DOTA's official repository and documentation.
+Typically, datasets incorporate a YAML (Yet Another Markup Language) file detailing the dataset's configuration. For DOTA v1 and DOTA v1.5, Ultralytics provides `DOTAv1.yaml` and `DOTAv1.5.yaml` files. For additional details on these as well as DOTA v2 please consult DOTA's official repository and documentation.
 
 !!! example "DOTAv1.yaml"
 
     ```yaml
-    --8<-- "sfdt_ibrahim/cfg/datasets/DOTAv1.yaml"
+    --8<-- "ultralytics/cfg/datasets/DOTAv1.yaml"
     ```
 
 ## Split DOTA images
@@ -75,7 +75,7 @@ To train DOTA dataset, we split original DOTA images with high-resolution into i
     === "Python"
 
         ```python
-        from sfdt_ibrahim.data.split_dota import split_test, split_trainval
+        from ultralytics.data.split_dota import split_test, split_trainval
 
         # split train and val set, with labels.
         split_trainval(
@@ -106,7 +106,7 @@ To train a model on the DOTA v1 dataset, you can utilize the following code snip
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Create a new YOLO11n-OBB model from scratch
         model = YOLO("yolo11n-obb.yaml")
@@ -126,9 +126,9 @@ To train a model on the DOTA v1 dataset, you can utilize the following code snip
 
 Having a glance at the dataset illustrates its depth:
 
-![Dataset sample image](https://github.com/sfdt_ibrahim/docs/releases/download/0/instances-DOTA.avif)
+![Dataset sample image](https://github.com/ultralytics/docs/releases/download/0/instances-DOTA.avif)
 
-- **DOTA examples**: This snapshot underlines the complexity of aerial scenes and the significance of Oriented [Bounding Box](https://www.sfdt_ibrahim.com/glossary/bounding-box) annotations, capturing objects in their natural orientation.
+- **DOTA examples**: This snapshot underlines the complexity of aerial scenes and the significance of Oriented [Bounding Box](https://www.ultralytics.com/glossary/bounding-box) annotations, capturing objects in their natural orientation.
 
 The dataset's richness offers invaluable insights into object detection challenges exclusive to aerial imagery.
 
@@ -167,14 +167,14 @@ DOTA utilizes Oriented Bounding Boxes (OBB) for annotation, which are represente
 
 ### How can I train a model using the DOTA dataset?
 
-To train a model on the DOTA dataset, you can use the following example with SFDT_Ibrahim YOLO:
+To train a model on the DOTA dataset, you can use the following example with Ultralytics YOLO:
 
 !!! example "Train Example"
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Create a new YOLO11n-OBB model from scratch
         model = YOLO("yolo11n-obb.yaml")
@@ -209,7 +209,7 @@ DOTA images, which can be very large, are split into smaller resolutions for man
     === "Python"
 
         ```python
-        from sfdt_ibrahim.data.split_dota import split_test, split_trainval
+        from ultralytics.data.split_dota import split_test, split_trainval
 
         # split train and val set, with labels.
         split_trainval(

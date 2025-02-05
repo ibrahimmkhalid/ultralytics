@@ -1,4 +1,4 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 import argparse
 import time
@@ -11,10 +11,10 @@ import numpy as np
 import torch
 from transformers import AutoModel, AutoProcessor
 
-from sfdt_ibrahim import YOLO
-from sfdt_ibrahim.data.loaders import get_best_youtube_url
-from sfdt_ibrahim.utils.plotting import Annotator
-from sfdt_ibrahim.utils.torch_utils import select_device
+from ultralytics import YOLO
+from ultralytics.data.loaders import get_best_youtube_url
+from ultralytics.utils.plotting import Annotator
+from ultralytics.utils.torch_utils import select_device
 
 
 class TorchVisionVideoClassifier:
@@ -421,7 +421,7 @@ def run(
 def parse_opt():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser()
-    parser.add_argument("--weights", type=str, default="yolo11n.pt", help="sfdt_ibrahim detector model path")
+    parser.add_argument("--weights", type=str, default="yolo11n.pt", help="ultralytics detector model path")
     parser.add_argument("--device", default="", help='cuda device, i.e. 0 or 0,1,2,3 or cpu/mps, "" for auto-detection')
     parser.add_argument(
         "--source",
