@@ -1,14 +1,14 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 import sys
 from unittest import mock
 
 from tests import MODEL
-from sfdt_ibrahim import YOLO
-from sfdt_ibrahim.cfg import get_cfg
-from sfdt_ibrahim.engine.exporter import Exporter
-from sfdt_ibrahim.models.yolo import classify, detect, segment
-from sfdt_ibrahim.utils import ASSETS, DEFAULT_CFG, WEIGHTS_DIR
+from ultralytics import YOLO
+from ultralytics.cfg import get_cfg
+from ultralytics.engine.exporter import Exporter
+from ultralytics.models.yolo import classify, detect, segment
+from ultralytics.utils import ASSETS, DEFAULT_CFG, WEIGHTS_DIR
 
 
 def test_func(*args):  # noqa

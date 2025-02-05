@@ -1,16 +1,16 @@
 ---
 comments: true
-description: Discover the diverse modes of SFDT_Ibrahim YOLO11, including training, validation, prediction, export, tracking, and benchmarking. Maximize model performance and efficiency.
-keywords: SFDT_Ibrahim, YOLO11, machine learning, model training, validation, prediction, export, tracking, benchmarking, object detection
+description: Discover the diverse modes of Ultralytics YOLO11, including training, validation, prediction, export, tracking, and benchmarking. Maximize model performance and efficiency.
+keywords: Ultralytics, YOLO11, machine learning, model training, validation, prediction, export, tracking, benchmarking, object detection
 ---
 
-# SFDT_Ibrahim YOLO11 Modes
+# Ultralytics YOLO11 Modes
 
-<img width="1024" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/sfdt_ibrahim-yolov8-ecosystem-integrations.avif" alt="SFDT_Ibrahim YOLO ecosystem and integrations">
+<img width="1024" src="https://github.com/ultralytics/docs/releases/download/0/ultralytics-yolov8-ecosystem-integrations.avif" alt="Ultralytics YOLO ecosystem and integrations">
 
 ## Introduction
 
-SFDT_Ibrahim YOLO11 is not just another object detection model; it's a versatile framework designed to cover the entire lifecycle of [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) models—from data ingestion and model training to validation, deployment, and real-world tracking. Each mode serves a specific purpose and is engineered to offer you the flexibility and efficiency required for different tasks and use-cases.
+Ultralytics YOLO11 is not just another object detection model; it's a versatile framework designed to cover the entire lifecycle of [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) models—from data ingestion and model training to validation, deployment, and real-world tracking. Each mode serves a specific purpose and is engineered to offer you the flexibility and efficiency required for different tasks and use-cases.
 
 <p align="center">
   <br>
@@ -20,17 +20,17 @@ SFDT_Ibrahim YOLO11 is not just another object detection model; it's a versatile
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> SFDT_Ibrahim Modes Tutorial: Train, Validate, Predict, Export & Benchmark.
+  <strong>Watch:</strong> Ultralytics Modes Tutorial: Train, Validate, Predict, Export & Benchmark.
 </p>
 
 ### Modes at a Glance
 
-Understanding the different **modes** that SFDT_Ibrahim YOLO11 supports is critical to getting the most out of your models:
+Understanding the different **modes** that Ultralytics YOLO11 supports is critical to getting the most out of your models:
 
 - **Train** mode: Fine-tune your model on custom or preloaded datasets.
 - **Val** mode: A post-training checkpoint to validate model performance.
 - **Predict** mode: Unleash the predictive power of your model on real-world data.
-- **Export** mode: Make your [model deployment](https://www.sfdt_ibrahim.com/glossary/model-deployment)-ready in various formats.
+- **Export** mode: Make your [model deployment](https://www.ultralytics.com/glossary/model-deployment)-ready in various formats.
 - **Track** mode: Extend your object detection model into real-time tracking applications.
 - **Benchmark** mode: Analyze the speed and accuracy of your model in diverse deployment environments.
 
@@ -74,16 +74,16 @@ Benchmark mode is used to profile the speed and accuracy of various export forma
 
 ## FAQ
 
-### How do I train a custom [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) model with SFDT_Ibrahim YOLO11?
+### How do I train a custom [object detection](https://www.ultralytics.com/glossary/object-detection) model with Ultralytics YOLO11?
 
-Training a custom object detection model with SFDT_Ibrahim YOLO11 involves using the train mode. You need a dataset formatted in YOLO format, containing images and corresponding annotation files. Use the following command to start the training process:
+Training a custom object detection model with Ultralytics YOLO11 involves using the train mode. You need a dataset formatted in YOLO format, containing images and corresponding annotation files. Use the following command to start the training process:
 
 !!! example
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a pre-trained YOLO model (you can choose n, s, m, l, or x versions)
         model = YOLO("yolo11n.pt")
@@ -99,15 +99,15 @@ Training a custom object detection model with SFDT_Ibrahim YOLO11 involves using
         yolo train data=path/to/dataset.yaml epochs=100 imgsz=640
         ```
 
-For more detailed instructions, you can refer to the [SFDT_Ibrahim Train Guide](../modes/train.md).
+For more detailed instructions, you can refer to the [Ultralytics Train Guide](../modes/train.md).
 
-### What metrics does SFDT_Ibrahim YOLO11 use to validate the model's performance?
+### What metrics does Ultralytics YOLO11 use to validate the model's performance?
 
-SFDT_Ibrahim YOLO11 uses various metrics during the validation process to assess model performance. These include:
+Ultralytics YOLO11 uses various metrics during the validation process to assess model performance. These include:
 
 - **mAP (mean Average Precision)**: This evaluates the accuracy of object detection.
 - **IOU (Intersection over Union)**: Measures the overlap between predicted and ground truth bounding boxes.
-- **[Precision](https://www.sfdt_ibrahim.com/glossary/precision) and [Recall](https://www.sfdt_ibrahim.com/glossary/recall)**: Precision measures the ratio of true positive detections to the total detected positives, while recall measures the ratio of true positive detections to the total actual positives.
+- **[Precision](https://www.ultralytics.com/glossary/precision) and [Recall](https://www.ultralytics.com/glossary/recall)**: Precision measures the ratio of true positive detections to the total detected positives, while recall measures the ratio of true positive detections to the total actual positives.
 
 You can run the following command to start the validation:
 
@@ -116,7 +116,7 @@ You can run the following command to start the validation:
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a pre-trained or custom YOLO model
         model = YOLO("yolo11n.pt")
@@ -136,14 +136,14 @@ Refer to the [Validation Guide](../modes/val.md) for further details.
 
 ### How can I export my YOLO11 model for deployment?
 
-SFDT_Ibrahim YOLO11 offers export functionality to convert your trained model into various deployment formats such as ONNX, TensorRT, CoreML, and more. Use the following example to export your model:
+Ultralytics YOLO11 offers export functionality to convert your trained model into various deployment formats such as ONNX, TensorRT, CoreML, and more. Use the following example to export your model:
 
 !!! example
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load your trained YOLO model
         model = YOLO("yolo11n.pt")
@@ -161,16 +161,16 @@ SFDT_Ibrahim YOLO11 offers export functionality to convert your trained model in
 
 Detailed steps for each export format can be found in the [Export Guide](../modes/export.md).
 
-### What is the purpose of the benchmark mode in SFDT_Ibrahim YOLO11?
+### What is the purpose of the benchmark mode in Ultralytics YOLO11?
 
-Benchmark mode in SFDT_Ibrahim YOLO11 is used to analyze the speed and [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy) of various export formats such as ONNX, TensorRT, and OpenVINO. It provides metrics like model size, `mAP50-95` for object detection, and inference time across different hardware setups, helping you choose the most suitable format for your deployment needs.
+Benchmark mode in Ultralytics YOLO11 is used to analyze the speed and [accuracy](https://www.ultralytics.com/glossary/accuracy) of various export formats such as ONNX, TensorRT, and OpenVINO. It provides metrics like model size, `mAP50-95` for object detection, and inference time across different hardware setups, helping you choose the most suitable format for your deployment needs.
 
 !!! example
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim.utils.benchmarks import benchmark
+        from ultralytics.utils.benchmarks import benchmark
 
         # Run benchmark on GPU (device 0)
         # You can adjust parameters like model, dataset, image size, and precision as needed
@@ -187,16 +187,16 @@ Benchmark mode in SFDT_Ibrahim YOLO11 is used to analyze the speed and [accuracy
 
 For more details, refer to the [Benchmark Guide](../modes/benchmark.md).
 
-### How can I perform real-time object tracking using SFDT_Ibrahim YOLO11?
+### How can I perform real-time object tracking using Ultralytics YOLO11?
 
-Real-time object tracking can be achieved using the track mode in SFDT_Ibrahim YOLO11. This mode extends object detection capabilities to track objects across video frames or live feeds. Use the following example to enable tracking:
+Real-time object tracking can be achieved using the track mode in Ultralytics YOLO11. This mode extends object detection capabilities to track objects across video frames or live feeds. Use the following example to enable tracking:
 
 !!! example
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a pre-trained YOLO model
         model = YOLO("yolo11n.pt")

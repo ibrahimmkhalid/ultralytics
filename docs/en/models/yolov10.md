@@ -1,14 +1,14 @@
 ---
 comments: true
 description: Discover YOLOv10, the latest in real-time object detection, eliminating NMS and boosting efficiency. Achieve top performance with a low computational cost.
-keywords: YOLOv10, real-time object detection, NMS-free, deep learning, Tsinghua University, SFDT_Ibrahim, machine learning, neural networks, performance optimization
+keywords: YOLOv10, real-time object detection, NMS-free, deep learning, Tsinghua University, Ultralytics, machine learning, neural networks, performance optimization
 ---
 
-# YOLOv10: Real-Time End-to-End [Object Detection](https://www.sfdt_ibrahim.com/glossary/object-detection)
+# YOLOv10: Real-Time End-to-End [Object Detection](https://www.ultralytics.com/glossary/object-detection)
 
-YOLOv10, built on the [SFDT_Ibrahim](https://www.sfdt_ibrahim.com/) [Python package](https://pypi.org/project/sfdt_ibrahim/) by researchers at [Tsinghua University](https://www.tsinghua.edu.cn/en/), introduces a new approach to real-time object detection, addressing both the post-processing and model architecture deficiencies found in previous YOLO versions. By eliminating non-maximum suppression (NMS) and optimizing various model components, YOLOv10 achieves state-of-the-art performance with significantly reduced computational overhead. Extensive experiments demonstrate its superior accuracy-latency trade-offs across multiple model scales.
+YOLOv10, built on the [Ultralytics](https://www.ultralytics.com/) [Python package](https://pypi.org/project/ultralytics/) by researchers at [Tsinghua University](https://www.tsinghua.edu.cn/en/), introduces a new approach to real-time object detection, addressing both the post-processing and model architecture deficiencies found in previous YOLO versions. By eliminating non-maximum suppression (NMS) and optimizing various model components, YOLOv10 achieves state-of-the-art performance with significantly reduced computational overhead. Extensive experiments demonstrate its superior accuracy-latency trade-offs across multiple model scales.
 
-![YOLOv10 consistent dual assignment for NMS-free training](https://github.com/sfdt_ibrahim/docs/releases/download/0/yolov10-consistent-dual-assignment.avif)
+![YOLOv10 consistent dual assignment for NMS-free training](https://github.com/ultralytics/docs/releases/download/0/yolov10-consistent-dual-assignment.avif)
 
 <p align="center">
   <br>
@@ -18,7 +18,7 @@ YOLOv10, built on the [SFDT_Ibrahim](https://www.sfdt_ibrahim.com/) [Python pack
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> How to Train YOLOv10 on SKU-110k Dataset using SFDT_Ibrahim | Retail Dataset
+  <strong>Watch:</strong> How to Train YOLOv10 on SKU-110k Dataset using Ultralytics | Retail Dataset
 </p>
 
 ## Overview
@@ -29,7 +29,7 @@ Real-time object detection aims to accurately predict object categories and posi
 
 The architecture of YOLOv10 builds upon the strengths of previous YOLO models while introducing several key innovations. The model architecture consists of the following components:
 
-1. **Backbone**: Responsible for [feature extraction](https://www.sfdt_ibrahim.com/glossary/feature-extraction), the backbone in YOLOv10 uses an enhanced version of CSPNet (Cross Stage Partial Network) to improve gradient flow and reduce computational redundancy.
+1. **Backbone**: Responsible for [feature extraction](https://www.ultralytics.com/glossary/feature-extraction), the backbone in YOLOv10 uses an enhanced version of CSPNet (Cross Stage Partial Network) to improve gradient flow and reduce computational redundancy.
 2. **Neck**: The neck is designed to aggregate features from different scales and passes them to the head. It includes PAN (Path Aggregation Network) layers for effective multiscale feature fusion.
 3. **One-to-Many Head**: Generates multiple predictions per object during training to provide rich supervisory signals and improve learning accuracy.
 4. **One-to-One Head**: Generates a single best prediction per object during inference to eliminate the need for NMS, thereby reducing latency and improving efficiency.
@@ -77,7 +77,7 @@ Latency measured with TensorRT FP16 on T4 GPU.
 
 YOLOv10 employs dual label assignments, combining one-to-many and one-to-one strategies during training to ensure rich supervision and efficient end-to-end deployment. The consistent matching metric aligns the supervision between both strategies, enhancing the quality of predictions during inference.
 
-### Holistic Efficiency-[Accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy) Driven Model Design
+### Holistic Efficiency-[Accuracy](https://www.ultralytics.com/glossary/accuracy) Driven Model Design
 
 #### Efficiency Enhancements
 
@@ -96,7 +96,7 @@ YOLOv10 has been extensively tested on standard benchmarks like COCO, demonstrat
 
 ## Comparisons
 
-![YOLOv10 comparison with SOTA object detectors](https://github.com/sfdt_ibrahim/docs/releases/download/0/yolov10-comparison-sota-detectors.avif)
+![YOLOv10 comparison with SOTA object detectors](https://github.com/ultralytics/docs/releases/download/0/yolov10-comparison-sota-detectors.avif)
 
 Compared to other state-of-the-art detectors:
 
@@ -134,12 +134,12 @@ Here is a detailed comparison of YOLOv10 variants with other state-of-the-art mo
 | RT-DETR-R101       | 76.0               | 259.0             | 54.3                 | 13.71                | 13.58                        |
 | **[YOLOv10-X][6]** | **29.5**           | **160.4**         | **54.4**             | **10.70**            | **10.60**                    |
 
-[1]: https://github.com/sfdt_ibrahim/assets/releases/download/v8.2.0/yolov10n.pt
-[2]: https://github.com/sfdt_ibrahim/assets/releases/download/v8.2.0/yolov10s.pt
-[3]: https://github.com/sfdt_ibrahim/assets/releases/download/v8.2.0/yolov10m.pt
-[4]: https://github.com/sfdt_ibrahim/assets/releases/download/v8.2.0/yolov10b.pt
-[5]: https://github.com/sfdt_ibrahim/assets/releases/download/v8.2.0/yolov10l.pt
-[6]: https://github.com/sfdt_ibrahim/assets/releases/download/v8.2.0/yolov10x.pt
+[1]: https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov10n.pt
+[2]: https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov10s.pt
+[3]: https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov10m.pt
+[4]: https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov10b.pt
+[5]: https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov10l.pt
+[6]: https://github.com/ultralytics/assets/releases/download/v8.2.0/yolov10x.pt
 
 ## Usage Examples
 
@@ -150,7 +150,7 @@ For predicting new images with YOLOv10:
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a pre-trained YOLOv10n model
         model = YOLO("yolov10n.pt")
@@ -176,7 +176,7 @@ For training YOLOv10 on a custom dataset:
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load YOLOv10n model from scratch
         model = YOLO("yolov10n.yaml")
@@ -205,16 +205,16 @@ The YOLOv10 models series offers a range of models, each optimized for high-perf
 
 ## Exporting YOLOv10
 
-Due to the new operations introduced with YOLOv10, not all export formats provided by SFDT_Ibrahim are currently supported. The following table outlines which formats have been successfully converted using SFDT_Ibrahim for YOLOv10. Feel free to open a pull request if you're able to [provide a contribution change](../help/contributing.md) for adding export support of additional formats for YOLOv10.
+Due to the new operations introduced with YOLOv10, not all export formats provided by Ultralytics are currently supported. The following table outlines which formats have been successfully converted using Ultralytics for YOLOv10. Feel free to open a pull request if you're able to [provide a contribution change](../help/contributing.md) for adding export support of additional formats for YOLOv10.
 
 | Export Format                                     | Export Support | Exported Model Inference | Notes                                                                                  |
 | ------------------------------------------------- | -------------- | ------------------------ | -------------------------------------------------------------------------------------- |
-| [TorchScript](../integrations/torchscript.md)     | ✅             | ✅                       | Standard [PyTorch](https://www.sfdt_ibrahim.com/glossary/pytorch) model format.         |
+| [TorchScript](../integrations/torchscript.md)     | ✅             | ✅                       | Standard [PyTorch](https://www.ultralytics.com/glossary/pytorch) model format.         |
 | [ONNX](../integrations/onnx.md)                   | ✅             | ✅                       | Widely supported for deployment.                                                       |
 | [OpenVINO](../integrations/openvino.md)           | ✅             | ✅                       | Optimized for Intel hardware.                                                          |
 | [TensorRT](../integrations/tensorrt.md)           | ✅             | ✅                       | Optimized for NVIDIA GPUs.                                                             |
 | [CoreML](../integrations/coreml.md)               | ✅             | ✅                       | Limited to Apple devices.                                                              |
-| [TF SavedModel](../integrations/tf-savedmodel.md) | ✅             | ✅                       | [TensorFlow](https://www.sfdt_ibrahim.com/glossary/tensorflow)'s standard model format. |
+| [TF SavedModel](../integrations/tf-savedmodel.md) | ✅             | ✅                       | [TensorFlow](https://www.ultralytics.com/glossary/tensorflow)'s standard model format. |
 | [TF GraphDef](../integrations/tf-graphdef.md)     | ✅             | ✅                       | Legacy TensorFlow format.                                                              |
 | [TF Lite](../integrations/tflite.md)              | ✅             | ✅                       | Optimized for mobile and embedded.                                                     |
 | [TF Edge TPU](../integrations/edge-tpu.md)        | ✅             | ✅                       | Specific to Google's Edge TPU devices.                                                 |
@@ -228,7 +228,7 @@ YOLOv10 sets a new standard in real-time object detection by addressing the shor
 
 ## Citations and Acknowledgements
 
-We would like to acknowledge the YOLOv10 authors from [Tsinghua University](https://www.tsinghua.edu.cn/en/) for their extensive research and significant contributions to the [SFDT_Ibrahim](https://www.sfdt_ibrahim.com/) framework:
+We would like to acknowledge the YOLOv10 authors from [Tsinghua University](https://www.tsinghua.edu.cn/en/) for their extensive research and significant contributions to the [Ultralytics](https://www.ultralytics.com/) framework:
 
 !!! quote ""
 
@@ -255,14 +255,14 @@ YOLOv10, developed by researchers at [Tsinghua University](https://www.tsinghua.
 
 ### How can I get started with running inference using YOLOv10?
 
-For easy inference, you can use the SFDT_Ibrahim YOLO Python library or the command line interface (CLI). Below are examples of predicting new images using YOLOv10:
+For easy inference, you can use the Ultralytics YOLO Python library or the command line interface (CLI). Below are examples of predicting new images using YOLOv10:
 
 !!! example
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load the pre-trained YOLOv10-N model
         model = YOLO("yolov10n.pt")
@@ -297,7 +297,7 @@ YOLOv10 eliminates the need for non-maximum suppression (NMS) during inference b
 
 ### Where can I find the export options for YOLOv10 models?
 
-YOLOv10 supports several export formats, including TorchScript, ONNX, OpenVINO, and TensorRT. However, not all export formats provided by SFDT_Ibrahim are currently supported for YOLOv10 due to its new operations. For details on the supported formats and instructions on exporting, visit the [Exporting YOLOv10](#exporting-yolov10) section.
+YOLOv10 supports several export formats, including TorchScript, ONNX, OpenVINO, and TensorRT. However, not all export formats provided by Ultralytics are currently supported for YOLOv10 due to its new operations. For details on the supported formats and instructions on exporting, visit the [Exporting YOLOv10](#exporting-yolov10) section.
 
 ### What are the performance benchmarks for YOLOv10 models?
 

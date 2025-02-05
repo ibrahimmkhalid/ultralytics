@@ -1,14 +1,14 @@
 ---
 comments: true
-description: Learn about SFDT_Ibrahim YOLO format for pose estimation datasets, supported formats, COCO-Pose, COCO8-Pose, Tiger-Pose, and how to add your own dataset.
-keywords: pose estimation, SFDT_Ibrahim, YOLO format, COCO-Pose, COCO8-Pose, Tiger-Pose, dataset conversion, keypoints
+description: Learn about Ultralytics YOLO format for pose estimation datasets, supported formats, COCO-Pose, COCO8-Pose, Tiger-Pose, and how to add your own dataset.
+keywords: pose estimation, Ultralytics, YOLO format, COCO-Pose, COCO8-Pose, Tiger-Pose, dataset conversion, keypoints
 ---
 
 # Pose Estimation Datasets Overview
 
 ## Supported Dataset Formats
 
-### SFDT_Ibrahim YOLO format
+### Ultralytics YOLO format
 
 The dataset label format used for training YOLO pose models is as follows:
 
@@ -34,11 +34,11 @@ Format with Dim = 3
 <class-index> <x> <y> <width> <height> <px1> <py1> <p1-visibility> <px2> <py2> <p2-visibility> <pxn> <pyn> <p2-visibility>
 ```
 
-In this format, `<class-index>` is the index of the class for the object,`<x> <y> <width> <height>` are coordinates of [bounding box](https://www.sfdt_ibrahim.com/glossary/bounding-box), and `<px1> <py1> <px2> <py2> ... <pxn> <pyn>` are the pixel coordinates of the keypoints. The coordinates are separated by spaces.
+In this format, `<class-index>` is the index of the class for the object,`<x> <y> <width> <height>` are coordinates of [bounding box](https://www.ultralytics.com/glossary/bounding-box), and `<px1> <py1> <px2> <py2> ... <pxn> <pyn>` are the pixel coordinates of the keypoints. The coordinates are separated by spaces.
 
 ### Dataset YAML format
 
-The SFDT_Ibrahim framework uses a YAML file format to define the dataset and model configuration for training Detection Models. Here is an example of the YAML format used for defining a detection dataset:
+The Ultralytics framework uses a YAML file format to define the dataset and model configuration for training Detection Models. Here is an example of the YAML format used for defining a detection dataset:
 
 ```yaml
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
@@ -69,7 +69,7 @@ The `train` and `val` fields specify the paths to the directories containing the
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a model
         model = YOLO("yolo11n-pose.pt")  # load a pretrained model (recommended for training)
@@ -87,12 +87,12 @@ The `train` and `val` fields specify the paths to the directories containing the
 
 ## Supported Datasets
 
-This section outlines the datasets that are compatible with SFDT_Ibrahim YOLO format and can be used for training pose estimation models:
+This section outlines the datasets that are compatible with Ultralytics YOLO format and can be used for training pose estimation models:
 
 ### COCO-Pose
 
-- **Description**: COCO-Pose is a large-scale [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection), segmentation, and pose estimation dataset. It is a subset of the popular COCO dataset and focuses on human pose estimation. COCO-Pose includes multiple keypoints for each human instance.
-- **Label Format**: Same as SFDT_Ibrahim YOLO format as described above, with keypoints for human poses.
+- **Description**: COCO-Pose is a large-scale [object detection](https://www.ultralytics.com/glossary/object-detection), segmentation, and pose estimation dataset. It is a subset of the popular COCO dataset and focuses on human pose estimation. COCO-Pose includes multiple keypoints for each human instance.
+- **Label Format**: Same as Ultralytics YOLO format as described above, with keypoints for human poses.
 - **Number of Classes**: 1 (Human).
 - **Keypoints**: 17 keypoints including nose, eyes, ears, shoulders, elbows, wrists, hips, knees, and ankles.
 - **Usage**: Suitable for training human pose estimation models.
@@ -101,8 +101,8 @@ This section outlines the datasets that are compatible with SFDT_Ibrahim YOLO fo
 
 ### COCO8-Pose
 
-- **Description**: [SFDT_Ibrahim](https://www.sfdt_ibrahim.com/) COCO8-Pose is a small, but versatile pose detection dataset composed of the first 8 images of the COCO train 2017 set, 4 for training and 4 for validation.
-- **Label Format**: Same as SFDT_Ibrahim YOLO format as described above, with keypoints for human poses.
+- **Description**: [Ultralytics](https://www.ultralytics.com/) COCO8-Pose is a small, but versatile pose detection dataset composed of the first 8 images of the COCO train 2017 set, 4 for training and 4 for validation.
+- **Label Format**: Same as Ultralytics YOLO format as described above, with keypoints for human poses.
 - **Number of Classes**: 1 (Human).
 - **Keypoints**: 17 keypoints including nose, eyes, ears, shoulders, elbows, wrists, hips, knees, and ankles.
 - **Usage**: Suitable for testing and debugging object detection models, or for experimenting with new detection approaches.
@@ -111,8 +111,8 @@ This section outlines the datasets that are compatible with SFDT_Ibrahim YOLO fo
 
 ### Tiger-Pose
 
-- **Description**: [SFDT_Ibrahim](https://www.sfdt_ibrahim.com/) This animal pose dataset comprises 263 images sourced from a [YouTube Video](https://www.youtube.com/watch?v=MIBAT6BGE6U&pp=ygUbVGlnZXIgd2Fsa2luZyByZWZlcmVuY2UubXA0), with 210 images allocated for training and 53 for validation.
-- **Label Format**: Same as SFDT_Ibrahim YOLO format as described above, with 12 keypoints for animal pose and no visible dimension.
+- **Description**: [Ultralytics](https://www.ultralytics.com/) This animal pose dataset comprises 263 images sourced from a [YouTube Video](https://www.youtube.com/watch?v=MIBAT6BGE6U&pp=ygUbVGlnZXIgd2Fsa2luZyByZWZlcmVuY2UubXA0), with 210 images allocated for training and 53 for validation.
+- **Label Format**: Same as Ultralytics YOLO format as described above, with 12 keypoints for animal pose and no visible dimension.
 - **Number of Classes**: 1 (Tiger).
 - **Keypoints**: 12 keypoints.
 - **Usage**: Great for animal pose or any other pose that is not human-based.
@@ -121,7 +121,7 @@ This section outlines the datasets that are compatible with SFDT_Ibrahim YOLO fo
 ### Hand Keypoints
 
 - **Description**: Hand keypoints pose dataset comprises nearly 26K images, with 18776 images allocated for training and 7992 for validation.
-- **Label Format**: Same as SFDT_Ibrahim YOLO format as described above, but with 21 keypoints for human hand and visible dimension.
+- **Label Format**: Same as Ultralytics YOLO format as described above, but with 21 keypoints for human hand and visible dimension.
 - **Number of Classes**: 1 (Hand).
 - **Keypoints**: 21 keypoints.
 - **Usage**: Great for human hand pose estimation.
@@ -130,7 +130,7 @@ This section outlines the datasets that are compatible with SFDT_Ibrahim YOLO fo
 ### Dog-Pose
 
 - **Description**: The Dog Pose dataset contains approximately 6,000 images, providing a diverse and extensive resource for training and validation of dog pose estimation models.
-- **Label Format**: Follows the SFDT_Ibrahim YOLO format, with annotations for multiple keypoints specific to dog anatomy.
+- **Label Format**: Follows the Ultralytics YOLO format, with annotations for multiple keypoints specific to dog anatomy.
 - **Number of Classes**: 1 (Dog).
 - **Keypoints**: Includes 24 keypoints tailored to dog poses, such as limbs, joints, and head positions.
 - **Usage**: Ideal for training models to estimate dog poses in various scenarios, from research to real-world applications.
@@ -138,47 +138,47 @@ This section outlines the datasets that are compatible with SFDT_Ibrahim YOLO fo
 
 ### Adding your own dataset
 
-If you have your own dataset and would like to use it for training pose estimation models with SFDT_Ibrahim YOLO format, ensure that it follows the format specified above under "SFDT_Ibrahim YOLO format". Convert your annotations to the required format and specify the paths, number of classes, and class names in the YAML configuration file.
+If you have your own dataset and would like to use it for training pose estimation models with Ultralytics YOLO format, ensure that it follows the format specified above under "Ultralytics YOLO format". Convert your annotations to the required format and specify the paths, number of classes, and class names in the YAML configuration file.
 
 ### Conversion Tool
 
-SFDT_Ibrahim provides a convenient conversion tool to convert labels from the popular COCO dataset format to YOLO format:
+Ultralytics provides a convenient conversion tool to convert labels from the popular COCO dataset format to YOLO format:
 
 !!! example
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim.data.converter import convert_coco
+        from ultralytics.data.converter import convert_coco
 
         convert_coco(labels_dir="path/to/coco/annotations/", use_keypoints=True)
         ```
 
-This conversion tool can be used to convert the COCO dataset or any dataset in the COCO format to the SFDT_Ibrahim YOLO format. The `use_keypoints` parameter specifies whether to include keypoints (for pose estimation) in the converted labels.
+This conversion tool can be used to convert the COCO dataset or any dataset in the COCO format to the Ultralytics YOLO format. The `use_keypoints` parameter specifies whether to include keypoints (for pose estimation) in the converted labels.
 
 ## FAQ
 
-### What is the SFDT_Ibrahim YOLO format for pose estimation?
+### What is the Ultralytics YOLO format for pose estimation?
 
-The SFDT_Ibrahim YOLO format for pose estimation datasets involves labeling each image with a corresponding text file. Each row of the text file stores information about an object instance:
+The Ultralytics YOLO format for pose estimation datasets involves labeling each image with a corresponding text file. Each row of the text file stores information about an object instance:
 
 - Object class index
 - Object center coordinates (normalized x and y)
 - Object width and height (normalized)
 - Object keypoint coordinates (normalized pxn and pyn)
 
-For 2D poses, keypoints include pixel coordinates. For 3D, each keypoint also has a visibility flag. For more details, see [SFDT_Ibrahim YOLO format](#sfdt_ibrahim-yolo-format).
+For 2D poses, keypoints include pixel coordinates. For 3D, each keypoint also has a visibility flag. For more details, see [Ultralytics YOLO format](#ultralytics-yolo-format).
 
-### How do I use the COCO-Pose dataset with SFDT_Ibrahim YOLO?
+### How do I use the COCO-Pose dataset with Ultralytics YOLO?
 
-To use the COCO-Pose dataset with SFDT_Ibrahim YOLO:
+To use the COCO-Pose dataset with Ultralytics YOLO:
 
 1. Download the dataset and prepare your label files in the YOLO format.
 2. Create a YAML configuration file specifying paths to training and validation images, keypoint shape, and class names.
 3. Use the configuration file for training:
 
     ```python
-    from sfdt_ibrahim import YOLO
+    from ultralytics import YOLO
 
     model = YOLO("yolo11n-pose.pt")  # load pretrained model
     results = model.train(data="coco-pose.yaml", epochs=100, imgsz=640)
@@ -186,16 +186,16 @@ To use the COCO-Pose dataset with SFDT_Ibrahim YOLO:
 
     For more information, visit [COCO-Pose](coco.md) and [train](../../modes/train.md) sections.
 
-### How can I add my own dataset for pose estimation in SFDT_Ibrahim YOLO?
+### How can I add my own dataset for pose estimation in Ultralytics YOLO?
 
 To add your dataset:
 
-1. Convert your annotations to the SFDT_Ibrahim YOLO format.
+1. Convert your annotations to the Ultralytics YOLO format.
 2. Create a YAML configuration file specifying the dataset paths, number of classes, and class names.
 3. Use the configuration file to train your model:
 
     ```python
-    from sfdt_ibrahim import YOLO
+    from ultralytics import YOLO
 
     model = YOLO("yolo11n-pose.pt")
     results = model.train(data="your-dataset.yaml", epochs=100, imgsz=640)
@@ -203,9 +203,9 @@ To add your dataset:
 
     For complete steps, check the [Adding your own dataset](#adding-your-own-dataset) section.
 
-### What is the purpose of the dataset YAML file in SFDT_Ibrahim YOLO?
+### What is the purpose of the dataset YAML file in Ultralytics YOLO?
 
-The dataset YAML file in SFDT_Ibrahim YOLO defines the dataset and model configuration for training. It specifies paths to training, validation, and test images, keypoint shapes, class names, and other configuration options. This structured format helps streamline dataset management and model training. Here is an example YAML format:
+The dataset YAML file in Ultralytics YOLO defines the dataset and model configuration for training. It specifies paths to training, validation, and test images, keypoint shapes, class names, and other configuration options. This structured format helps streamline dataset management and model training. Here is an example YAML format:
 
 ```yaml
 path: ../datasets/coco8-pose
@@ -217,12 +217,12 @@ names:
 
 Read more about creating YAML configuration files in [Dataset YAML format](#dataset-yaml-format).
 
-### How can I convert COCO dataset labels to SFDT_Ibrahim YOLO format for pose estimation?
+### How can I convert COCO dataset labels to Ultralytics YOLO format for pose estimation?
 
-SFDT_Ibrahim provides a conversion tool to convert COCO dataset labels to the YOLO format, including keypoint information:
+Ultralytics provides a conversion tool to convert COCO dataset labels to the YOLO format, including keypoint information:
 
 ```python
-from sfdt_ibrahim.data.converter import convert_coco
+from ultralytics.data.converter import convert_coco
 
 convert_coco(labels_dir="path/to/coco/annotations/", use_keypoints=True)
 ```

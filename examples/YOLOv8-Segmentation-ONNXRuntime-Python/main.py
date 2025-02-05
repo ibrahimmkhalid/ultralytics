@@ -1,4 +1,4 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 import argparse
 
@@ -6,9 +6,9 @@ import cv2
 import numpy as np
 import onnxruntime as ort
 
-from sfdt_ibrahim.utils import ASSETS, yaml_load
-from sfdt_ibrahim.utils.checks import check_yaml
-from sfdt_ibrahim.utils.plotting import Colors
+from ultralytics.utils import ASSETS, yaml_load
+from ultralytics.utils.checks import check_yaml
+from ultralytics.utils.plotting import Colors
 
 
 class YOLOv8Seg:
@@ -88,7 +88,7 @@ class YOLOv8Seg:
             pad_w (float): width padding in letterbox.
             pad_h (float): height padding in letterbox.
         """
-        # Resize and pad input image using letterbox() (Borrowed from SFDT_Ibrahim)
+        # Resize and pad input image using letterbox() (Borrowed from Ultralytics)
         shape = img.shape[:2]  # original image shape
         new_shape = (self.model_height, self.model_width)
         r = min(new_shape[0] / shape[0], new_shape[1] / shape[1])
@@ -167,7 +167,7 @@ class YOLOv8Seg:
     def masks2segments(masks):
         """
         Takes a list of masks(n,h,w) and returns a list of segments(n,xy), from
-        https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/ops.py.
+        https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/ops.py.
 
         Args:
             masks (numpy.ndarray): the output of the model, which is a tensor of shape (batch_size, 160, 160).
@@ -189,7 +189,7 @@ class YOLOv8Seg:
     def crop_mask(masks, boxes):
         """
         Takes a mask and a bounding box, and returns a mask that is cropped to the bounding box, from
-        https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/ops.py.
+        https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/ops.py.
 
         Args:
             masks (Numpy.ndarray): [n, h, w] tensor of masks.
@@ -207,7 +207,7 @@ class YOLOv8Seg:
     def process_mask(self, protos, masks_in, bboxes, im0_shape):
         """
         Takes the output of the mask head, and applies the mask to the bounding boxes. This produces masks of higher
-        quality but is slower, from https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/ops.py.
+        quality but is slower, from https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/ops.py.
 
         Args:
             protos (numpy.ndarray): [mask_dim, mask_h, mask_w].
@@ -230,7 +230,7 @@ class YOLOv8Seg:
     def scale_mask(masks, im0_shape, ratio_pad=None):
         """
         Takes a mask, and resizes it to the original image size, from
-        https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/ops.py.
+        https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/ops.py.
 
         Args:
             masks (np.ndarray): resized and padded masks/images, [h, w, num]/[h, w, 3].

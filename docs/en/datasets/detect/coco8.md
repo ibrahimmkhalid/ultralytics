@@ -1,14 +1,14 @@
 ---
 comments: true
-description: Explore the SFDT_Ibrahim COCO8 dataset, a versatile and manageable set of 8 images perfect for testing object detection models and training pipelines.
-keywords: COCO8, SFDT_Ibrahim, dataset, object detection, YOLO11, training, validation, machine learning, computer vision
+description: Explore the Ultralytics COCO8 dataset, a versatile and manageable set of 8 images perfect for testing object detection models and training pipelines.
+keywords: COCO8, Ultralytics, dataset, object detection, YOLO11, training, validation, machine learning, computer vision
 ---
 
 # COCO8 Dataset
 
 ## Introduction
 
-[SFDT_Ibrahim](https://www.sfdt_ibrahim.com/) COCO8 is a small, but versatile [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) dataset composed of the first 8 images of the COCO train 2017 set, 4 for training and 4 for validation. This dataset is ideal for testing and debugging object detection models, or for experimenting with new detection approaches. With 8 images, it is small enough to be easily manageable, yet diverse enough to test training pipelines for errors and act as a sanity check before training larger datasets.
+[Ultralytics](https://www.ultralytics.com/) COCO8 is a small, but versatile [object detection](https://www.ultralytics.com/glossary/object-detection) dataset composed of the first 8 images of the COCO train 2017 set, 4 for training and 4 for validation. This dataset is ideal for testing and debugging object detection models, or for experimenting with new detection approaches. With 8 images, it is small enough to be easily manageable, yet diverse enough to test training pipelines for errors and act as a sanity check before training larger datasets.
 
 <p align="center">
   <br>
@@ -18,31 +18,31 @@ keywords: COCO8, SFDT_Ibrahim, dataset, object detection, YOLO11, training, vali
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> SFDT_Ibrahim COCO Dataset Overview
+  <strong>Watch:</strong> Ultralytics COCO Dataset Overview
 </p>
 
-This dataset is intended for use with SFDT_Ibrahim [HUB](https://hub.sfdt_ibrahim.com/) and [YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim).
+This dataset is intended for use with Ultralytics [HUB](https://hub.ultralytics.com/) and [YOLO11](https://github.com/ultralytics/ultralytics).
 
 ## Dataset YAML
 
-A YAML (Yet Another Markup Language) file is used to define the dataset configuration. It contains information about the dataset's paths, classes, and other relevant information. In the case of the COCO8 dataset, the `coco8.yaml` file is maintained at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/cfg/datasets/coco8.yaml](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/cfg/datasets/coco8.yaml).
+A YAML (Yet Another Markup Language) file is used to define the dataset configuration. It contains information about the dataset's paths, classes, and other relevant information. In the case of the COCO8 dataset, the `coco8.yaml` file is maintained at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/coco8.yaml](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/coco8.yaml).
 
-!!! example "sfdt_ibrahim/cfg/datasets/coco8.yaml"
+!!! example "ultralytics/cfg/datasets/coco8.yaml"
 
     ```yaml
-    --8<-- "sfdt_ibrahim/cfg/datasets/coco8.yaml"
+    --8<-- "ultralytics/cfg/datasets/coco8.yaml"
     ```
 
 ## Usage
 
-To train a YOLO11n model on the COCO8 dataset for 100 [epochs](https://www.sfdt_ibrahim.com/glossary/epoch) with an image size of 640, you can use the following code snippets. For a comprehensive list of available arguments, refer to the model [Training](../../modes/train.md) page.
+To train a YOLO11n model on the COCO8 dataset for 100 [epochs](https://www.ultralytics.com/glossary/epoch) with an image size of 640, you can use the following code snippets. For a comprehensive list of available arguments, refer to the model [Training](../../modes/train.md) page.
 
 !!! example "Train Example"
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a model
         model = YOLO("yolo11n.pt")  # load a pretrained model (recommended for training)
@@ -62,7 +62,7 @@ To train a YOLO11n model on the COCO8 dataset for 100 [epochs](https://www.sfdt_
 
 Here are some examples of images from the COCO8 dataset, along with their corresponding annotations:
 
-<img src="https://github.com/sfdt_ibrahim/docs/releases/download/0/mosaiced-training-batch-1.avif" alt="Dataset sample image" width="800">
+<img src="https://github.com/ultralytics/docs/releases/download/0/mosaiced-training-batch-1.avif" alt="Dataset sample image" width="800">
 
 - **Mosaiced Image**: This image demonstrates a training batch composed of mosaiced dataset images. Mosaicing is a technique used during training that combines multiple images into a single image to increase the variety of objects and scenes within each training batch. This helps improve the model's ability to generalize to different object sizes, aspect ratios, and contexts.
 
@@ -87,13 +87,13 @@ If you use the COCO dataset in your research or development work, please cite th
         }
         ```
 
-We would like to acknowledge the COCO Consortium for creating and maintaining this valuable resource for the [computer vision](https://www.sfdt_ibrahim.com/glossary/computer-vision-cv) community. For more information about the COCO dataset and its creators, visit the [COCO dataset website](https://cocodataset.org/#home).
+We would like to acknowledge the COCO Consortium for creating and maintaining this valuable resource for the [computer vision](https://www.ultralytics.com/glossary/computer-vision-cv) community. For more information about the COCO dataset and its creators, visit the [COCO dataset website](https://cocodataset.org/#home).
 
 ## FAQ
 
-### What is the SFDT_Ibrahim COCO8 dataset used for?
+### What is the Ultralytics COCO8 dataset used for?
 
-The SFDT_Ibrahim COCO8 dataset is a compact yet versatile object detection dataset consisting of the first 8 images from the COCO train 2017 set, with 4 images for training and 4 for validation. It is designed for testing and debugging object detection models and experimentation with new detection approaches. Despite its small size, COCO8 offers enough diversity to act as a sanity check for your training pipelines before deploying larger datasets. For more details, view the [COCO8 dataset](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/cfg/datasets/coco8.yaml).
+The Ultralytics COCO8 dataset is a compact yet versatile object detection dataset consisting of the first 8 images from the COCO train 2017 set, with 4 images for training and 4 for validation. It is designed for testing and debugging object detection models and experimentation with new detection approaches. Despite its small size, COCO8 offers enough diversity to act as a sanity check for your training pipelines before deploying larger datasets. For more details, view the [COCO8 dataset](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/datasets/coco8.yaml).
 
 ### How do I train a YOLO11 model using the COCO8 dataset?
 
@@ -104,7 +104,7 @@ To train a YOLO11 model using the COCO8 dataset, you can employ either Python or
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a model
         model = YOLO("yolo11n.pt")  # load a pretrained model (recommended for training)
@@ -122,9 +122,9 @@ To train a YOLO11 model using the COCO8 dataset, you can employ either Python or
 
 For a comprehensive list of available arguments, refer to the model [Training](../../modes/train.md) page.
 
-### Why should I use SFDT_Ibrahim HUB for managing my COCO8 training?
+### Why should I use Ultralytics HUB for managing my COCO8 training?
 
-SFDT_Ibrahim HUB is an all-in-one web tool designed to simplify the training and deployment of YOLO models, including the SFDT_Ibrahim YOLO11 models on the COCO8 dataset. It offers cloud training, real-time tracking, and seamless dataset management. HUB allows you to start training with a single click and avoids the complexities of manual setups. Discover more about [SFDT_Ibrahim HUB](https://hub.sfdt_ibrahim.com/) and its benefits.
+Ultralytics HUB is an all-in-one web tool designed to simplify the training and deployment of YOLO models, including the Ultralytics YOLO11 models on the COCO8 dataset. It offers cloud training, real-time tracking, and seamless dataset management. HUB allows you to start training with a single click and avoids the complexities of manual setups. Discover more about [Ultralytics HUB](https://hub.ultralytics.com/) and its benefits.
 
 ### What are the benefits of using mosaic augmentation in training with the COCO8 dataset?
 

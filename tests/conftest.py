@@ -1,4 +1,4 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 import shutil
 from pathlib import Path
@@ -48,7 +48,7 @@ def pytest_sessionstart(session):
     Returns:
         (None)
     """
-    from sfdt_ibrahim.utils.torch_utils import init_seeds
+    from ultralytics.utils.torch_utils import init_seeds
 
     init_seeds()
     shutil.rmtree(TMP, ignore_errors=True)  # delete any existing tests/tmp directory
@@ -70,7 +70,7 @@ def pytest_terminal_summary(terminalreporter, exitstatus, config):
     Returns:
         (None)
     """
-    from sfdt_ibrahim.utils import WEIGHTS_DIR
+    from ultralytics.utils import WEIGHTS_DIR
 
     # Remove files
     models = [path for x in ["*.onnx", "*.torchscript"] for path in WEIGHTS_DIR.rglob(x)]

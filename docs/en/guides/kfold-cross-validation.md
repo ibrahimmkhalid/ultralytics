@@ -1,20 +1,20 @@
 ---
 comments: true
-description: Learn to implement K-Fold Cross Validation for object detection datasets using SFDT_Ibrahim YOLO. Improve your model's reliability and robustness.
-keywords: SFDT_Ibrahim, YOLO, K-Fold Cross Validation, object detection, sklearn, pandas, PyYaml, machine learning, dataset split
+description: Learn to implement K-Fold Cross Validation for object detection datasets using Ultralytics YOLO. Improve your model's reliability and robustness.
+keywords: Ultralytics, YOLO, K-Fold Cross Validation, object detection, sklearn, pandas, PyYaml, machine learning, dataset split
 ---
 
-# K-Fold Cross Validation with SFDT_Ibrahim
+# K-Fold Cross Validation with Ultralytics
 
 ## Introduction
 
-This comprehensive guide illustrates the implementation of K-Fold Cross Validation for [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) datasets within the SFDT_Ibrahim ecosystem. We'll leverage the YOLO detection format and key Python libraries such as sklearn, pandas, and PyYaml to guide you through the necessary setup, the process of generating feature vectors, and the execution of a K-Fold dataset split.
+This comprehensive guide illustrates the implementation of K-Fold Cross Validation for [object detection](https://www.ultralytics.com/glossary/object-detection) datasets within the Ultralytics ecosystem. We'll leverage the YOLO detection format and key Python libraries such as sklearn, pandas, and PyYaml to guide you through the necessary setup, the process of generating feature vectors, and the execution of a K-Fold dataset split.
 
 <p align="center">
-  <img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/k-fold-cross-validation-overview.avif" alt="K-Fold Cross Validation Overview">
+  <img width="800" src="https://github.com/ultralytics/docs/releases/download/0/k-fold-cross-validation-overview.avif" alt="K-Fold Cross Validation Overview">
 </p>
 
-Whether your project involves the Fruit Detection dataset or a custom data source, this tutorial aims to help you comprehend and apply K-Fold Cross Validation to bolster the reliability and robustness of your [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) models. While we're applying `k=5` folds for this tutorial, keep in mind that the optimal number of folds can vary depending on your dataset and the specifics of your project.
+Whether your project involves the Fruit Detection dataset or a custom data source, this tutorial aims to help you comprehend and apply K-Fold Cross Validation to bolster the reliability and robustness of your [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) models. While we're applying `k=5` folds for this tutorial, keep in mind that the optimal number of folds can vary depending on your dataset and the specifics of your project.
 
 Without further ado, let's dive in!
 
@@ -39,7 +39,7 @@ Without further ado, let's dive in!
 
 - Necessary Python packages include:
 
-    - `sfdt_ibrahim`
+    - `ultralytics`
     - `sklearn`
     - `pandas`
     - `pyyaml`
@@ -48,7 +48,7 @@ Without further ado, let's dive in!
 
 1. Initiate a new Python virtual environment (`venv`) for your project and activate it. Use `pip` (or your preferred package manager) to install:
 
-    - The SFDT_Ibrahim library: `pip install -U sfdt_ibrahim`. Alternatively, you can clone the official [repo](https://github.com/sfdt_ibrahim/sfdt_ibrahim).
+    - The Ultralytics library: `pip install -U ultralytics`. Alternatively, you can clone the official [repo](https://github.com/ultralytics/ultralytics).
     - Scikit-learn, pandas, and PyYAML: `pip install -U scikit-learn pandas pyyaml`.
 
 2. Verify that your annotations are in the [YOLO detection format](../datasets/detect/index.md).
@@ -245,7 +245,7 @@ fold_lbl_distrb.to_csv(save_path / "kfold_label_distribution.csv")
 1. First, load the YOLO model.
 
     ```python
-    from sfdt_ibrahim import YOLO
+    from ultralytics import YOLO
 
     weights_path = "path/to/weights.pt"
     model = YOLO(weights_path, task="detect")
@@ -286,11 +286,11 @@ Remember that although we used YOLO in this guide, these steps are mostly transf
 
 ### What is K-Fold Cross Validation and why is it useful in object detection?
 
-K-Fold Cross Validation is a technique where the dataset is divided into 'k' subsets (folds) to evaluate model performance more reliably. Each fold serves as both training and [validation data](https://www.sfdt_ibrahim.com/glossary/validation-data). In the context of object detection, using K-Fold Cross Validation helps to ensure your SFDT_Ibrahim YOLO model's performance is robust and generalizable across different data splits, enhancing its reliability. For detailed instructions on setting up K-Fold Cross Validation with SFDT_Ibrahim YOLO, refer to [K-Fold Cross Validation with SFDT_Ibrahim](#introduction).
+K-Fold Cross Validation is a technique where the dataset is divided into 'k' subsets (folds) to evaluate model performance more reliably. Each fold serves as both training and [validation data](https://www.ultralytics.com/glossary/validation-data). In the context of object detection, using K-Fold Cross Validation helps to ensure your Ultralytics YOLO model's performance is robust and generalizable across different data splits, enhancing its reliability. For detailed instructions on setting up K-Fold Cross Validation with Ultralytics YOLO, refer to [K-Fold Cross Validation with Ultralytics](#introduction).
 
-### How do I implement K-Fold Cross Validation using SFDT_Ibrahim YOLO?
+### How do I implement K-Fold Cross Validation using Ultralytics YOLO?
 
-To implement K-Fold Cross Validation with SFDT_Ibrahim YOLO, you need to follow these steps:
+To implement K-Fold Cross Validation with Ultralytics YOLO, you need to follow these steps:
 
 1. Verify annotations are in the [YOLO detection format](../datasets/detect/index.md).
 2. Use Python libraries like `sklearn`, `pandas`, and `pyyaml`.
@@ -300,13 +300,13 @@ To implement K-Fold Cross Validation with SFDT_Ibrahim YOLO, you need to follow 
 
 For a comprehensive guide, see the [K-Fold Dataset Split](#k-fold-dataset-split) section in our documentation.
 
-### Why should I use SFDT_Ibrahim YOLO for object detection?
+### Why should I use Ultralytics YOLO for object detection?
 
-SFDT_Ibrahim YOLO offers state-of-the-art, real-time object detection with high [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy) and efficiency. It's versatile, supporting multiple [computer vision](https://www.sfdt_ibrahim.com/glossary/computer-vision-cv) tasks such as detection, segmentation, and classification. Additionally, it integrates seamlessly with tools like SFDT_Ibrahim HUB for no-code model training and deployment. For more details, explore the benefits and features on our [SFDT_Ibrahim YOLO page](https://www.sfdt_ibrahim.com/yolo).
+Ultralytics YOLO offers state-of-the-art, real-time object detection with high [accuracy](https://www.ultralytics.com/glossary/accuracy) and efficiency. It's versatile, supporting multiple [computer vision](https://www.ultralytics.com/glossary/computer-vision-cv) tasks such as detection, segmentation, and classification. Additionally, it integrates seamlessly with tools like Ultralytics HUB for no-code model training and deployment. For more details, explore the benefits and features on our [Ultralytics YOLO page](https://www.ultralytics.com/yolo).
 
-### How can I ensure my annotations are in the correct format for SFDT_Ibrahim YOLO?
+### How can I ensure my annotations are in the correct format for Ultralytics YOLO?
 
-Your annotations should follow the YOLO detection format. Each annotation file must list the object class, alongside its [bounding box](https://www.sfdt_ibrahim.com/glossary/bounding-box) coordinates in the image. The YOLO format ensures streamlined and standardized data processing for training object detection models. For more information on proper annotation formatting, visit the [YOLO detection format guide](../datasets/detect/index.md).
+Your annotations should follow the YOLO detection format. Each annotation file must list the object class, alongside its [bounding box](https://www.ultralytics.com/glossary/bounding-box) coordinates in the image. The YOLO format ensures streamlined and standardized data processing for training object detection models. For more information on proper annotation formatting, visit the [YOLO detection format guide](../datasets/detect/index.md).
 
 ### Can I use K-Fold Cross Validation with custom datasets other than Fruit Detection?
 

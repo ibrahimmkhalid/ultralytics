@@ -1,20 +1,20 @@
 ---
 description: Explore the RTDETRValidator and RTDETRDataset classes for real-time detection and tracking. Understand initialization, transformations, and post-processing.
-keywords: RTDETR, SFDT_Ibrahim, object detection, tracking, YOLO, RTDETRDataset, RTDETRValidator, real-time detection
+keywords: RTDETR, Ultralytics, object detection, tracking, YOLO, RTDETRDataset, RTDETRValidator, real-time detection
 ---
 
-# Reference for `sfdt_ibrahim/models/rtdetr/val.py`
+# Reference for `ultralytics/models/rtdetr/val.py`
 
 !!! note
 
-    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/models/rtdetr/val.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/models/rtdetr/val.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/models/rtdetr/val.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/models/rtdetr/val.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/models/rtdetr/val.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/models/rtdetr/val.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: sfdt_ibrahim.models.rtdetr.val.RTDETRDataset
+## ::: ultralytics.models.rtdetr.val.RTDETRDataset
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.models.rtdetr.val.RTDETRValidator
+## ::: ultralytics.models.rtdetr.val.RTDETRValidator
 
 <br><br>

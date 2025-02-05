@@ -1,7 +1,7 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
-# SFDT_Ibrahim Contributor License Agreement (CLA) action https://docs.sfdt_ibrahim.com/help/CLA
-# This workflow automatically requests Pull Requests (PR) authors to sign the SFDT_Ibrahim CLA before PRs can be merged
+# Ultralytics Contributor License Agreement (CLA) action https://docs.ultralytics.com/help/CLA
+# This workflow automatically requests Pull Requests (PR) authors to sign the Ultralytics CLA before PRs can be merged
 
 name: CLA Assistant
 on:
@@ -22,7 +22,7 @@ permissions:
 
 jobs:
   CLA:
-    if: github.repository == 'sfdt_ibrahim/sfdt_ibrahim'
+    if: github.repository == 'ultralytics/ultralytics'
     runs-on: ubuntu-latest
     steps:
       - name: CLA Assistant
@@ -34,12 +34,12 @@ jobs:
           PERSONAL_ACCESS_TOKEN: ${{ secrets._GITHUB_TOKEN }}
         with:
           path-to-signatures: "signatures/version1/cla.json"
-          path-to-document: "https://docs.sfdt_ibrahim.com/help/CLA" # CLA document
+          path-to-document: "https://docs.ultralytics.com/help/CLA" # CLA document
           # Branch must not be protected
           branch: cla-signatures
           allowlist: dependabot[bot],github-actions,[pre-commit*,pre-commit*,bot*
 
-          remote-organization-name: sfdt_ibrahim
+          remote-organization-name: ultralytics
           remote-repository-name: cla
           custom-pr-sign-comment: "I have read the CLA Document and I sign the CLA"
           custom-allsigned-prcomment: All Contributors have signed the CLA. ✅

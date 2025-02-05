@@ -1,7 +1,7 @@
 ---
 comments: true
 description: Optimize YOLO11 models for mobile and embedded devices by exporting to MNN format.
-keywords: SFDT_Ibrahim, YOLO11, MNN, model export, machine learning, deployment, mobile, embedded systems, deep learning, AI models
+keywords: Ultralytics, YOLO11, MNN, model export, machine learning, deployment, mobile, embedded systems, deep learning, AI models
 ---
 
 # MNN Export for YOLO11 Models and Deploy
@@ -28,20 +28,20 @@ To install the required packages, run:
 
         ```bash
         # Install the required package for YOLO11 and MNN
-        pip install sfdt_ibrahim
+        pip install ultralytics
         pip install MNN
         ```
 
 ### Usage
 
-Before diving into the usage instructions, it's important to note that while all [SFDT_Ibrahim YOLO11 models](../models/index.md) are available for exporting, you can ensure that the model you select supports export functionality [here](../modes/export.md).
+Before diving into the usage instructions, it's important to note that while all [Ultralytics YOLO11 models](../models/index.md) are available for exporting, you can ensure that the model you select supports export functionality [here](../modes/export.md).
 
 !!! example "Usage"
 
     === "Python"
 
           ```python
-          from sfdt_ibrahim import YOLO
+          from ultralytics import YOLO
 
           # Load the YOLO11 model
           model = YOLO("yolo11n.pt")
@@ -53,7 +53,7 @@ Before diving into the usage instructions, it's important to note that while all
           mnn_model = YOLO("yolo11n.mnn")
 
           # Run inference
-          results = mnn_model("https://sfdt_ibrahim.com/images/bus.jpg")
+          results = mnn_model("https://ultralytics.com/images/bus.jpg")
           ```
 
     === "CLI"
@@ -63,10 +63,10 @@ Before diving into the usage instructions, it's important to note that while all
           yolo export model=yolo11n.pt format=mnn  # creates 'yolo11n.mnn'
 
           # Run inference with the exported model
-          yolo predict model='yolo11n.mnn' source='https://sfdt_ibrahim.com/images/bus.jpg'
+          yolo predict model='yolo11n.mnn' source='https://ultralytics.com/images/bus.jpg'
           ```
 
-For more details about supported export options, visit the [SFDT_Ibrahim documentation page on deployment options](../guides/model-deployment-options.md).
+For more details about supported export options, visit the [Ultralytics documentation page on deployment options](../guides/model-deployment-options.md).
 
 ### MNN-Only Inference
 
@@ -261,22 +261,22 @@ A function that relies solely on MNN for YOLO11 inference and preprocessing is i
 
 ## Summary
 
-In this guide, we introduce how to export the SFDT_Ibrahim YOLO11 model to MNN and use MNN for inference.
+In this guide, we introduce how to export the Ultralytics YOLO11 model to MNN and use MNN for inference.
 
 For more usage, please refer to the [MNN documentation](https://mnn-docs.readthedocs.io/en/latest).
 
 ## FAQ
 
-### How do I export SFDT_Ibrahim YOLO11 models to MNN format?
+### How do I export Ultralytics YOLO11 models to MNN format?
 
-To export your SFDT_Ibrahim YOLO11 model to MNN format, follow these steps:
+To export your Ultralytics YOLO11 model to MNN format, follow these steps:
 
 !!! example "Export"
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load the YOLO11 model
         model = YOLO("yolo11n.pt")
@@ -306,14 +306,14 @@ To predict with an exported YOLO11 MNN model, use the `predict` function from th
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load the YOLO11 MNN model
         model = YOLO("yolo11n.mnn")
 
         # Export to MNN format
-        results = mnn_model("https://sfdt_ibrahim.com/images/bus.jpg")  # predict with `fp32`
-        results = mnn_model("https://sfdt_ibrahim.com/images/bus.jpg", half=True)  # predict with `fp16` if device support
+        results = mnn_model("https://ultralytics.com/images/bus.jpg")  # predict with `fp32`
+        results = mnn_model("https://ultralytics.com/images/bus.jpg", half=True)  # predict with `fp16` if device support
 
         for result in results:
             result.show()  # display to screen
@@ -323,8 +323,8 @@ To predict with an exported YOLO11 MNN model, use the `predict` function from th
     === "CLI"
 
         ```bash
-        yolo predict model='yolo11n.mnn' source='https://sfdt_ibrahim.com/images/bus.jpg'              # predict with `fp32`
-        yolo predict model='yolo11n.mnn' source='https://sfdt_ibrahim.com/images/bus.jpg' --half=True  # predict with `fp16` if device support
+        yolo predict model='yolo11n.mnn' source='https://ultralytics.com/images/bus.jpg'              # predict with `fp32`
+        yolo predict model='yolo11n.mnn' source='https://ultralytics.com/images/bus.jpg' --half=True  # predict with `fp16` if device support
         ```
 
 ### What platforms are supported for MNN?
@@ -335,7 +335,7 @@ MNN is versatile and supports various platforms:
 - **Embedded Systems and IoT Devices**: Devices like Raspberry Pi and NVIDIA Jetson.
 - **Desktop and Servers**: Linux, Windows, and macOS.
 
-### How can I deploy SFDT_Ibrahim YOLO11 MNN models on Mobile Devices?
+### How can I deploy Ultralytics YOLO11 MNN models on Mobile Devices?
 
 To deploy your YOLO11 models on Mobile devices:
 

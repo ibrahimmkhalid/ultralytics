@@ -1,4 +1,4 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 import argparse
 from pathlib import Path
@@ -6,14 +6,14 @@ from pathlib import Path
 import cv2
 from sahi import AutoDetectionModel
 from sahi.predict import get_sliced_prediction
-from sahi.utils.sfdt_ibrahim import download_yolo11n_model
+from sahi.utils.ultralytics import download_yolo11n_model
 
-from sfdt_ibrahim.utils.files import increment_path
-from sfdt_ibrahim.utils.plotting import Annotator, colors
+from ultralytics.utils.files import increment_path
+from ultralytics.utils.plotting import Annotator, colors
 
 
 class SAHIInference:
-    """Runs SFDT_Ibrahim YOLO11 and SAHI for object detection on video with options to view, save, and track results."""
+    """Runs Ultralytics YOLO11 and SAHI for object detection on video with options to view, save, and track results."""
 
     def __init__(self):
         """Initializes the SAHIInference class for performing sliced inference using SAHI with YOLO11 models."""
@@ -24,7 +24,7 @@ class SAHIInference:
         yolo11_model_path = f"models/{weights}"
         download_yolo11n_model(yolo11_model_path)
         self.detection_model = AutoDetectionModel.from_pretrained(
-            model_type="sfdt_ibrahim", model_path=yolo11_model_path, device="cpu"
+            model_type="ultralytics", model_path=yolo11_model_path, device="cpu"
         )
 
     def inference(
@@ -51,7 +51,7 @@ class SAHIInference:
         frame_width, frame_height = int(cap.get(3)), int(cap.get(4))
 
         # Output setup
-        save_dir = increment_path(Path("sfdt_ibrahim_results_with_sahi") / "exp", exist_ok)
+        save_dir = increment_path(Path("ultralytics_results_with_sahi") / "exp", exist_ok)
         save_dir.mkdir(parents=True, exist_ok=True)
         video_writer = cv2.VideoWriter(
             str(save_dir / f"{Path(source).stem}.avi"),

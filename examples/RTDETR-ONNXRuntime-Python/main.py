@@ -1,4 +1,4 @@
-# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
+# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
 
 import argparse
 
@@ -7,8 +7,8 @@ import numpy as np
 import onnxruntime as ort
 import torch
 
-from sfdt_ibrahim.utils import ASSETS, yaml_load
-from sfdt_ibrahim.utils.checks import check_requirements, check_yaml
+from ultralytics.utils import ASSETS, yaml_load
+from ultralytics.utils.checks import check_requirements, check_yaml
 
 
 class RTDETR:

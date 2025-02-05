@@ -1,96 +1,96 @@
 ---
-description: Explore detailed metrics and utility functions for model validation and performance analysis with SFDT_Ibrahim' metrics module.
-keywords: SFDT_Ibrahim, metrics, model validation, performance analysis, IoU, confusion matrix
+description: Explore detailed metrics and utility functions for model validation and performance analysis with Ultralytics' metrics module.
+keywords: Ultralytics, metrics, model validation, performance analysis, IoU, confusion matrix
 ---
 
-# Reference for `sfdt_ibrahim/utils/metrics.py`
+# Reference for `ultralytics/utils/metrics.py`
 
 !!! note
 
-    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/metrics.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/metrics.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/utils/metrics.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/metrics.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/metrics.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/utils/metrics.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: sfdt_ibrahim.utils.metrics.ConfusionMatrix
+## ::: ultralytics.utils.metrics.ConfusionMatrix
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.Metric
+## ::: ultralytics.utils.metrics.Metric
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.DetMetrics
+## ::: ultralytics.utils.metrics.DetMetrics
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.SegmentMetrics
+## ::: ultralytics.utils.metrics.SegmentMetrics
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.PoseMetrics
+## ::: ultralytics.utils.metrics.PoseMetrics
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.ClassifyMetrics
+## ::: ultralytics.utils.metrics.ClassifyMetrics
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.OBBMetrics
+## ::: ultralytics.utils.metrics.OBBMetrics
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.bbox_ioa
+## ::: ultralytics.utils.metrics.bbox_ioa
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.box_iou
+## ::: ultralytics.utils.metrics.box_iou
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.bbox_iou
+## ::: ultralytics.utils.metrics.bbox_iou
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.mask_iou
+## ::: ultralytics.utils.metrics.mask_iou
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.kpt_iou
+## ::: ultralytics.utils.metrics.kpt_iou
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics._get_covariance_matrix
+## ::: ultralytics.utils.metrics._get_covariance_matrix
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.probiou
+## ::: ultralytics.utils.metrics.probiou
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.batch_probiou
+## ::: ultralytics.utils.metrics.batch_probiou
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.smooth_bce
+## ::: ultralytics.utils.metrics.smooth_bce
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.smooth
+## ::: ultralytics.utils.metrics.smooth
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.plot_pr_curve
+## ::: ultralytics.utils.metrics.plot_pr_curve
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.plot_mc_curve
+## ::: ultralytics.utils.metrics.plot_mc_curve
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.compute_ap
+## ::: ultralytics.utils.metrics.compute_ap
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.utils.metrics.ap_per_class
+## ::: ultralytics.utils.metrics.ap_per_class
 
 <br><br>

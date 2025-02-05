@@ -11,7 +11,7 @@ using namespace cv;
 
 int main(int argc, char **argv)
 {
-    std::string projectBasePath = "/home/user/sfdt_ibrahim"; // Set your sfdt_ibrahim base path
+    std::string projectBasePath = "/home/user/ultralytics"; // Set your ultralytics base path
 
     bool runOnGPU = true;
 
@@ -27,8 +27,8 @@ int main(int argc, char **argv)
     Inference inf(projectBasePath + "/yolov8s.onnx", cv::Size(640, 640), "classes.txt", runOnGPU);
 
     std::vector<std::string> imageNames;
-    imageNames.push_back(projectBasePath + "/sfdt_ibrahim/assets/bus.jpg");
-    imageNames.push_back(projectBasePath + "/sfdt_ibrahim/assets/zidane.jpg");
+    imageNames.push_back(projectBasePath + "/ultralytics/assets/bus.jpg");
+    imageNames.push_back(projectBasePath + "/ultralytics/assets/zidane.jpg");
 
     for (int i = 0; i < imageNames.size(); ++i)
     {

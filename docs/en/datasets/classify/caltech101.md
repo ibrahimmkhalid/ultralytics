@@ -22,7 +22,7 @@ Unlike many other datasets, the Caltech-101 dataset is not formally split into t
 
 ## Applications
 
-The Caltech-101 dataset is extensively used for training and evaluating [deep learning](https://www.sfdt_ibrahim.com/glossary/deep-learning-dl) models in object recognition tasks, such as [Convolutional Neural Networks](https://www.sfdt_ibrahim.com/glossary/convolutional-neural-network-cnn) (CNNs), Support Vector Machines (SVMs), and various other machine learning algorithms. Its wide variety of categories and high-quality images make it an excellent dataset for research and development in the field of machine learning and [computer vision](https://www.sfdt_ibrahim.com/glossary/computer-vision-cv).
+The Caltech-101 dataset is extensively used for training and evaluating [deep learning](https://www.ultralytics.com/glossary/deep-learning-dl) models in object recognition tasks, such as [Convolutional Neural Networks](https://www.ultralytics.com/glossary/convolutional-neural-network-cnn) (CNNs), Support Vector Machines (SVMs), and various other machine learning algorithms. Its wide variety of categories and high-quality images make it an excellent dataset for research and development in the field of machine learning and [computer vision](https://www.ultralytics.com/glossary/computer-vision-cv).
 
 ## Usage
 
@@ -33,7 +33,7 @@ To train a YOLO model on the Caltech-101 dataset for 100 epochs, you can use the
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a model
         model = YOLO("yolo11n-cls.pt")  # load a pretrained model (recommended for training)
@@ -53,7 +53,7 @@ To train a YOLO model on the Caltech-101 dataset for 100 epochs, you can use the
 
 The Caltech-101 dataset contains high-quality color images of various objects, providing a well-structured dataset for object recognition tasks. Here are some examples of images from the dataset:
 
-![Dataset sample image](https://github.com/sfdt_ibrahim/docs/releases/download/0/caltech101-sample-image.avif)
+![Dataset sample image](https://github.com/ultralytics/docs/releases/download/0/caltech101-sample-image.avif)
 
 The example showcases the variety and complexity of the objects in the Caltech-101 dataset, emphasizing the significance of a diverse dataset for training robust object recognition models.
 
@@ -84,18 +84,18 @@ We would like to acknowledge Li Fei-Fei, Rob Fergus, and Pietro Perona for creat
 
 ### What is the Caltech-101 dataset used for in machine learning?
 
-The [Caltech-101](https://data.caltech.edu/records/mzrjq-6wc02) dataset is widely used in machine learning for object recognition tasks. It contains around 9,000 images across 101 categories, providing a challenging benchmark for evaluating object recognition algorithms. Researchers leverage it to train and test models, especially Convolutional [Neural Networks](https://www.sfdt_ibrahim.com/glossary/neural-network-nn) (CNNs) and [Support Vector Machines](https://www.sfdt_ibrahim.com/glossary/support-vector-machine-svm) (SVMs), in computer vision.
+The [Caltech-101](https://data.caltech.edu/records/mzrjq-6wc02) dataset is widely used in machine learning for object recognition tasks. It contains around 9,000 images across 101 categories, providing a challenging benchmark for evaluating object recognition algorithms. Researchers leverage it to train and test models, especially Convolutional [Neural Networks](https://www.ultralytics.com/glossary/neural-network-nn) (CNNs) and [Support Vector Machines](https://www.ultralytics.com/glossary/support-vector-machine-svm) (SVMs), in computer vision.
 
-### How can I train an SFDT_Ibrahim YOLO model on the Caltech-101 dataset?
+### How can I train an Ultralytics YOLO model on the Caltech-101 dataset?
 
-To train an SFDT_Ibrahim YOLO model on the Caltech-101 dataset, you can use the provided code snippets. For example, to train for 100 [epochs](https://www.sfdt_ibrahim.com/glossary/epoch):
+To train an Ultralytics YOLO model on the Caltech-101 dataset, you can use the provided code snippets. For example, to train for 100 [epochs](https://www.ultralytics.com/glossary/epoch):
 
 !!! example "Train Example"
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load a model
         model = YOLO("yolo11n-cls.pt")  # load a pretrained model (recommended for training)
@@ -122,7 +122,7 @@ The Caltech-101 dataset includes:
 - Variable number of images per category, typically between 40 and 800.
 - Variable image sizes, with most being medium resolution.
 
-These features make it an excellent choice for training and evaluating object recognition models in [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) and computer vision.
+These features make it an excellent choice for training and evaluating object recognition models in [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) and computer vision.
 
 ### Why should I cite the Caltech-101 dataset in my research?
 
@@ -147,6 +147,6 @@ Citing the Caltech-101 dataset in your research acknowledges the creators' contr
 
 Citing helps in maintaining the integrity of academic work and assists peers in locating the original resource.
 
-### Can I use SFDT_Ibrahim HUB for training models on the Caltech-101 dataset?
+### Can I use Ultralytics HUB for training models on the Caltech-101 dataset?
 
-Yes, you can use SFDT_Ibrahim HUB for training models on the Caltech-101 dataset. SFDT_Ibrahim HUB provides an intuitive platform for managing datasets, training models, and deploying them without extensive coding. For a detailed guide, refer to the [how to train your custom models with SFDT_Ibrahim HUB](https://www.sfdt_ibrahim.com/blog/how-to-train-your-custom-models-with-sfdt_ibrahim-hub) blog post.
+Yes, you can use Ultralytics HUB for training models on the Caltech-101 dataset. Ultralytics HUB provides an intuitive platform for managing datasets, training models, and deploying them without extensive coding. For a detailed guide, refer to the [how to train your custom models with Ultralytics HUB](https://www.ultralytics.com/blog/how-to-train-your-custom-models-with-ultralytics-hub) blog post.

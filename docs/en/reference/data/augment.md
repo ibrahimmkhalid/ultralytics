@@ -1,88 +1,88 @@
 ---
-description: Explore SFDT_Ibrahim image augmentation techniques like MixUp, Mosaic, and Random Perspective for enhancing model training. Improve your deep learning models now.
-keywords: SFDT_Ibrahim, image augmentation, MixUp, Mosaic, Random Perspective, deep learning, model training, YOLO
+description: Explore Ultralytics image augmentation techniques like MixUp, Mosaic, and Random Perspective for enhancing model training. Improve your deep learning models now.
+keywords: Ultralytics, image augmentation, MixUp, Mosaic, Random Perspective, deep learning, model training, YOLO
 ---
 
-# Reference for `sfdt_ibrahim/data/augment.py`
+# Reference for `ultralytics/data/augment.py`
 
 !!! note
 
-    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/data/augment.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/data/augment.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/data/augment.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/data/augment.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/data/augment.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/data/augment.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: sfdt_ibrahim.data.augment.BaseTransform
+## ::: ultralytics.data.augment.BaseTransform
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.Compose
+## ::: ultralytics.data.augment.Compose
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.BaseMixTransform
+## ::: ultralytics.data.augment.BaseMixTransform
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.Mosaic
+## ::: ultralytics.data.augment.Mosaic
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.MixUp
+## ::: ultralytics.data.augment.MixUp
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.RandomPerspective
+## ::: ultralytics.data.augment.RandomPerspective
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.RandomHSV
+## ::: ultralytics.data.augment.RandomHSV
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.RandomFlip
+## ::: ultralytics.data.augment.RandomFlip
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.LetterBox
+## ::: ultralytics.data.augment.LetterBox
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.CopyPaste
+## ::: ultralytics.data.augment.CopyPaste
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.Albumentations
+## ::: ultralytics.data.augment.Albumentations
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.Format
+## ::: ultralytics.data.augment.Format
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.RandomLoadText
+## ::: ultralytics.data.augment.RandomLoadText
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.ClassifyLetterBox
+## ::: ultralytics.data.augment.ClassifyLetterBox
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.CenterCrop
+## ::: ultralytics.data.augment.CenterCrop
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.ToTensor
+## ::: ultralytics.data.augment.ToTensor
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.v8_transforms
+## ::: ultralytics.data.augment.v8_transforms
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.classify_transforms
+## ::: ultralytics.data.augment.classify_transforms
 
 <br><br><hr><br>
 
-## ::: sfdt_ibrahim.data.augment.classify_augmentations
+## ::: ultralytics.data.augment.classify_augmentations
 
 <br><br>

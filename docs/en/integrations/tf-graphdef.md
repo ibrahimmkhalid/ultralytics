@@ -6,12 +6,12 @@ keywords: YOLO11, export, TensorFlow, GraphDef, model deployment, TensorFlow Ser
 
 # How to Export to TF GraphDef from YOLO11 for Deployment
 
-When you are deploying cutting-edge [computer vision](https://www.sfdt_ibrahim.com/glossary/computer-vision-cv) models, like YOLO11, in different environments, you might run into compatibility issues. Google's [TensorFlow](https://www.sfdt_ibrahim.com/glossary/tensorflow) GraphDef, or TF GraphDef, offers a solution by providing a serialized, platform-independent representation of your model. Using the TF GraphDef model format, you can deploy your YOLO11 model in environments where the complete TensorFlow ecosystem may not be available, such as mobile devices or specialized hardware.
+When you are deploying cutting-edge [computer vision](https://www.ultralytics.com/glossary/computer-vision-cv) models, like YOLO11, in different environments, you might run into compatibility issues. Google's [TensorFlow](https://www.ultralytics.com/glossary/tensorflow) GraphDef, or TF GraphDef, offers a solution by providing a serialized, platform-independent representation of your model. Using the TF GraphDef model format, you can deploy your YOLO11 model in environments where the complete TensorFlow ecosystem may not be available, such as mobile devices or specialized hardware.
 
-In this guide, we'll walk you step by step through how to export your [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim) models to the TF GraphDef model format. By converting your model, you can streamline deployment and use YOLO11's computer vision capabilities in a broader range of applications and platforms.
+In this guide, we'll walk you step by step through how to export your [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics) models to the TF GraphDef model format. By converting your model, you can streamline deployment and use YOLO11's computer vision capabilities in a broader range of applications and platforms.
 
 <p align="center">
-  <img width="640" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/tensorflow-graphdef.avif" alt="TensorFlow GraphDef">
+  <img width="640" src="https://github.com/ultralytics/docs/releases/download/0/tensorflow-graphdef.avif" alt="TensorFlow GraphDef">
 </p>
 
 ## Why Should You Export to TF GraphDef?
@@ -24,7 +24,7 @@ GraphDef models can use hardware accelerators such as GPUs, TPUs, and AI chips, 
 
 ## Key Features of TF GraphDef Models
 
-TF GraphDef offers distinct features for streamlining [model deployment](https://www.sfdt_ibrahim.com/glossary/model-deployment) and optimization.
+TF GraphDef offers distinct features for streamlining [model deployment](https://www.ultralytics.com/glossary/model-deployment) and optimization.
 
 Here's a look at its key characteristics:
 
@@ -64,21 +64,21 @@ To install the required package, run:
 
         ```bash
         # Install the required package for YOLO11
-        pip install sfdt_ibrahim
+        pip install ultralytics
         ```
 
-For detailed instructions and best practices related to the installation process, check our [SFDT_Ibrahim Installation guide](../quickstart.md). While installing the required packages for YOLO11, if you encounter any difficulties, consult our [Common Issues guide](../guides/yolo-common-issues.md) for solutions and tips.
+For detailed instructions and best practices related to the installation process, check our [Ultralytics Installation guide](../quickstart.md). While installing the required packages for YOLO11, if you encounter any difficulties, consult our [Common Issues guide](../guides/yolo-common-issues.md) for solutions and tips.
 
 ### Usage
 
-Before diving into the usage instructions, it's important to note that while all [SFDT_Ibrahim YOLO11 models](../models/index.md) are available for exporting, you can ensure that the model you select supports export functionality [here](../modes/export.md).
+Before diving into the usage instructions, it's important to note that while all [Ultralytics YOLO11 models](../models/index.md) are available for exporting, you can ensure that the model you select supports export functionality [here](../modes/export.md).
 
 !!! example "Usage"
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load the YOLO11 model
         model = YOLO("yolo11n.pt")
@@ -90,7 +90,7 @@ Before diving into the usage instructions, it's important to note that while all
         tf_graphdef_model = YOLO("yolo11n.pb")
 
         # Run inference
-        results = tf_graphdef_model("https://sfdt_ibrahim.com/images/bus.jpg")
+        results = tf_graphdef_model("https://ultralytics.com/images/bus.jpg")
         ```
 
     === "CLI"
@@ -100,10 +100,10 @@ Before diving into the usage instructions, it's important to note that while all
         yolo export model=yolo11n.pt format=pb  # creates 'yolo11n.pb'
 
         # Run inference with the exported model
-        yolo predict model='yolo11n.pb' source='https://sfdt_ibrahim.com/images/bus.jpg'
+        yolo predict model='yolo11n.pb' source='https://ultralytics.com/images/bus.jpg'
         ```
 
-For more details about supported export options, visit the [SFDT_Ibrahim documentation page on deployment options](../guides/model-deployment-options.md).
+For more details about supported export options, visit the [Ultralytics documentation page on deployment options](../guides/model-deployment-options.md).
 
 ## Deploying Exported YOLO11 TF GraphDef Models
 
@@ -111,7 +111,7 @@ Once you've exported your YOLO11 model to the TF GraphDef format, the next step 
 
 However, for more information on deploying your TF GraphDef models, take a look at the following resources:
 
-- **[TensorFlow Serving](https://www.tensorflow.org/tfx/guide/serving)**: A guide on TensorFlow Serving that teaches how to deploy and serve [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) models efficiently in production environments.
+- **[TensorFlow Serving](https://www.tensorflow.org/tfx/guide/serving)**: A guide on TensorFlow Serving that teaches how to deploy and serve [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) models efficiently in production environments.
 
 - **[TensorFlow Lite](https://www.tensorflow.org/api_docs/python/tf/lite/TFLiteConverter)**: This page describes how to convert machine learning models into a format optimized for on-device inference with TensorFlow Lite.
 
@@ -119,24 +119,24 @@ However, for more information on deploying your TF GraphDef models, take a look 
 
 ## Summary
 
-In this guide, we explored how to export SFDT_Ibrahim YOLO11 models to the TF GraphDef format. By doing this, you can flexibly deploy your optimized YOLO11 models in different environments.
+In this guide, we explored how to export Ultralytics YOLO11 models to the TF GraphDef format. By doing this, you can flexibly deploy your optimized YOLO11 models in different environments.
 
 For further details on usage, visit the [TF GraphDef official documentation](https://www.tensorflow.org/api_docs/python/tf/Graph).
 
-For more information on integrating SFDT_Ibrahim YOLO11 with other platforms and frameworks, don't forget to check out our [integration guide page](index.md). It has great resources and insights to help you make the most of YOLO11 in your projects.
+For more information on integrating Ultralytics YOLO11 with other platforms and frameworks, don't forget to check out our [integration guide page](index.md). It has great resources and insights to help you make the most of YOLO11 in your projects.
 
 ## FAQ
 
 ### How do I export a YOLO11 model to TF GraphDef format?
 
-SFDT_Ibrahim YOLO11 models can be exported to TensorFlow GraphDef (TF GraphDef) format seamlessly. This format provides a serialized, platform-independent representation of the model, ideal for deploying in varied environments like mobile and web. To export a YOLO11 model to TF GraphDef, follow these steps:
+Ultralytics YOLO11 models can be exported to TensorFlow GraphDef (TF GraphDef) format seamlessly. This format provides a serialized, platform-independent representation of the model, ideal for deploying in varied environments like mobile and web. To export a YOLO11 model to TF GraphDef, follow these steps:
 
 !!! example "Usage"
 
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load the YOLO11 model
         model = YOLO("yolo11n.pt")
@@ -148,7 +148,7 @@ SFDT_Ibrahim YOLO11 models can be exported to TensorFlow GraphDef (TF GraphDef) 
         tf_graphdef_model = YOLO("yolo11n.pb")
 
         # Run inference
-        results = tf_graphdef_model("https://sfdt_ibrahim.com/images/bus.jpg")
+        results = tf_graphdef_model("https://ultralytics.com/images/bus.jpg")
         ```
 
     === "CLI"
@@ -158,10 +158,10 @@ SFDT_Ibrahim YOLO11 models can be exported to TensorFlow GraphDef (TF GraphDef) 
         yolo export model="yolo11n.pt" format="pb"  # creates 'yolo11n.pb'
 
         # Run inference with the exported model
-        yolo predict model="yolo11n.pb" source="https://sfdt_ibrahim.com/images/bus.jpg"
+        yolo predict model="yolo11n.pb" source="https://ultralytics.com/images/bus.jpg"
         ```
 
-For more information on different export options, visit the [SFDT_Ibrahim documentation on model export](../modes/export.md).
+For more information on different export options, visit the [Ultralytics documentation on model export](../modes/export.md).
 
 ### What are the benefits of using TF GraphDef for YOLO11 model deployment?
 
@@ -173,15 +173,15 @@ Exporting YOLO11 models to the TF GraphDef format offers multiple advantages, in
 
 Read more about the benefits in the [TF GraphDef section](#why-should-you-export-to-tf-graphdef) of our documentation.
 
-### Why should I use SFDT_Ibrahim YOLO11 over other [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) models?
+### Why should I use Ultralytics YOLO11 over other [object detection](https://www.ultralytics.com/glossary/object-detection) models?
 
-SFDT_Ibrahim YOLO11 offers numerous advantages compared to other models like YOLOv5 and YOLOv7. Some key benefits include:
+Ultralytics YOLO11 offers numerous advantages compared to other models like YOLOv5 and YOLOv7. Some key benefits include:
 
-1. **State-of-the-Art Performance**: YOLO11 provides exceptional speed and [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy) for real-time object detection, segmentation, and classification.
+1. **State-of-the-Art Performance**: YOLO11 provides exceptional speed and [accuracy](https://www.ultralytics.com/glossary/accuracy) for real-time object detection, segmentation, and classification.
 2. **Ease of Use**: Features a user-friendly API for model training, validation, prediction, and export, making it accessible for both beginners and experts.
 3. **Broad Compatibility**: Supports multiple export formats including ONNX, TensorRT, CoreML, and TensorFlow, for versatile deployment options.
 
-Explore further details in our [introduction to YOLO11](https://docs.sfdt_ibrahim.com/models/yolov8/).
+Explore further details in our [introduction to YOLO11](https://docs.ultralytics.com/models/yolov8/).
 
 ### How can I deploy a YOLO11 model on specialized hardware using TF GraphDef?
 
@@ -196,7 +196,7 @@ Check the [deployment options](#deployment-options-with-tf-graphdef) section for
 
 ### Where can I find solutions for common issues while exporting YOLO11 models?
 
-For troubleshooting common issues with exporting YOLO11 models, SFDT_Ibrahim provides comprehensive guides and resources. If you encounter problems during installation or model export, refer to:
+For troubleshooting common issues with exporting YOLO11 models, Ultralytics provides comprehensive guides and resources. If you encounter problems during installation or model export, refer to:
 
 - **[Common Issues Guide](../guides/yolo-common-issues.md)**: Offers solutions to frequently faced problems.
 - **[Installation Guide](../quickstart.md)**: Step-by-step instructions for setting up the required packages.

@@ -1,4 +1,4 @@
-# SFDT_Ibrahim YOLO 🚀, AGPL-3.0 license
+# Ultralytics YOLO 🚀, AGPL-3.0 license
 
-sfdt_ibrahim
+ultralytics
 transformers

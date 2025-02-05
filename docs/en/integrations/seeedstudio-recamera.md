@@ -1,16 +1,16 @@
 ---
 comments: true
-description: Discover how to get started with Seeed Studio reCamera for edge AI applications using SFDT_Ibrahim YOLO11. Learn about its powerful features, real-world applications, and how to export YOLO11 models to ONNX format for seamless integration.
-keywords: Seeed Studio reCamera, YOLO11, ONNX export, edge AI, computer vision, real-time detection, personal protective equipment detection, fire detection, waste detection, fall detection, modular AI devices, SFDT_Ibrahim
+description: Discover how to get started with Seeed Studio reCamera for edge AI applications using Ultralytics YOLO11. Learn about its powerful features, real-world applications, and how to export YOLO11 models to ONNX format for seamless integration.
+keywords: Seeed Studio reCamera, YOLO11, ONNX export, edge AI, computer vision, real-time detection, personal protective equipment detection, fire detection, waste detection, fall detection, modular AI devices, Ultralytics
 ---
 
-# Quick Start Guide: Seeed Studio reCamera with SFDT_Ibrahim YOLO11
+# Quick Start Guide: Seeed Studio reCamera with Ultralytics YOLO11
 
-[reCamera](https://www.seeedstudio.com/recamera) was introduced for the AI community at [YOLO Vision 2024 (YV24)](https://www.youtube.com/watch?v=rfI5vOo3-_A), [SFDT_Ibrahim](https://sfdt_ibrahim.com/) annual hybrid event. It is mainly designed for edge AI applications, offering powerful processing capabilities and effortless deployment.
+[reCamera](https://www.seeedstudio.com/recamera) was introduced for the AI community at [YOLO Vision 2024 (YV24)](https://www.youtube.com/watch?v=rfI5vOo3-_A), [Ultralytics](https://ultralytics.com/) annual hybrid event. It is mainly designed for edge AI applications, offering powerful processing capabilities and effortless deployment.
 
-With support for diverse hardware configurations and open-source resources, it serves as an ideal platform for prototyping and deploying innovative [computer vision](https://www.sfdt_ibrahim.com/glossary/computer-vision-cv) [solutions](https://docs.sfdt_ibrahim.com/solutions/#solutions) at the edge.
+With support for diverse hardware configurations and open-source resources, it serves as an ideal platform for prototyping and deploying innovative [computer vision](https://www.ultralytics.com/glossary/computer-vision-cv) [solutions](https://docs.ultralytics.com/solutions/#solutions) at the edge.
 
-![Seeed Studio reCamera](https://github.com/sfdt_ibrahim/docs/releases/download/0/saeed-studio-recamera.avif)
+![Seeed Studio reCamera](https://github.com/ultralytics/docs/releases/download/0/saeed-studio-recamera.avif)
 
 ## Why Choose reCamera?
 
@@ -26,19 +26,19 @@ reCamera series is purpose-built for edge AI applications, tailored to meet the 
 
 ## Quick Hardware Setup of reCamera
 
-Please follow [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started) for initial onboarding of the device such as connecting the device to a WiFi network and access the [Node-RED](https://nodered.org) web UI for quick previewing of detection redsults with the pre-installed SFDT_Ibrahim YOLO models.
+Please follow [reCamera Quick Start Guide](https://wiki.seeedstudio.com/recamera_getting_started) for initial onboarding of the device such as connecting the device to a WiFi network and access the [Node-RED](https://nodered.org) web UI for quick previewing of detection redsults with the pre-installed Ultralytics YOLO models.
 
 ## Export to cvimodel: Converting Your YOLO11 Model
 
 Here we will first convert `PyTorch` model to `ONNX` and then convert it to `MLIR` model format. Finally `MLIR` will be converted to `cvimodel` in order to inference on-device
 
 <p align="center">
-  <img width="80%" src="https://github.com/sfdt_ibrahim/assets/releases/download/v0.0.0/recamera-toolchain-workflow.avif" alt="reCamera Toolchain">
+  <img width="80%" src="https://github.com/ultralytics/assets/releases/download/v0.0.0/recamera-toolchain-workflow.avif" alt="reCamera Toolchain">
 </p>
 
 ### Export to ONNX
 
-Export an SFDT_Ibrahim YOLO11 model to ONNX model format.
+Export an Ultralytics YOLO11 model to ONNX model format.
 
 #### Installation
 
@@ -49,10 +49,10 @@ To install the required packages, run:
     === "CLI"
 
         ```bash
-        pip install sfdt_ibrahim
+        pip install ultralytics
         ```
 
-For detailed instructions and best practices related to the installation process, check our [SFDT_Ibrahim Installation guide](../quickstart.md). While installing the required packages for YOLO11, if you encounter any difficulties, consult our [Common Issues guide](../guides/yolo-common-issues.md) for solutions and tips.
+For detailed instructions and best practices related to the installation process, check our [Ultralytics Installation guide](../quickstart.md). While installing the required packages for YOLO11, if you encounter any difficulties, consult our [Common Issues guide](../guides/yolo-common-issues.md) for solutions and tips.
 
 #### Usage
 
@@ -61,7 +61,7 @@ For detailed instructions and best practices related to the installation process
     === "Python"
 
         ```python
-        from sfdt_ibrahim import YOLO
+        from ultralytics import YOLO
 
         # Load the YOLO11 model
         model = YOLO("yolo11n.pt")
@@ -77,7 +77,7 @@ For detailed instructions and best practices related to the installation process
         yolo export model=yolo11n.pt format=onnx  # creates 'yolo11n.onnx'
         ```
 
-For more details about the export process, visit the [SFDT_Ibrahim documentation page on exporting](../modes/export.md).
+For more details about the export process, visit the [Ultralytics documentation page on exporting](../modes/export.md).
 
 ### Export ONNX to MLIR and cvimodel
 
@@ -85,7 +85,7 @@ After obtaining an ONNX model, refer to [Convert and Quantize AI Models](https:/
 
 !!! note
 
-    We're actively working on adding reCamera support directly into the SFDT_Ibrahim package, and it will be available soon. In the meantime, check out our blog on [Integrating SFDT_Ibrahim YOLO Models with Seeed Studio's reCamera](https://www.sfdt_ibrahim.com/blog/integrating-sfdt_ibrahim-yolo-models-on-seeed-studios-recamera) for more insights.
+    We're actively working on adding reCamera support directly into the Ultralytics package, and it will be available soon. In the meantime, check out our blog on [Integrating Ultralytics YOLO Models with Seeed Studio's reCamera](https://www.ultralytics.com/blog/integrating-ultralytics-yolo-models-on-seeed-studios-recamera) for more insights.
 
 ## Benchmarks
 
@@ -99,7 +99,7 @@ reCamera advanced computer vision capabilities and modular design make it suitab
 
 - **Personal Protective Equipment Detection**: The reCamera can be used to ensure workplace safety by detecting PPE compliance in real-time. It helps identify whether workers are wearing helmets, gloves, or other safety gear, reducing risks in industrial environments.
 
-![Personal protective equipment detection](https://github.com/sfdt_ibrahim/docs/releases/download/0/personal-protective-equipment-detection.avif)
+![Personal protective equipment detection](https://github.com/ultralytics/docs/releases/download/0/personal-protective-equipment-detection.avif)
 
 - **Fire Detection**: The reCamera's real-time processing capabilities make it an excellent choice for fire detection in industrial and residential areas, providing early warnings to prevent potential disasters.
 
@@ -107,4 +107,4 @@ reCamera advanced computer vision capabilities and modular design make it suitab
 
 - **Car Parts Detection**: In manufacturing and automotive industries, it aids in detecting and analyzing car parts for quality control, assembly line monitoring, and inventory management.
 
-![Car parts detection](https://github.com/sfdt_ibrahim/docs/releases/download/0/carparts-detection.avif)
+![Car parts detection](https://github.com/ultralytics/docs/releases/download/0/carparts-detection.avif)
