@@ -1,16 +1,16 @@
 ---
 comments: true
-description: Master instance segmentation and tracking with Ultralytics YOLO11. Learn techniques for precise object identification and tracking.
-keywords: instance segmentation, tracking, YOLO11, Ultralytics, object detection, machine learning, computer vision, python
+description: Master instance segmentation and tracking with SFDT_Ibrahim YOLO11. Learn techniques for precise object identification and tracking.
+keywords: instance segmentation, tracking, YOLO11, SFDT_Ibrahim, object detection, machine learning, computer vision, python
 ---
 
-# Instance Segmentation and Tracking using Ultralytics YOLO11 🚀
+# Instance Segmentation and Tracking using SFDT_Ibrahim YOLO11 🚀
 
-## What is [Instance Segmentation](https://www.ultralytics.com/glossary/instance-segmentation)?
+## What is [Instance Segmentation](https://www.sfdt_ibrahim.com/glossary/instance-segmentation)?
 
-[Ultralytics YOLO11](https://github.com/ultralytics/ultralytics/) instance segmentation involves identifying and outlining individual objects in an image, providing a detailed understanding of spatial distribution. Unlike [semantic segmentation](https://www.ultralytics.com/glossary/semantic-segmentation), it uniquely labels and precisely delineates each object, crucial for tasks like [object detection](https://www.ultralytics.com/glossary/object-detection) and medical imaging.
+[SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim/) instance segmentation involves identifying and outlining individual objects in an image, providing a detailed understanding of spatial distribution. Unlike [semantic segmentation](https://www.sfdt_ibrahim.com/glossary/semantic-segmentation), it uniquely labels and precisely delineates each object, crucial for tasks like [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) and medical imaging.
 
-There are two types of instance segmentation tracking available in the Ultralytics package:
+There are two types of instance segmentation tracking available in the SFDT_Ibrahim package:
 
 - **Instance Segmentation with Class Objects:** Each class object is assigned a unique color for clear visual separation.
 
@@ -24,15 +24,15 @@ There are two types of instance segmentation tracking available in the Ultralyti
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> Instance Segmentation with Object Tracking using Ultralytics YOLO11
+  <strong>Watch:</strong> Instance Segmentation with Object Tracking using SFDT_Ibrahim YOLO11
 </p>
 
 ## Samples
 
 |                                                        Instance Segmentation                                                         |                                                                  Instance Segmentation + Object Tracking                                                                  |
 | :----------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![Ultralytics Instance Segmentation](https://github.com/ultralytics/docs/releases/download/0/ultralytics-instance-segmentation.avif) | ![Ultralytics Instance Segmentation with Object Tracking](https://github.com/ultralytics/docs/releases/download/0/ultralytics-instance-segmentation-object-tracking.avif) |
-|                                                 Ultralytics Instance Segmentation 😍                                                 |                                                         Ultralytics Instance Segmentation with Object Tracking 🔥                                                         |
+| ![SFDT_Ibrahim Instance Segmentation](https://github.com/sfdt_ibrahim/docs/releases/download/0/sfdt_ibrahim-instance-segmentation.avif) | ![SFDT_Ibrahim Instance Segmentation with Object Tracking](https://github.com/sfdt_ibrahim/docs/releases/download/0/sfdt_ibrahim-instance-segmentation-object-tracking.avif) |
+|                                                 SFDT_Ibrahim Instance Segmentation 😍                                                 |                                                         SFDT_Ibrahim Instance Segmentation with Object Tracking 🔥                                                         |
 
 !!! example "Instance Segmentation and Tracking"
 
@@ -41,8 +41,8 @@ There are two types of instance segmentation tracking available in the Ultralyti
         ```python
         import cv2
 
-        from ultralytics import YOLO
-        from ultralytics.utils.plotting import Annotator, colors
+        from sfdt_ibrahim import YOLO
+        from sfdt_ibrahim.utils.plotting import Annotator, colors
 
         model = YOLO("yolo11n-seg.pt")  # segmentation model
         names = model.model.names
@@ -84,8 +84,8 @@ There are two types of instance segmentation tracking available in the Ultralyti
         ```python
         import cv2
 
-        from ultralytics import YOLO
-        from ultralytics.utils.plotting import Annotator, colors
+        from sfdt_ibrahim import YOLO
+        from sfdt_ibrahim.utils.plotting import Annotator, colors
 
         model = YOLO("yolo11n-seg.pt")  # segmentation model
         cap = cv2.VideoCapture("path/to/video/file.mp4")
@@ -134,13 +134,13 @@ There are two types of instance segmentation tracking available in the Ultralyti
 
 ## Note
 
-For any inquiries, feel free to post your questions in the [Ultralytics Issue Section](https://github.com/ultralytics/ultralytics/issues/new/choose) or the discussion section mentioned below.
+For any inquiries, feel free to post your questions in the [SFDT_Ibrahim Issue Section](https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues/new/choose) or the discussion section mentioned below.
 
 ## FAQ
 
-### How do I perform instance segmentation using Ultralytics YOLO11?
+### How do I perform instance segmentation using SFDT_Ibrahim YOLO11?
 
-To perform instance segmentation using Ultralytics YOLO11, initialize the YOLO model with a segmentation version of YOLO11 and process video frames through it. Here's a simplified code example:
+To perform instance segmentation using SFDT_Ibrahim YOLO11, initialize the YOLO model with a segmentation version of YOLO11 and process video frames through it. Here's a simplified code example:
 
 !!! example
 
@@ -149,8 +149,8 @@ To perform instance segmentation using Ultralytics YOLO11, initialize the YOLO m
         ```python
         import cv2
 
-        from ultralytics import YOLO
-        from ultralytics.utils.plotting import Annotator, colors
+        from sfdt_ibrahim import YOLO
+        from sfdt_ibrahim.utils.plotting import Annotator, colors
 
         model = YOLO("yolo11n-seg.pt")  # segmentation model
         cap = cv2.VideoCapture("path/to/video/file.mp4")
@@ -182,17 +182,17 @@ To perform instance segmentation using Ultralytics YOLO11, initialize the YOLO m
         cv2.destroyAllWindows()
         ```
 
-Learn more about instance segmentation in the [Ultralytics YOLO11 guide](#what-is-instance-segmentation).
+Learn more about instance segmentation in the [SFDT_Ibrahim YOLO11 guide](#what-is-instance-segmentation).
 
-### What is the difference between instance segmentation and object tracking in Ultralytics YOLO11?
+### What is the difference between instance segmentation and object tracking in SFDT_Ibrahim YOLO11?
 
-Instance segmentation identifies and outlines individual objects within an image, giving each object a unique label and mask. Object tracking extends this by assigning consistent labels to objects across video frames, facilitating continuous tracking of the same objects over time. Learn more about the distinctions in the [Ultralytics YOLO11 documentation](#samples).
+Instance segmentation identifies and outlines individual objects within an image, giving each object a unique label and mask. Object tracking extends this by assigning consistent labels to objects across video frames, facilitating continuous tracking of the same objects over time. Learn more about the distinctions in the [SFDT_Ibrahim YOLO11 documentation](#samples).
 
-### Why should I use Ultralytics YOLO11 for instance segmentation and tracking over other models like Mask R-CNN or Faster R-CNN?
+### Why should I use SFDT_Ibrahim YOLO11 for instance segmentation and tracking over other models like Mask R-CNN or Faster R-CNN?
 
-Ultralytics YOLO11 offers real-time performance, superior [accuracy](https://www.ultralytics.com/glossary/accuracy), and ease of use compared to other models like Mask R-CNN or Faster R-CNN. YOLO11 provides a seamless integration with Ultralytics HUB, allowing users to manage models, datasets, and training pipelines efficiently. Discover more about the benefits of YOLO11 in the [Ultralytics blog](https://www.ultralytics.com/blog/introducing-ultralytics-yolov8).
+SFDT_Ibrahim YOLO11 offers real-time performance, superior [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy), and ease of use compared to other models like Mask R-CNN or Faster R-CNN. YOLO11 provides a seamless integration with SFDT_Ibrahim HUB, allowing users to manage models, datasets, and training pipelines efficiently. Discover more about the benefits of YOLO11 in the [SFDT_Ibrahim blog](https://www.sfdt_ibrahim.com/blog/introducing-sfdt_ibrahim-yolov8).
 
-### How can I implement object tracking using Ultralytics YOLO11?
+### How can I implement object tracking using SFDT_Ibrahim YOLO11?
 
 To implement object tracking, use the `model.track` method and ensure that each object's ID is consistently assigned across frames. Below is a simple example:
 
@@ -203,8 +203,8 @@ To implement object tracking, use the `model.track` method and ensure that each 
         ```python
         import cv2
 
-        from ultralytics import YOLO
-        from ultralytics.utils.plotting import Annotator, colors
+        from sfdt_ibrahim import YOLO
+        from sfdt_ibrahim.utils.plotting import Annotator, colors
 
         model = YOLO("yolo11n-seg.pt")  # segmentation model
         cap = cv2.VideoCapture("path/to/video/file.mp4")
@@ -239,6 +239,6 @@ To implement object tracking, use the `model.track` method and ensure that each 
 
 Find more in the [Instance Segmentation and Tracking section](#samples).
 
-### Are there any datasets provided by Ultralytics suitable for training YOLO11 models for instance segmentation and tracking?
+### Are there any datasets provided by SFDT_Ibrahim suitable for training YOLO11 models for instance segmentation and tracking?
 
-Yes, Ultralytics offers several datasets suitable for training YOLO11 models, including segmentation and tracking datasets. Dataset examples, structures, and instructions for use can be found in the [Ultralytics Datasets documentation](https://docs.ultralytics.com/datasets/).
+Yes, SFDT_Ibrahim offers several datasets suitable for training YOLO11 models, including segmentation and tracking datasets. Dataset examples, structures, and instructions for use can be found in the [SFDT_Ibrahim Datasets documentation](https://docs.sfdt_ibrahim.com/datasets/).

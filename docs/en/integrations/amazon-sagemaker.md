@@ -1,19 +1,19 @@
 ---
 comments: true
-description: Learn step-by-step how to deploy Ultralytics' YOLO11 on Amazon SageMaker Endpoints, from setup to testing, for powerful real-time inference with AWS services.
-keywords: YOLO11, Amazon SageMaker, AWS, Ultralytics, machine learning, computer vision, model deployment, AWS CloudFormation, AWS CDK, real-time inference
+description: Learn step-by-step how to deploy SFDT_Ibrahim' YOLO11 on Amazon SageMaker Endpoints, from setup to testing, for powerful real-time inference with AWS services.
+keywords: YOLO11, Amazon SageMaker, AWS, SFDT_Ibrahim, machine learning, computer vision, model deployment, AWS CloudFormation, AWS CDK, real-time inference
 ---
 
 # A Guide to Deploying YOLO11 on Amazon SageMaker Endpoints
 
-Deploying advanced [computer vision](https://www.ultralytics.com/glossary/computer-vision-cv) models like [Ultralytics' YOLO11](https://github.com/ultralytics/ultralytics) on Amazon SageMaker Endpoints opens up a wide range of possibilities for various [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) applications. The key to effectively using these models lies in understanding their setup, configuration, and deployment processes. YOLO11 becomes even more powerful when integrated seamlessly with Amazon SageMaker, a robust and scalable machine learning service by AWS.
+Deploying advanced [computer vision](https://www.sfdt_ibrahim.com/glossary/computer-vision-cv) models like [SFDT_Ibrahim' YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim) on Amazon SageMaker Endpoints opens up a wide range of possibilities for various [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) applications. The key to effectively using these models lies in understanding their setup, configuration, and deployment processes. YOLO11 becomes even more powerful when integrated seamlessly with Amazon SageMaker, a robust and scalable machine learning service by AWS.
 
-This guide will take you through the process of deploying YOLO11 [PyTorch](https://www.ultralytics.com/glossary/pytorch) models on Amazon SageMaker Endpoints step by step. You'll learn the essentials of preparing your AWS environment, configuring the model appropriately, and using tools like AWS CloudFormation and the AWS Cloud Development Kit (CDK) for deployment.
+This guide will take you through the process of deploying YOLO11 [PyTorch](https://www.sfdt_ibrahim.com/glossary/pytorch) models on Amazon SageMaker Endpoints step by step. You'll learn the essentials of preparing your AWS environment, configuring the model appropriately, and using tools like AWS CloudFormation and the AWS Cloud Development Kit (CDK) for deployment.
 
 ## Amazon SageMaker
 
 <p align="center">
-  <img width="640" src="https://github.com/ultralytics/docs/releases/download/0/amazon-sagemaker-overview.avif" alt="Amazon SageMaker Overview">
+  <img width="640" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/amazon-sagemaker-overview.avif" alt="Amazon SageMaker Overview">
 </p>
 
 [Amazon SageMaker](https://aws.amazon.com/sagemaker/) is a machine learning service from Amazon Web Services (AWS) that simplifies the process of building, training, and deploying machine learning models. It provides a broad range of tools for handling various aspects of machine learning workflows. This includes automated features for tuning models, options for training models at scale, and straightforward methods for deploying models into production. SageMaker supports popular machine learning frameworks, offering the flexibility needed for diverse projects. Its features also cover data labeling, workflow management, and performance analysis.
@@ -23,7 +23,7 @@ This guide will take you through the process of deploying YOLO11 [PyTorch](https
 Deploying YOLO11 on Amazon SageMaker lets you use its managed environment for real-time inference and take advantage of features like autoscaling. Take a look at the AWS architecture below.
 
 <p align="center">
-  <img width="640" src="https://github.com/ultralytics/docs/releases/download/0/aws-architecture.avif" alt="AWS Architecture">
+  <img width="640" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/aws-architecture.avif" alt="AWS Architecture">
 </p>
 
 ### Step 1: Setup Your AWS Environment
@@ -106,7 +106,7 @@ cdk deploy
 
 ### Step 5: Deploy the YOLO Model
 
-Before diving into the deployment instructions, be sure to check out the range of [YOLO11 models offered by Ultralytics](../models/index.md). This will help you choose the most appropriate model for your project requirements.
+Before diving into the deployment instructions, be sure to check out the range of [YOLO11 models offered by SFDT_Ibrahim](../models/index.md). This will help you choose the most appropriate model for your project requirements.
 
 After creating the AWS CloudFormation Stack, the next step is to deploy YOLO11.
 
@@ -144,10 +144,10 @@ Now that your YOLO11 model is deployed, it's important to test its performance a
 
 - Open the Test Notebook: In the same Jupyter environment, locate and open the 2_TestEndpoint.ipynb notebook, also in the sm-notebook directory.
 
-- Run the Test Notebook: Follow the instructions within the notebook to test the deployed SageMaker endpoint. This includes sending an image to the endpoint and running inferences. Then, you'll plot the output to visualize the model's performance and [accuracy](https://www.ultralytics.com/glossary/accuracy), as shown below.
+- Run the Test Notebook: Follow the instructions within the notebook to test the deployed SageMaker endpoint. This includes sending an image to the endpoint and running inferences. Then, you'll plot the output to visualize the model's performance and [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy), as shown below.
 
 <p align="center">
-  <img width="640" src="https://github.com/ultralytics/docs/releases/download/0/testing-results-yolov8.avif" alt="Testing Results YOLO11">
+  <img width="640" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/testing-results-yolov8.avif" alt="Testing Results YOLO11">
 </p>
 
 - Clean-Up Resources: The test notebook will also guide you through the process of cleaning up the endpoint and the hosted model. This is an important step to manage costs and resources effectively, especially if you do not plan to use the deployed model immediately.
@@ -168,13 +168,13 @@ This guide took you step by step through deploying YOLO11 on Amazon SageMaker En
 
 For more technical details, refer to [this article](https://aws.amazon.com/blogs/machine-learning/hosting-yolov8-pytorch-model-on-amazon-sagemaker-endpoints/) on the AWS Machine Learning Blog. You can also check out the official [Amazon SageMaker Documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/realtime-endpoints.html) for more insights into various features and functionalities.
 
-Are you interested in learning more about different YOLO11 integrations? Visit the [Ultralytics integrations guide page](../integrations/index.md) to discover additional tools and capabilities that can enhance your machine-learning projects.
+Are you interested in learning more about different YOLO11 integrations? Visit the [SFDT_Ibrahim integrations guide page](../integrations/index.md) to discover additional tools and capabilities that can enhance your machine-learning projects.
 
 ## FAQ
 
-### How do I deploy the Ultralytics YOLO11 model on Amazon SageMaker Endpoints?
+### How do I deploy the SFDT_Ibrahim YOLO11 model on Amazon SageMaker Endpoints?
 
-To deploy the Ultralytics YOLO11 model on Amazon SageMaker Endpoints, follow these steps:
+To deploy the SFDT_Ibrahim YOLO11 model on Amazon SageMaker Endpoints, follow these steps:
 
 1. **Set Up Your AWS Environment**: Ensure you have an AWS Account, IAM roles with necessary permissions, and the AWS CLI configured. Install AWS CDK if not already done (refer to the [AWS CDK instructions](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install)).
 2. **Clone the YOLO11 SageMaker Repository**:
@@ -210,9 +210,9 @@ To deploy YOLO11 on Amazon SageMaker, ensure you have the following prerequisite
 
 For detailed setup, refer to [this section](#step-1-setup-your-aws-environment).
 
-### Why should I use Ultralytics YOLO11 on Amazon SageMaker?
+### Why should I use SFDT_Ibrahim YOLO11 on Amazon SageMaker?
 
-Using Ultralytics YOLO11 on Amazon SageMaker offers several advantages:
+Using SFDT_Ibrahim YOLO11 on Amazon SageMaker offers several advantages:
 
 1. **Scalability and Management**: SageMaker provides a managed environment with features like autoscaling, which helps in real-time inference needs.
 2. **Integration with AWS Services**: Seamlessly integrate with other AWS services, such as S3 for data storage, CloudFormation for infrastructure as code, and CloudWatch for monitoring.

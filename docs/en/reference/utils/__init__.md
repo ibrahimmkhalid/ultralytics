@@ -1,184 +1,184 @@
 ---
-description: Explore the comprehensive reference for ultralytics.utils in the Ultralytics library. Enhance your ML workflow with these utility functions.
-keywords: Ultralytics, utils, TQDM, Python, ML, Machine Learning utilities, YOLO, threading, logging, yaml, settings
+description: Explore the comprehensive reference for sfdt_ibrahim.utils in the SFDT_Ibrahim library. Enhance your ML workflow with these utility functions.
+keywords: SFDT_Ibrahim, utils, TQDM, Python, ML, Machine Learning utilities, YOLO, threading, logging, yaml, settings
 ---
 
-# Reference for `ultralytics/utils/__init__.py`
+# Reference for `sfdt_ibrahim/utils/__init__.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/\_\_init\_\_.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/__init__.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/utils/__init__.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/\_\_init\_\_.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/__init__.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/utils/__init__.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.utils.TQDM
+## ::: sfdt_ibrahim.utils.TQDM
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.SimpleClass
+## ::: sfdt_ibrahim.utils.SimpleClass
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.IterableSimpleNamespace
+## ::: sfdt_ibrahim.utils.IterableSimpleNamespace
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.ThreadingLocked
+## ::: sfdt_ibrahim.utils.ThreadingLocked
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.TryExcept
+## ::: sfdt_ibrahim.utils.TryExcept
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.Retry
+## ::: sfdt_ibrahim.utils.Retry
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.JSONDict
+## ::: sfdt_ibrahim.utils.JSONDict
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.SettingsManager
+## ::: sfdt_ibrahim.utils.SettingsManager
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.plt_settings
+## ::: sfdt_ibrahim.utils.plt_settings
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.set_logging
+## ::: sfdt_ibrahim.utils.set_logging
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.emojis
+## ::: sfdt_ibrahim.utils.emojis
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.yaml_save
+## ::: sfdt_ibrahim.utils.yaml_save
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.yaml_load
+## ::: sfdt_ibrahim.utils.yaml_load
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.yaml_print
+## ::: sfdt_ibrahim.utils.yaml_print
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.read_device_model
+## ::: sfdt_ibrahim.utils.read_device_model
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_ubuntu
+## ::: sfdt_ibrahim.utils.is_ubuntu
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_colab
+## ::: sfdt_ibrahim.utils.is_colab
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_kaggle
+## ::: sfdt_ibrahim.utils.is_kaggle
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_jupyter
+## ::: sfdt_ibrahim.utils.is_jupyter
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_runpod
+## ::: sfdt_ibrahim.utils.is_runpod
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_docker
+## ::: sfdt_ibrahim.utils.is_docker
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_raspberrypi
+## ::: sfdt_ibrahim.utils.is_raspberrypi
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_jetson
+## ::: sfdt_ibrahim.utils.is_jetson
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_online
+## ::: sfdt_ibrahim.utils.is_online
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_pip_package
+## ::: sfdt_ibrahim.utils.is_pip_package
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_dir_writeable
+## ::: sfdt_ibrahim.utils.is_dir_writeable
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_pytest_running
+## ::: sfdt_ibrahim.utils.is_pytest_running
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_github_action_running
+## ::: sfdt_ibrahim.utils.is_github_action_running
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.get_git_dir
+## ::: sfdt_ibrahim.utils.get_git_dir
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.is_git_dir
+## ::: sfdt_ibrahim.utils.is_git_dir
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.get_git_origin_url
+## ::: sfdt_ibrahim.utils.get_git_origin_url
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.get_git_branch
+## ::: sfdt_ibrahim.utils.get_git_branch
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.get_default_args
+## ::: sfdt_ibrahim.utils.get_default_args
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.get_ubuntu_version
+## ::: sfdt_ibrahim.utils.get_ubuntu_version
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.get_user_config_dir
+## ::: sfdt_ibrahim.utils.get_user_config_dir
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.colorstr
+## ::: sfdt_ibrahim.utils.colorstr
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.remove_colorstr
+## ::: sfdt_ibrahim.utils.remove_colorstr
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.threaded
+## ::: sfdt_ibrahim.utils.threaded
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.set_sentry
+## ::: sfdt_ibrahim.utils.set_sentry
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.deprecation_warn
+## ::: sfdt_ibrahim.utils.deprecation_warn
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.clean_url
+## ::: sfdt_ibrahim.utils.clean_url
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.url2file
+## ::: sfdt_ibrahim.utils.url2file
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.vscode_msg
+## ::: sfdt_ibrahim.utils.vscode_msg
 
 <br><br>

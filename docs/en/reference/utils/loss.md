@@ -1,60 +1,60 @@
 ---
-description: Explore detailed descriptions and implementations of various loss functions used in Ultralytics models, including Varifocal Loss, Focal Loss, Bbox Loss, and more.
-keywords: Ultralytics, loss functions, Varifocal Loss, Focal Loss, Bbox Loss, Rotated Bbox Loss, Keypoint Loss, YOLO, model training, documentation
+description: Explore detailed descriptions and implementations of various loss functions used in SFDT_Ibrahim models, including Varifocal Loss, Focal Loss, Bbox Loss, and more.
+keywords: SFDT_Ibrahim, loss functions, Varifocal Loss, Focal Loss, Bbox Loss, Rotated Bbox Loss, Keypoint Loss, YOLO, model training, documentation
 ---
 
-# Reference for `ultralytics/utils/loss.py`
+# Reference for `sfdt_ibrahim/utils/loss.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/loss.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/loss.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/utils/loss.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/loss.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/loss.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/utils/loss.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.utils.loss.VarifocalLoss
+## ::: sfdt_ibrahim.utils.loss.VarifocalLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.FocalLoss
+## ::: sfdt_ibrahim.utils.loss.FocalLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.DFLoss
+## ::: sfdt_ibrahim.utils.loss.DFLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.BboxLoss
+## ::: sfdt_ibrahim.utils.loss.BboxLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.RotatedBboxLoss
+## ::: sfdt_ibrahim.utils.loss.RotatedBboxLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.KeypointLoss
+## ::: sfdt_ibrahim.utils.loss.KeypointLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.v8DetectionLoss
+## ::: sfdt_ibrahim.utils.loss.v8DetectionLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.v8SegmentationLoss
+## ::: sfdt_ibrahim.utils.loss.v8SegmentationLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.v8PoseLoss
+## ::: sfdt_ibrahim.utils.loss.v8PoseLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.v8ClassificationLoss
+## ::: sfdt_ibrahim.utils.loss.v8ClassificationLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.v8OBBLoss
+## ::: sfdt_ibrahim.utils.loss.v8OBBLoss
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.loss.E2EDetectLoss
+## ::: sfdt_ibrahim.utils.loss.E2EDetectLoss
 
 <br><br>

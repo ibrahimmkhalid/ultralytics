@@ -1,14 +1,14 @@
 ---
 comments: true
-description: Explore the supported dataset formats for Ultralytics YOLO and learn how to prepare and use datasets for training object segmentation models.
-keywords: Ultralytics, YOLO, instance segmentation, dataset formats, auto-annotation, COCO, segmentation models, training data
+description: Explore the supported dataset formats for SFDT_Ibrahim YOLO and learn how to prepare and use datasets for training object segmentation models.
+keywords: SFDT_Ibrahim, YOLO, instance segmentation, dataset formats, auto-annotation, COCO, segmentation models, training data
 ---
 
 # Instance Segmentation Datasets Overview
 
 ## Supported Dataset Formats
 
-### Ultralytics YOLO format
+### SFDT_Ibrahim YOLO format
 
 The dataset label format used for training YOLO segmentation models is as follows:
 
@@ -40,7 +40,7 @@ Here is an example of the YOLO dataset format for a single image with two object
 
 ### Dataset YAML format
 
-The Ultralytics framework uses a YAML file format to define the dataset and model configuration for training Detection Models. Here is an example of the YAML format used for defining a detection dataset:
+The SFDT_Ibrahim framework uses a YAML file format to define the dataset and model configuration for training Detection Models. Here is an example of the YAML format used for defining a detection dataset:
 
 ```yaml
 # Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
@@ -71,7 +71,7 @@ The `train` and `val` fields specify the paths to the directories containing the
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a model
         model = YOLO("yolo11n-seg.pt")  # load a pretrained model (recommended for training)
@@ -91,16 +91,16 @@ The `train` and `val` fields specify the paths to the directories containing the
 
 ## Supported Datasets
 
-- [COCO](coco.md): A comprehensive dataset for [object detection](https://www.ultralytics.com/glossary/object-detection), segmentation, and captioning, featuring over 200K labeled images across a wide range of categories.
-- [COCO8-seg](coco8-seg.md): A compact, 8-image subset of COCO designed for quick testing of segmentation model training, ideal for CI checks and workflow validation in the `ultralytics` repository.
-- [COCO128-seg](coco.md): A smaller dataset for [instance segmentation](https://www.ultralytics.com/glossary/instance-segmentation) tasks, containing a subset of 128 COCO images with segmentation annotations.
+- [COCO](coco.md): A comprehensive dataset for [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection), segmentation, and captioning, featuring over 200K labeled images across a wide range of categories.
+- [COCO8-seg](coco8-seg.md): A compact, 8-image subset of COCO designed for quick testing of segmentation model training, ideal for CI checks and workflow validation in the `sfdt_ibrahim` repository.
+- [COCO128-seg](coco.md): A smaller dataset for [instance segmentation](https://www.sfdt_ibrahim.com/glossary/instance-segmentation) tasks, containing a subset of 128 COCO images with segmentation annotations.
 - [Carparts-seg](carparts-seg.md): A specialized dataset focused on the segmentation of car parts, ideal for automotive applications. It includes a variety of vehicles with detailed annotations of individual car components.
 - [Crack-seg](crack-seg.md): A dataset tailored for the segmentation of cracks in various surfaces. Essential for infrastructure maintenance and quality control, it provides detailed imagery for training models to identify structural weaknesses.
 - [Package-seg](package-seg.md): A dataset dedicated to the segmentation of different types of packaging materials and shapes. It's particularly useful for logistics and warehouse automation, aiding in the development of systems for package handling and sorting.
 
 ### Adding your own dataset
 
-If you have your own dataset and would like to use it for training segmentation models with Ultralytics YOLO format, ensure that it follows the format specified above under "Ultralytics YOLO format". Convert your annotations to the required format and specify the paths, number of classes, and class names in the YAML configuration file.
+If you have your own dataset and would like to use it for training segmentation models with SFDT_Ibrahim YOLO format, ensure that it follows the format specified above under "SFDT_Ibrahim YOLO format". Convert your annotations to the required format and specify the paths, number of classes, and class names in the YAML configuration file.
 
 ## Port or Convert Label Formats
 
@@ -113,12 +113,12 @@ You can easily convert labels from the popular COCO dataset format to the YOLO f
     === "Python"
 
         ```python
-        from ultralytics.data.converter import convert_coco
+        from sfdt_ibrahim.data.converter import convert_coco
 
         convert_coco(labels_dir="path/to/coco/annotations/", use_segments=True)
         ```
 
-This conversion tool can be used to convert the COCO dataset or any dataset in the COCO format to the Ultralytics YOLO format.
+This conversion tool can be used to convert the COCO dataset or any dataset in the COCO format to the SFDT_Ibrahim YOLO format.
 
 Remember to double-check if the dataset you want to use is compatible with your model and follows the necessary format conventions. Properly formatted datasets are crucial for training successful object detection models.
 
@@ -128,14 +128,14 @@ Auto-annotation is an essential feature that allows you to generate a segmentati
 
 ### Generate Segmentation Dataset Using a Detection Model
 
-To auto-annotate your dataset using the Ultralytics framework, you can use the `auto_annotate` function as shown below:
+To auto-annotate your dataset using the SFDT_Ibrahim framework, you can use the `auto_annotate` function as shown below:
 
 !!! example
 
     === "Python"
 
         ```python
-        from ultralytics.data.annotator import auto_annotate
+        from sfdt_ibrahim.data.annotator import auto_annotate
 
         auto_annotate(data="path/to/images", det_model="yolo11x.pt", sam_model="sam_b.pt")
         ```
@@ -148,25 +148,25 @@ By leveraging the power of pre-trained models, auto-annotation can significantly
 
 ## FAQ
 
-### What dataset formats does Ultralytics YOLO support for instance segmentation?
+### What dataset formats does SFDT_Ibrahim YOLO support for instance segmentation?
 
-Ultralytics YOLO supports several dataset formats for instance segmentation, with the primary format being its own Ultralytics YOLO format. Each image in your dataset needs a corresponding text file with object information segmented into multiple rows (one row per object), listing the class index and normalized bounding coordinates. For more detailed instructions on the YOLO dataset format, visit the [Instance Segmentation Datasets Overview](#instance-segmentation-datasets-overview).
+SFDT_Ibrahim YOLO supports several dataset formats for instance segmentation, with the primary format being its own SFDT_Ibrahim YOLO format. Each image in your dataset needs a corresponding text file with object information segmented into multiple rows (one row per object), listing the class index and normalized bounding coordinates. For more detailed instructions on the YOLO dataset format, visit the [Instance Segmentation Datasets Overview](#instance-segmentation-datasets-overview).
 
 ### How can I convert COCO dataset annotations to the YOLO format?
 
-Converting COCO format annotations to YOLO format is straightforward using Ultralytics tools. You can use the `convert_coco` function from the `ultralytics.data.converter` module:
+Converting COCO format annotations to YOLO format is straightforward using SFDT_Ibrahim tools. You can use the `convert_coco` function from the `sfdt_ibrahim.data.converter` module:
 
 ```python
-from ultralytics.data.converter import convert_coco
+from sfdt_ibrahim.data.converter import convert_coco
 
 convert_coco(labels_dir="path/to/coco/annotations/", use_segments=True)
 ```
 
 This script converts your COCO dataset annotations to the required YOLO format, making it suitable for training your YOLO models. For more details, refer to [Port or Convert Label Formats](#coco-dataset-format-to-yolo-format).
 
-### How do I prepare a YAML file for training Ultralytics YOLO models?
+### How do I prepare a YAML file for training SFDT_Ibrahim YOLO models?
 
-To prepare a YAML file for training YOLO models with Ultralytics, you need to define the dataset paths and class names. Here's an example YAML configuration:
+To prepare a YAML file for training YOLO models with SFDT_Ibrahim, you need to define the dataset paths and class names. Here's an example YAML configuration:
 
 ```yaml
 path: ../datasets/coco8-seg # dataset root dir
@@ -182,14 +182,14 @@ names:
 
 Ensure you update the paths and class names according to your dataset. For more information, check the [Dataset YAML Format](#dataset-yaml-format) section.
 
-### What is the auto-annotation feature in Ultralytics YOLO?
+### What is the auto-annotation feature in SFDT_Ibrahim YOLO?
 
-Auto-annotation in Ultralytics YOLO allows you to generate segmentation annotations for your dataset using a pre-trained detection model. This significantly reduces the need for manual labeling. You can use the `auto_annotate` function as follows:
+Auto-annotation in SFDT_Ibrahim YOLO allows you to generate segmentation annotations for your dataset using a pre-trained detection model. This significantly reduces the need for manual labeling. You can use the `auto_annotate` function as follows:
 
 ```python
-from ultralytics.data.annotator import auto_annotate
+from sfdt_ibrahim.data.annotator import auto_annotate
 
 auto_annotate(data="path/to/images", det_model="yolo11x.pt", sam_model="sam_b.pt")  # or sam_model="mobile_sam.pt"
 ```
 
-This function automates the annotation process, making it faster and more efficient. For more details, explore the [Auto-Annotate Reference](https://docs.ultralytics.com/reference/data/annotator/#ultralytics.data.annotator.auto_annotate).
+This function automates the annotation process, making it faster and more efficient. For more details, explore the [Auto-Annotate Reference](https://docs.sfdt_ibrahim.com/reference/data/annotator/#sfdt_ibrahim.data.annotator.auto_annotate).

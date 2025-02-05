@@ -1,4 +1,4 @@
-# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
 
 import argparse
 from typing import Tuple, Union
@@ -8,7 +8,7 @@ import numpy as np
 import tensorflow as tf
 import yaml
 
-from ultralytics.utils import ASSETS
+from sfdt_ibrahim.utils import ASSETS
 
 try:
     from tflite_runtime.interpreter import Interpreter

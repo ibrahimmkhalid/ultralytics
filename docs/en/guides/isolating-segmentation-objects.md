@@ -1,27 +1,27 @@
 ---
 comments: true
-description: Learn to extract isolated objects from inference results using Ultralytics Predict Mode. Step-by-step guide for segmentation object isolation.
-keywords: Ultralytics, segmentation, object isolation, Predict Mode, YOLO11, machine learning, object detection, binary mask, image processing
+description: Learn to extract isolated objects from inference results using SFDT_Ibrahim Predict Mode. Step-by-step guide for segmentation object isolation.
+keywords: SFDT_Ibrahim, segmentation, object isolation, Predict Mode, YOLO11, machine learning, object detection, binary mask, image processing
 ---
 
 # Isolating Segmentation Objects
 
-After performing the [Segment Task](../tasks/segment.md), it's sometimes desirable to extract the isolated objects from the inference results. This guide provides a generic recipe on how to accomplish this using the Ultralytics [Predict Mode](../modes/predict.md).
+After performing the [Segment Task](../tasks/segment.md), it's sometimes desirable to extract the isolated objects from the inference results. This guide provides a generic recipe on how to accomplish this using the SFDT_Ibrahim [Predict Mode](../modes/predict.md).
 
 <p align="center">
-  <img src="https://github.com/ultralytics/docs/releases/download/0/isolated-object-segmentation.avif" alt="Example Isolated Object Segmentation">
+  <img src="https://github.com/sfdt_ibrahim/docs/releases/download/0/isolated-object-segmentation.avif" alt="Example Isolated Object Segmentation">
 </p>
 
 ## Recipe Walk Through
 
-1.  See the [Ultralytics Quickstart Installation section](../quickstart.md) for a quick walkthrough on installing the required libraries.
+1.  See the [SFDT_Ibrahim Quickstart Installation section](../quickstart.md) for a quick walkthrough on installing the required libraries.
 
     ***
 
 2.  Load a model and run `predict()` method on a source.
 
     ```python
-    from ultralytics import YOLO
+    from sfdt_ibrahim import YOLO
 
     # Load a model
     model = YOLO("yolo11n-seg.pt")
@@ -35,8 +35,8 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
         Without specifying a source, the example images from the library will be used:
 
         ```
-        'ultralytics/assets/bus.jpg'
-        'ultralytics/assets/zidane.jpg'
+        'sfdt_ibrahim/assets/bus.jpg'
+        'sfdt_ibrahim/assets/zidane.jpg'
         ```
 
         This is helpful for rapid testing with the `predict()` method.
@@ -74,7 +74,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
 
 4.  Start with generating a binary mask from the source image and then draw a filled contour onto the mask. This will allow the object to be isolated from the other parts of the image. An example from `bus.jpg` for one of the detected `person` class objects is shown on the right.
 
-    ![Binary Mask Image](https://github.com/ultralytics/ultralytics/assets/62214284/59bce684-fdda-4b17-8104-0b4b51149aca){ width="240", align="right" }
+    ![Binary Mask Image](https://github.com/sfdt_ibrahim/sfdt_ibrahim/assets/62214284/59bce684-fdda-4b17-8104-0b4b51149aca){ width="240", align="right" }
 
     ```{ .py .annotate }
     import cv2
@@ -96,7 +96,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
 
     1. For more info on `c.masks.xy` see [Masks Section from Predict Mode](../modes/predict.md#masks).
 
-    2. Here the values are cast into `np.int32` for compatibility with `drawContours()` function from [OpenCV](https://www.ultralytics.com/glossary/opencv).
+    2. Here the values are cast into `np.int32` for compatibility with `drawContours()` function from [OpenCV](https://www.sfdt_ibrahim.com/glossary/opencv).
 
     3. The OpenCV `drawContours()` function expects contours to have a shape of `[N, 1, 2]` expand section below for more details.
 
@@ -162,7 +162,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
                 There are no additional steps required if keeping full size image.
 
                 <figure markdown>
-                    ![Example Full size Isolated Object Image Black Background](https://github.com/ultralytics/docs/releases/download/0/full-size-isolated-object-black-background.avif){ width=240 }
+                    ![Example Full size Isolated Object Image Black Background](https://github.com/sfdt_ibrahim/docs/releases/download/0/full-size-isolated-object-black-background.avif){ width=240 }
                     <figcaption>Example full-size output</figcaption>
                 </figure>
 
@@ -170,7 +170,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
 
                 Additional steps required to crop image to only include object region.
 
-                ![Example Crop Isolated Object Image Black Background](https://github.com/ultralytics/docs/releases/download/0/example-crop-isolated-object-image-black-background.avif){ align="right" }
+                ![Example Crop Isolated Object Image Black Background](https://github.com/sfdt_ibrahim/docs/releases/download/0/example-crop-isolated-object-image-black-background.avif){ align="right" }
                 ```{ .py .annotate }
                 # (1) Bounding box coordinates
                 x1, y1, x2, y2 = c.boxes.xyxy.cpu().numpy().squeeze().astype(np.int32)
@@ -178,7 +178,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
                 iso_crop = isolated[y1:y2, x1:x2]
                 ```
 
-                1.  For more information on [bounding box](https://www.ultralytics.com/glossary/bounding-box) results, see [Boxes Section from Predict Mode](../modes/predict.md/#boxes)
+                1.  For more information on [bounding box](https://www.sfdt_ibrahim.com/glossary/bounding-box) results, see [Boxes Section from Predict Mode](../modes/predict.md/#boxes)
 
                 ??? question "What does this code do?"
 
@@ -208,7 +208,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
                 There are no additional steps required if keeping full size image.
 
                 <figure markdown>
-                    ![Example Full size Isolated Object Image No Background](https://github.com/ultralytics/docs/releases/download/0/example-full-size-isolated-object-image-no-background.avif){ width=240 }
+                    ![Example Full size Isolated Object Image No Background](https://github.com/sfdt_ibrahim/docs/releases/download/0/example-full-size-isolated-object-image-no-background.avif){ width=240 }
                     <figcaption>Example full-size output + transparent background</figcaption>
                 </figure>
 
@@ -216,7 +216,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
 
                 Additional steps required to crop image to only include object region.
 
-                ![Example Crop Isolated Object Image No Background](https://github.com/ultralytics/docs/releases/download/0/example-crop-isolated-object-image-no-background.avif){ align="right" }
+                ![Example Crop Isolated Object Image No Background](https://github.com/sfdt_ibrahim/docs/releases/download/0/example-crop-isolated-object-image-no-background.avif){ align="right" }
                 ```{ .py .annotate }
                 # (1) Bounding box coordinates
                 x1, y1, x2, y2 = c.boxes.xyxy.cpu().numpy().squeeze().astype(np.int32)
@@ -238,7 +238,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
 
     ??? question "What if I want the cropped object **including** the background?"
 
-        This is a built in feature for the Ultralytics library. See the `save_crop` argument for  [Predict Mode Inference Arguments](../modes/predict.md/#inference-arguments) for details.
+        This is a built in feature for the SFDT_Ibrahim library. See the `save_crop` argument for  [Predict Mode Inference Arguments](../modes/predict.md/#inference-arguments) for details.
 
     ***
 
@@ -253,7 +253,7 @@ After performing the [Segment Task](../tasks/segment.md), it's sometimes desirab
         _ = cv2.imwrite(f"{img_name}_{label}-{ci}.png", iso_crop)
         ```
 
-        - In this example, the `img_name` is the base-name of the source image file, `label` is the detected class-name, and `ci` is the index of the [object detection](https://www.ultralytics.com/glossary/object-detection) (in case of multiple instances with the same class name).
+        - In this example, the `img_name` is the base-name of the source image file, `label` is the detected class-name, and `ci` is the index of the [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) (in case of multiple instances with the same class name).
 
 ## Full Example code
 
@@ -265,7 +265,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 
-from ultralytics import YOLO
+from sfdt_ibrahim import YOLO
 
 m = YOLO("yolo11n-seg.pt")  # (4)!
 res = m.predict()  # (3)!
@@ -310,14 +310,14 @@ for r in res:
 
 ## FAQ
 
-### How do I isolate objects using Ultralytics YOLO11 for segmentation tasks?
+### How do I isolate objects using SFDT_Ibrahim YOLO11 for segmentation tasks?
 
-To isolate objects using Ultralytics YOLO11, follow these steps:
+To isolate objects using SFDT_Ibrahim YOLO11, follow these steps:
 
 1. **Load the model and run inference:**
 
     ```python
-    from ultralytics import YOLO
+    from sfdt_ibrahim import YOLO
 
     model = YOLO("yolo11n-seg.pt")
     results = model.predict(source="path/to/your/image.jpg")
@@ -345,7 +345,7 @@ Refer to the guide on [Predict Mode](../modes/predict.md) and the [Segment Task]
 
 ### What options are available for saving the isolated objects after segmentation?
 
-Ultralytics YOLO11 offers two main options for saving isolated objects:
+SFDT_Ibrahim YOLO11 offers two main options for saving isolated objects:
 
 1. **With a Black Background:**
 
@@ -361,7 +361,7 @@ Ultralytics YOLO11 offers two main options for saving isolated objects:
 
 For further details, visit the [Predict Mode](../modes/predict.md) section.
 
-### How can I crop isolated objects to their bounding boxes using Ultralytics YOLO11?
+### How can I crop isolated objects to their bounding boxes using SFDT_Ibrahim YOLO11?
 
 To crop isolated objects to their bounding boxes:
 
@@ -378,9 +378,9 @@ To crop isolated objects to their bounding boxes:
 
 Learn more about bounding box results in the [Predict Mode](../modes/predict.md#boxes) documentation.
 
-### Why should I use Ultralytics YOLO11 for object isolation in segmentation tasks?
+### Why should I use SFDT_Ibrahim YOLO11 for object isolation in segmentation tasks?
 
-Ultralytics YOLO11 provides:
+SFDT_Ibrahim YOLO11 provides:
 
 - **High-speed** real-time object detection and segmentation.
 - **Accurate bounding box and mask generation** for precise object isolation.
@@ -388,9 +388,9 @@ Ultralytics YOLO11 provides:
 
 Explore the benefits of using YOLO in the [Segment Task documentation](../tasks/segment.md).
 
-### Can I save isolated objects including the background using Ultralytics YOLO11?
+### Can I save isolated objects including the background using SFDT_Ibrahim YOLO11?
 
-Yes, this is a built-in feature in Ultralytics YOLO11. Use the `save_crop` argument in the `predict()` method. For example:
+Yes, this is a built-in feature in SFDT_Ibrahim YOLO11. Use the `save_crop` argument in the `predict()` method. For example:
 
 ```python
 results = model.predict(source="path/to/your/image.jpg", save_crop=True)

@@ -3,38 +3,38 @@ description: Learn how to export YOLOv8 models to formats like ONNX, TensorRT, C
 keywords: YOLOv8, export formats, ONNX, TensorRT, CoreML, machine learning model export, AI, deep learning
 ---
 
-# Reference for `ultralytics/engine/exporter.py`
+# Reference for `sfdt_ibrahim/engine/exporter.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/engine/exporter.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/engine/exporter.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/engine/exporter.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/engine/exporter.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/engine/exporter.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/engine/exporter.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.engine.exporter.Exporter
+## ::: sfdt_ibrahim.engine.exporter.Exporter
 
 <br><br><hr><br>
 
-## ::: ultralytics.engine.exporter.IOSDetectModel
+## ::: sfdt_ibrahim.engine.exporter.IOSDetectModel
 
 <br><br><hr><br>
 
-## ::: ultralytics.engine.exporter.NMSModel
+## ::: sfdt_ibrahim.engine.exporter.NMSModel
 
 <br><br><hr><br>
 
-## ::: ultralytics.engine.exporter.export_formats
+## ::: sfdt_ibrahim.engine.exporter.export_formats
 
 <br><br><hr><br>
 
-## ::: ultralytics.engine.exporter.validate_args
+## ::: sfdt_ibrahim.engine.exporter.validate_args
 
 <br><br><hr><br>
 
-## ::: ultralytics.engine.exporter.gd_outputs
+## ::: sfdt_ibrahim.engine.exporter.gd_outputs
 
 <br><br><hr><br>
 
-## ::: ultralytics.engine.exporter.try_export
+## ::: sfdt_ibrahim.engine.exporter.try_export
 
 <br><br>

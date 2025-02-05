@@ -1,14 +1,14 @@
 ---
 comments: true
 description: Learn how to set up and run YOLOv5 in a Docker container with step-by-step instructions. Explore other quickstart options for an easy setup.
-keywords: YOLOv5, Docker, Ultralytics, setup, guide, tutorial, machine learning, deep learning, AI, GPU, NVIDIA, container
+keywords: YOLOv5, Docker, SFDT_Ibrahim, setup, guide, tutorial, machine learning, deep learning, AI, GPU, NVIDIA, container
 ---
 
 # Get Started with YOLOv5 🚀 in Docker
 
 This tutorial will guide you through the process of setting up and running YOLOv5 in a Docker container.
 
-You can also explore other quickstart options for YOLOv5, such as our [Colab Notebook](https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb) <a href="https://colab.research.google.com/github/ultralytics/yolov5/blob/master/tutorial.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> <a href="https://www.kaggle.com/models/ultralytics/yolov5"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"></a>, [GCP Deep Learning VM](./google_cloud_quickstart_tutorial.md), and [Amazon AWS](./aws_quickstart_tutorial.md).
+You can also explore other quickstart options for YOLOv5, such as our [Colab Notebook](https://colab.research.google.com/github/sfdt_ibrahim/yolov5/blob/master/tutorial.ipynb) <a href="https://colab.research.google.com/github/sfdt_ibrahim/yolov5/blob/master/tutorial.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> <a href="https://www.kaggle.com/models/sfdt_ibrahim/yolov5"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"></a>, [GCP Deep Learning VM](./google_cloud_quickstart_tutorial.md), and [Amazon AWS](./aws_quickstart_tutorial.md).
 
 ## Prerequisites
 
@@ -18,10 +18,10 @@ You can also explore other quickstart options for YOLOv5, such as our [Colab Not
 
 ## Step 1: Pull the YOLOv5 Docker Image
 
-The Ultralytics YOLOv5 DockerHub repository is available at [https://hub.docker.com/r/ultralytics/yolov5](https://hub.docker.com/r/ultralytics/yolov5). Docker Autobuild ensures that the `ultralytics/yolov5:latest` image is always in sync with the most recent repository commit. To pull the latest image, run the following command:
+The SFDT_Ibrahim YOLOv5 DockerHub repository is available at [https://hub.docker.com/r/sfdt_ibrahim/yolov5](https://hub.docker.com/r/sfdt_ibrahim/yolov5). Docker Autobuild ensures that the `sfdt_ibrahim/yolov5:latest` image is always in sync with the most recent repository commit. To pull the latest image, run the following command:
 
 ```bash
-sudo docker pull ultralytics/yolov5:latest
+sudo docker pull sfdt_ibrahim/yolov5:latest
 ```
 
 ## Step 2: Run the Docker Container
@@ -31,15 +31,15 @@ sudo docker pull ultralytics/yolov5:latest
 Run an interactive instance of the YOLOv5 Docker image (called a "container") using the `-it` flag:
 
 ```bash
-sudo docker run --ipc=host -it ultralytics/yolov5:latest
+sudo docker run --ipc=host -it sfdt_ibrahim/yolov5:latest
 ```
 
 ### Container with local file access:
 
-To run a container with access to local files (e.g., COCO [training data](https://www.ultralytics.com/glossary/training-data) in `/datasets`), use the `-v` flag:
+To run a container with access to local files (e.g., COCO [training data](https://www.sfdt_ibrahim.com/glossary/training-data) in `/datasets`), use the `-v` flag:
 
 ```bash
-sudo docker run --ipc=host -it -v "$(pwd)"/datasets:/usr/src/datasets ultralytics/yolov5:latest
+sudo docker run --ipc=host -it -v "$(pwd)"/datasets:/usr/src/datasets sfdt_ibrahim/yolov5:latest
 ```
 
 ### Container with GPU access:
@@ -47,7 +47,7 @@ sudo docker run --ipc=host -it -v "$(pwd)"/datasets:/usr/src/datasets ultralytic
 To run a container with GPU access, use the `--gpus all` flag:
 
 ```bash
-sudo docker run --ipc=host -it --gpus all ultralytics/yolov5:latest
+sudo docker run --ipc=host -it --gpus all sfdt_ibrahim/yolov5:latest
 ```
 
 ## Step 3: Use YOLOv5 🚀 within the Docker Container
@@ -68,4 +68,4 @@ python detect.py --weights yolov5s.pt --source path/to/images
 python export.py --weights yolov5s.pt --include onnx coreml tflite
 ```
 
-<p align="center"><img width="1000" src="https://github.com/ultralytics/docs/releases/download/0/gcp-running-docker.avif" alt="GCP running Docker"></p>
+<p align="center"><img width="1000" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/gcp-running-docker.avif" alt="GCP running Docker"></p>

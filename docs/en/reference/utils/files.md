@@ -1,44 +1,44 @@
 ---
-description: Explore the utility functions and context managers in Ultralytics like WorkingDirectory, increment_path, file_size, and more. Enhance your file handling in Python.
-keywords: Ultralytics, file utilities, Python, WorkingDirectory, increment_path, file_size, file_age, contexts, file handling, file management
+description: Explore the utility functions and context managers in SFDT_Ibrahim like WorkingDirectory, increment_path, file_size, and more. Enhance your file handling in Python.
+keywords: SFDT_Ibrahim, file utilities, Python, WorkingDirectory, increment_path, file_size, file_age, contexts, file handling, file management
 ---
 
-# Reference for `ultralytics/utils/files.py`
+# Reference for `sfdt_ibrahim/utils/files.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/files.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/files.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/utils/files.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/files.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/files.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/utils/files.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.utils.files.WorkingDirectory
+## ::: sfdt_ibrahim.utils.files.WorkingDirectory
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.files.spaces_in_path
+## ::: sfdt_ibrahim.utils.files.spaces_in_path
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.files.increment_path
+## ::: sfdt_ibrahim.utils.files.increment_path
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.files.file_age
+## ::: sfdt_ibrahim.utils.files.file_age
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.files.file_date
+## ::: sfdt_ibrahim.utils.files.file_date
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.files.file_size
+## ::: sfdt_ibrahim.utils.files.file_size
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.files.get_latest_run
+## ::: sfdt_ibrahim.utils.files.get_latest_run
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.files.update_models
+## ::: sfdt_ibrahim.utils.files.update_models
 
 <br><br>

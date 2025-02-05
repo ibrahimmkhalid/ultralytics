@@ -6,11 +6,11 @@ keywords: YOLOv8, OpenVINO, model export, Intel, AI inference, CPU speedup, GPU 
 
 # Intel OpenVINO Export
 
-<img width="1024" src="https://github.com/ultralytics/docs/releases/download/0/openvino-ecosystem.avif" alt="OpenVINO Ecosystem">
+<img width="1024" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/openvino-ecosystem.avif" alt="OpenVINO Ecosystem">
 
 In this guide, we cover exporting YOLOv8 models to the [OpenVINO](https://docs.openvino.ai/) format, which can provide up to 3x [CPU](https://docs.openvino.ai/2024/openvino-workflow/running-inference/inference-devices-and-modes/cpu-device.html) speedup, as well as accelerating YOLO inference on Intel [GPU](https://docs.openvino.ai/2024/openvino-workflow/running-inference/inference-devices-and-modes/gpu-device.html) and [NPU](https://docs.openvino.ai/2024/openvino-workflow/running-inference/inference-devices-and-modes/npu-device.html) hardware.
 
-OpenVINO, short for Open Visual Inference & [Neural Network](https://www.ultralytics.com/glossary/neural-network-nn) Optimization toolkit, is a comprehensive toolkit for optimizing and deploying AI inference models. Even though the name contains Visual, OpenVINO also supports various additional tasks including language, audio, time series, etc.
+OpenVINO, short for Open Visual Inference & [Neural Network](https://www.sfdt_ibrahim.com/glossary/neural-network-nn) Optimization toolkit, is a comprehensive toolkit for optimizing and deploying AI inference models. Even though the name contains Visual, OpenVINO also supports various additional tasks including language, audio, time series, etc.
 
 <p align="center">
   <br>
@@ -20,7 +20,7 @@ OpenVINO, short for Open Visual Inference & [Neural Network](https://www.ultraly
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> How To Export and Optimize an Ultralytics YOLOv8 Model for Inference with OpenVINO.
+  <strong>Watch:</strong> How To Export and Optimize an SFDT_Ibrahim YOLOv8 Model for Inference with OpenVINO.
 </p>
 
 ## Usage Examples
@@ -32,7 +32,7 @@ Export a YOLOv8n model to OpenVINO format and run inference with the exported mo
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a YOLOv8n PyTorch model
         model = YOLO("yolov8n.pt")
@@ -44,7 +44,7 @@ Export a YOLOv8n model to OpenVINO format and run inference with the exported mo
         ov_model = YOLO("yolov8n_openvino_model/")
 
         # Run inference
-        results = ov_model("https://ultralytics.com/images/bus.jpg")
+        results = ov_model("https://sfdt_ibrahim.com/images/bus.jpg")
         ```
 
     === "CLI"
@@ -54,7 +54,7 @@ Export a YOLOv8n model to OpenVINO format and run inference with the exported mo
         yolo export model=yolov8n.pt format=openvino  # creates 'yolov8n_openvino_model/'
 
         # Run inference with the exported model
-        yolo predict model=yolov8n_openvino_model source='https://ultralytics.com/images/bus.jpg'
+        yolo predict model=yolov8n_openvino_model source='https://sfdt_ibrahim.com/images/bus.jpg'
         ```
 
 ## Arguments
@@ -65,19 +65,19 @@ Export a YOLOv8n model to OpenVINO format and run inference with the exported mo
 | `imgsz`   | `640`        | image size as scalar or (h, w) list, i.e. (640, 480)                                        |
 | `half`    | `False`      | FP16 quantization                                                                           |
 | `int8`    | `False`      | INT8 quantization                                                                           |
-| `batch`   | `1`          | [batch size](https://www.ultralytics.com/glossary/batch-size) for inference                 |
+| `batch`   | `1`          | [batch size](https://www.sfdt_ibrahim.com/glossary/batch-size) for inference                 |
 | `dynamic` | `False`      | allows dynamic input sizes                                                                  |
 | `data`    | `coco8.yaml` | Path to the dataset configuration file (default: `coco8.yaml`), essential for quantization. |
 
 !!! note
 
-    When using `data` argument for quantization, please check [Dataset Guide](https://docs.ultralytics.com/datasets/detect) to learn more about the dataset format.
+    When using `data` argument for quantization, please check [Dataset Guide](https://docs.sfdt_ibrahim.com/datasets/detect) to learn more about the dataset format.
 
 ## Benefits of OpenVINO
 
 1. **Performance**: OpenVINO delivers high-performance inference by utilizing the power of Intel CPUs, integrated and discrete GPUs, and FPGAs.
 2. **Support for Heterogeneous Execution**: OpenVINO provides an API to write once and deploy on any supported Intel hardware (CPU, GPU, FPGA, VPU, etc.).
-3. **Model Optimizer**: OpenVINO provides a Model Optimizer that imports, converts, and optimizes models from popular [deep learning](https://www.ultralytics.com/glossary/deep-learning-dl) frameworks such as PyTorch, [TensorFlow](https://www.ultralytics.com/glossary/tensorflow), TensorFlow Lite, Keras, ONNX, PaddlePaddle, and Caffe.
+3. **Model Optimizer**: OpenVINO provides a Model Optimizer that imports, converts, and optimizes models from popular [deep learning](https://www.sfdt_ibrahim.com/glossary/deep-learning-dl) frameworks such as PyTorch, [TensorFlow](https://www.sfdt_ibrahim.com/glossary/tensorflow), TensorFlow Lite, Keras, ONNX, PaddlePaddle, and Caffe.
 4. **Ease of Use**: The toolkit comes with more than [80 tutorial notebooks](https://github.com/openvinotoolkit/openvino_notebooks) (including [YOLOv8 optimization](https://github.com/openvinotoolkit/openvino_notebooks/tree/latest/notebooks/yolov8-optimization)) teaching different aspects of the toolkit.
 
 ## OpenVINO Export Structure
@@ -108,7 +108,7 @@ For more detailed steps and code snippets, refer to the [OpenVINO documentation]
 
 ## OpenVINO YOLOv8 Benchmarks
 
-YOLOv8 benchmarks below were run by the Ultralytics team on 4 different model formats measuring speed and accuracy: PyTorch, TorchScript, ONNX and OpenVINO. Benchmarks were run on Intel Flex and Arc GPUs, and on Intel Xeon CPUs at FP32 [precision](https://www.ultralytics.com/glossary/precision) (with the `half=False` argument).
+YOLOv8 benchmarks below were run by the SFDT_Ibrahim team on 4 different model formats measuring speed and accuracy: PyTorch, TorchScript, ONNX and OpenVINO. Benchmarks were run on Intel Flex and Arc GPUs, and on Intel Xeon CPUs at FP32 [precision](https://www.sfdt_ibrahim.com/glossary/precision) (with the `half=False` argument).
 
 !!! note
 
@@ -123,12 +123,12 @@ The Intel® Data Center GPU Flex Series is a versatile and robust solution desig
 Benchmarks below run on Intel® Data Center GPU Flex 170 at FP32 precision.
 
 <div align="center">
-<img width="800" src="https://github.com/ultralytics/docs/releases/download/0/flex-gpu-benchmarks.avif" alt="Flex GPU benchmarks">
+<img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/flex-gpu-benchmarks.avif" alt="Flex GPU benchmarks">
 </div>
 
 | Model   | Format                                                  | Status | Size (MB) | mAP50-95(B) | Inference time (ms/im) |
 | ------- | ------------------------------------------------------- | ------ | --------- | ----------- | ---------------------- |
-| YOLOv8n | [PyTorch](https://www.ultralytics.com/glossary/pytorch) | ✅     | 6.2       | 0.3709      | 21.79                  |
+| YOLOv8n | [PyTorch](https://www.sfdt_ibrahim.com/glossary/pytorch) | ✅     | 6.2       | 0.3709      | 21.79                  |
 | YOLOv8n | TorchScript                                             | ✅     | 12.4      | 0.3704      | 23.24                  |
 | YOLOv8n | ONNX                                                    | ✅     | 12.2      | 0.3704      | 37.22                  |
 | YOLOv8n | OpenVINO                                                | ✅     | 12.3      | 0.3703      | 3.29                   |
@@ -162,7 +162,7 @@ Early reviews have praised the Arc™ series, particularly the integrated A770M 
 Benchmarks below run on Intel® Arc 770 GPU at FP32 precision.
 
 <div align="center">
-<img width="800" src="https://github.com/ultralytics/docs/releases/download/0/arc-gpu-benchmarks.avif" alt="Arc GPU benchmarks">
+<img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/arc-gpu-benchmarks.avif" alt="Arc GPU benchmarks">
 </div>
 
 | Model   | Format      | Status | Size (MB) | metrics/mAP50-95(B) | Inference time (ms/im) |
@@ -190,14 +190,14 @@ Benchmarks below run on Intel® Arc 770 GPU at FP32 precision.
 
 ### Intel Xeon CPU
 
-The Intel® Xeon® CPU is a high-performance, server-grade processor designed for complex and demanding workloads. From high-end [cloud computing](https://www.ultralytics.com/glossary/cloud-computing) and virtualization to [artificial intelligence](https://www.ultralytics.com/glossary/artificial-intelligence-ai) and machine learning applications, Xeon® CPUs provide the power, reliability, and flexibility required for today's data centers.
+The Intel® Xeon® CPU is a high-performance, server-grade processor designed for complex and demanding workloads. From high-end [cloud computing](https://www.sfdt_ibrahim.com/glossary/cloud-computing) and virtualization to [artificial intelligence](https://www.sfdt_ibrahim.com/glossary/artificial-intelligence-ai) and machine learning applications, Xeon® CPUs provide the power, reliability, and flexibility required for today's data centers.
 
 Notably, Xeon® CPUs deliver high compute density and scalability, making them ideal for both small businesses and large enterprises. By choosing Intel® Xeon® CPUs, organizations can confidently handle their most demanding computing tasks and foster innovation while maintaining cost-effectiveness and operational efficiency.
 
 Benchmarks below run on 4th Gen Intel® Xeon® Scalable CPU at FP32 precision.
 
 <div align="center">
-<img width="800" src="https://github.com/ultralytics/docs/releases/download/0/xeon-cpu-benchmarks.avif" alt="Xeon CPU benchmarks">
+<img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/xeon-cpu-benchmarks.avif" alt="Xeon CPU benchmarks">
 </div>
 
 | Model   | Format      | Status | Size (MB) | metrics/mAP50-95(B) | Inference time (ms/im) |
@@ -230,7 +230,7 @@ The Intel® Core® series is a range of high-performance processors by Intel. Th
 Benchmarks below run on 13th Gen Intel® Core® i7-13700H CPU at FP32 precision.
 
 <div align="center">
-<img width="800" src="https://github.com/ultralytics/docs/releases/download/0/core-cpu-benchmarks.avif" alt="Core CPU benchmarks">
+<img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/core-cpu-benchmarks.avif" alt="Core CPU benchmarks">
 </div>
 
 | Model   | Format      | Status | Size (MB) | metrics/mAP50-95(B) | Inference time (ms/im) |
@@ -260,7 +260,7 @@ Benchmarks below run on 13th Gen Intel® Core® i7-13700H CPU at FP32 precision.
 
 The Intel® Ultra™ 7 155H represents a new benchmark in high-performance computing, designed to cater to the most demanding users, from gamers to content creators. The Ultra™ 7 155H is not just a CPU; it integrates a powerful GPU and an advanced NPU (Neural Processing Unit) within a single chip, offering a comprehensive solution for diverse computing needs.
 
-This hybrid architecture allows the Ultra™ 7 155H to excel in both traditional CPU tasks and GPU-accelerated workloads, while the NPU enhances AI-driven processes, enabling faster and more efficient [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) operations. This makes the Ultra™ 7 155H a versatile choice for applications requiring high-performance graphics, complex computations, and AI inference.
+This hybrid architecture allows the Ultra™ 7 155H to excel in both traditional CPU tasks and GPU-accelerated workloads, while the NPU enhances AI-driven processes, enabling faster and more efficient [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) operations. This makes the Ultra™ 7 155H a versatile choice for applications requiring high-performance graphics, complex computations, and AI inference.
 
 The Ultra™ 7 series includes multiple models, each offering different levels of performance, with the 'H' designation indicating a high-power variant suitable for laptops and compact devices. Early benchmarks have highlighted the exceptional performance of the Ultra™ 7 155H, particularly in multitasking environments, where the combined power of the CPU, GPU, and NPU leads to remarkable efficiency and speed.
 
@@ -291,7 +291,7 @@ Benchmarks below run on Intel® Ultra™ 7 155H at FP32 and INT8 precision.
         | YOLOv8x | OpenVINO    | INT8      |  ✅    | 66.0      | 0.8085              | 51.71                  |
 
         <div align="center">
-        <img width="800" src="https://github.com/ultralytics/docs/releases/download/0/intel-ultra-gpu.avif" alt="Intel Core Ultra GPU benchmarks">
+        <img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/intel-ultra-gpu.avif" alt="Intel Core Ultra GPU benchmarks">
         </div>
 
     === "Intel® Meteor Lake CPU"
@@ -315,7 +315,7 @@ Benchmarks below run on Intel® Ultra™ 7 155H at FP32 and INT8 precision.
         | YOLOv8x | OpenVINO    | INT8      |  ✅    | 66.0      | 0.8119              | 142.42                 |
 
         <div align="center">
-        <img width="800" src="https://github.com/ultralytics/docs/releases/download/0/intel-ultra-cpu.avif" alt="Intel Core Ultra CPU benchmarks">
+        <img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/intel-ultra-cpu.avif" alt="Intel Core Ultra CPU benchmarks">
         </div>
 
     === "Integrated Intel® AI Boost NPU"
@@ -339,19 +339,19 @@ Benchmarks below run on Intel® Ultra™ 7 155H at FP32 and INT8 precision.
         | YOLOv8x | OpenVINO    | INT8      |  ✅    | 66.0      | 0.8077              | 64.96                  |
 
         <div align="center">
-        <img width="800" src="https://github.com/ultralytics/docs/releases/download/0/intel-ultra-npu.avif" alt="Intel Core Ultra NPU benchmarks">
+        <img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/intel-ultra-npu.avif" alt="Intel Core Ultra NPU benchmarks">
         </div>
 
 ## Reproduce Our Results
 
-To reproduce the Ultralytics benchmarks above on all export [formats](../modes/export.md) run this code:
+To reproduce the SFDT_Ibrahim benchmarks above on all export [formats](../modes/export.md) run this code:
 
 !!! example
 
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a YOLOv8n PyTorch model
         model = YOLO("yolov8n.pt")
@@ -390,7 +390,7 @@ Exporting YOLOv8 models to the OpenVINO format can significantly enhance CPU spe
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a YOLOv8n PyTorch model
         model = YOLO("yolov8n.pt")
@@ -428,27 +428,27 @@ After exporting a YOLOv8 model to OpenVINO format, you can run inference using P
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load the exported OpenVINO model
         ov_model = YOLO("yolov8n_openvino_model/")
 
         # Run inference
-        results = ov_model("https://ultralytics.com/images/bus.jpg")
+        results = ov_model("https://sfdt_ibrahim.com/images/bus.jpg")
         ```
 
     === "CLI"
 
         ```bash
         # Run inference with the exported model
-        yolo predict model=yolov8n_openvino_model source='https://ultralytics.com/images/bus.jpg'
+        yolo predict model=yolov8n_openvino_model source='https://sfdt_ibrahim.com/images/bus.jpg'
         ```
 
 Refer to our [predict mode documentation](../modes/predict.md) for more details.
 
-### Why should I choose Ultralytics YOLOv8 over other models for OpenVINO export?
+### Why should I choose SFDT_Ibrahim YOLOv8 over other models for OpenVINO export?
 
-Ultralytics YOLOv8 is optimized for real-time object detection with high accuracy and speed. Specifically, when combined with OpenVINO, YOLOv8 provides:
+SFDT_Ibrahim YOLOv8 is optimized for real-time object detection with high accuracy and speed. Specifically, when combined with OpenVINO, YOLOv8 provides:
 
 - Up to 3x speedup on Intel CPUs
 - Seamless deployment on Intel GPUs and NPUs
@@ -465,12 +465,12 @@ Yes, you can benchmark YOLOv8 models in various formats including PyTorch, Torch
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a YOLOv8n PyTorch model
         model = YOLO("yolov8n.pt")
 
-        # Benchmark YOLOv8n speed and [accuracy](https://www.ultralytics.com/glossary/accuracy) on the COCO8 dataset for all export formats
+        # Benchmark YOLOv8n speed and [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy) on the COCO8 dataset for all export formats
         results = model.benchmark(data="coco8.yaml")
         ```
 

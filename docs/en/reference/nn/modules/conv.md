@@ -1,72 +1,72 @@
 ---
-description: Explore detailed documentation on convolution modules like Conv, LightConv, GhostConv, and more used in Ultralytics models.
-keywords: Ultralytics, convolution modules, Conv, LightConv, GhostConv, YOLO, deep learning, neural networks
+description: Explore detailed documentation on convolution modules like Conv, LightConv, GhostConv, and more used in SFDT_Ibrahim models.
+keywords: SFDT_Ibrahim, convolution modules, Conv, LightConv, GhostConv, YOLO, deep learning, neural networks
 ---
 
-# Reference for `ultralytics/nn/modules/conv.py`
+# Reference for `sfdt_ibrahim/nn/modules/conv.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/nn/modules/conv.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/nn/modules/conv.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/nn/modules/conv.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/nn/modules/conv.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/nn/modules/conv.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/nn/modules/conv.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.nn.modules.conv.Conv
+## ::: sfdt_ibrahim.nn.modules.conv.Conv
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.Conv2
+## ::: sfdt_ibrahim.nn.modules.conv.Conv2
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.LightConv
+## ::: sfdt_ibrahim.nn.modules.conv.LightConv
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.DWConv
+## ::: sfdt_ibrahim.nn.modules.conv.DWConv
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.DWConvTranspose2d
+## ::: sfdt_ibrahim.nn.modules.conv.DWConvTranspose2d
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.ConvTranspose
+## ::: sfdt_ibrahim.nn.modules.conv.ConvTranspose
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.Focus
+## ::: sfdt_ibrahim.nn.modules.conv.Focus
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.GhostConv
+## ::: sfdt_ibrahim.nn.modules.conv.GhostConv
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.RepConv
+## ::: sfdt_ibrahim.nn.modules.conv.RepConv
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.ChannelAttention
+## ::: sfdt_ibrahim.nn.modules.conv.ChannelAttention
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.SpatialAttention
+## ::: sfdt_ibrahim.nn.modules.conv.SpatialAttention
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.CBAM
+## ::: sfdt_ibrahim.nn.modules.conv.CBAM
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.Concat
+## ::: sfdt_ibrahim.nn.modules.conv.Concat
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.Index
+## ::: sfdt_ibrahim.nn.modules.conv.Index
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.conv.autopad
+## ::: sfdt_ibrahim.nn.modules.conv.autopad
 
 <br><br>

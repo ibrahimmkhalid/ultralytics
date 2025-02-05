@@ -1,58 +1,58 @@
 ---
 comments: true
-description: Dive into advanced data exploration with Ultralytics Explorer. Perform semantic searches, execute SQL queries, and leverage AI-powered natural language insights for seamless data analysis.
-keywords: Ultralytics Explorer, data exploration, semantic search, vector similarity, SQL queries, AI, natural language queries, machine learning, OpenAI, LLMs, Ultralytics HUB
+description: Dive into advanced data exploration with SFDT_Ibrahim Explorer. Perform semantic searches, execute SQL queries, and leverage AI-powered natural language insights for seamless data analysis.
+keywords: SFDT_Ibrahim Explorer, data exploration, semantic search, vector similarity, SQL queries, AI, natural language queries, machine learning, OpenAI, LLMs, SFDT_Ibrahim HUB
 ---
 
 # VOC Exploration Example
 
 <div align="center">
 
-<a href="https://www.ultralytics.com/events/yolovision" target="_blank"><img width="1024%" src="https://github.com/ultralytics/docs/releases/download/0/ultralytics-yolov8-banner.avif" alt="Ultralytics YOLO banner"></a>
-<a href="https://docs.ultralytics.com/zh">中文</a> |
-<a href="https://docs.ultralytics.com/ko">한국어</a> |
-<a href="https://docs.ultralytics.com/ja">日本語</a> |
-<a href="https://docs.ultralytics.com/ru">Русский</a> |
-<a href="https://docs.ultralytics.com/de">Deutsch</a> |
-<a href="https://docs.ultralytics.com/fr">Français</a> |
-<a href="https://docs.ultralytics.com/es/">Español</a> |
-<a href="https://docs.ultralytics.com/pt">Português</a> |
-<a href="https://docs.ultralytics.com/tr">Türkçe</a> |
-<a href="https://docs.ultralytics.com/vi">Tiếng Việt</a> |
-<a href="https://docs.ultralytics.com/ar">العربية</a>
+<a href="https://www.sfdt_ibrahim.com/events/yolovision" target="_blank"><img width="1024%" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/sfdt_ibrahim-yolov8-banner.avif" alt="SFDT_Ibrahim YOLO banner"></a>
+<a href="https://docs.sfdt_ibrahim.com/zh">中文</a> |
+<a href="https://docs.sfdt_ibrahim.com/ko">한국어</a> |
+<a href="https://docs.sfdt_ibrahim.com/ja">日本語</a> |
+<a href="https://docs.sfdt_ibrahim.com/ru">Русский</a> |
+<a href="https://docs.sfdt_ibrahim.com/de">Deutsch</a> |
+<a href="https://docs.sfdt_ibrahim.com/fr">Français</a> |
+<a href="https://docs.sfdt_ibrahim.com/es/">Español</a> |
+<a href="https://docs.sfdt_ibrahim.com/pt">Português</a> |
+<a href="https://docs.sfdt_ibrahim.com/tr">Türkçe</a> |
+<a href="https://docs.sfdt_ibrahim.com/vi">Tiếng Việt</a> |
+<a href="https://docs.sfdt_ibrahim.com/ar">العربية</a>
 <br>
 
 <br>
-    <a href="https://github.com/ultralytics/ultralytics/actions/workflows/ci.yml"><img src="https://github.com/ultralytics/ultralytics/actions/workflows/ci.yml/badge.svg" alt="Ultralytics CI"></a>
-    <a href="https://pepy.tech/projects/ultralytics"><img src="https://static.pepy.tech/badge/ultralytics" alt="Ultralytics Downloads"></a>
-    <a href="https://zenodo.org/badge/latestdoi/264818686"><img src="https://zenodo.org/badge/264818686.svg" alt="Ultralytics YOLO Citation"></a>
-    <a href="https://discord.com/invite/ultralytics"><img alt="Ultralytics Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a>
-    <a href="https://community.ultralytics.com/"><img alt="Ultralytics Forums" src="https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue"></a>
-    <a href="https://reddit.com/r/ultralytics"><img alt="Ultralytics Reddit" src="https://img.shields.io/reddit/subreddit-subscribers/ultralytics?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue"></a>
+    <a href="https://github.com/sfdt_ibrahim/sfdt_ibrahim/actions/workflows/ci.yml"><img src="https://github.com/sfdt_ibrahim/sfdt_ibrahim/actions/workflows/ci.yml/badge.svg" alt="SFDT_Ibrahim CI"></a>
+    <a href="https://pepy.tech/projects/sfdt_ibrahim"><img src="https://static.pepy.tech/badge/sfdt_ibrahim" alt="SFDT_Ibrahim Downloads"></a>
+    <a href="https://zenodo.org/badge/latestdoi/264818686"><img src="https://zenodo.org/badge/264818686.svg" alt="SFDT_Ibrahim YOLO Citation"></a>
+    <a href="https://discord.com/invite/sfdt_ibrahim"><img alt="SFDT_Ibrahim Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a>
+    <a href="https://community.sfdt_ibrahim.com/"><img alt="SFDT_Ibrahim Forums" src="https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.sfdt_ibrahim.com&logo=discourse&label=Forums&color=blue"></a>
+    <a href="https://reddit.com/r/sfdt_ibrahim"><img alt="SFDT_Ibrahim Reddit" src="https://img.shields.io/reddit/subreddit-subscribers/sfdt_ibrahim?style=flat&logo=reddit&logoColor=white&label=Reddit&color=blue"></a>
     <br>
-    <a href="https://console.paperspace.com/github/ultralytics/ultralytics"><img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run Ultralytics on Gradient"></a>
-    <a href="https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Ultralytics In Colab"></a>
-    <a href="https://www.kaggle.com/models/ultralytics/yolo11"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open Ultralytics In Kaggle"></a>
-    <a href="https://mybinder.org/v2/gh/ultralytics/ultralytics/HEAD?labpath=examples%2Ftutorial.ipynb"><img src="https://mybinder.org/badge_logo.svg" alt="Open Ultralytics In Binder"></a>
+    <a href="https://console.paperspace.com/github/sfdt_ibrahim/sfdt_ibrahim"><img src="https://assets.paperspace.io/img/gradient-badge.svg" alt="Run SFDT_Ibrahim on Gradient"></a>
+    <a href="https://colab.research.google.com/github/sfdt_ibrahim/sfdt_ibrahim/blob/main/examples/tutorial.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open SFDT_Ibrahim In Colab"></a>
+    <a href="https://www.kaggle.com/models/sfdt_ibrahim/yolo11"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open SFDT_Ibrahim In Kaggle"></a>
+    <a href="https://mybinder.org/v2/gh/sfdt_ibrahim/sfdt_ibrahim/HEAD?labpath=examples%2Ftutorial.ipynb"><img src="https://mybinder.org/badge_logo.svg" alt="Open SFDT_Ibrahim In Binder"></a>
 <br>
 </div>
 
-Welcome to the Ultralytics Explorer API notebook! This notebook serves as the starting point for exploring the various resources available to help you get started with using Ultralytics to explore your datasets using with the power of semantic search. You can utilities out of the box that allow you to examine specific types of labels using vector search or even SQL queries.
+Welcome to the SFDT_Ibrahim Explorer API notebook! This notebook serves as the starting point for exploring the various resources available to help you get started with using SFDT_Ibrahim to explore your datasets using with the power of semantic search. You can utilities out of the box that allow you to examine specific types of labels using vector search or even SQL queries.
 
 Try `yolo explorer` powered by Explorer API
 
-Simply `pip install ultralytics` and run `yolo explorer` in your terminal to run custom queries and semantic search on your datasets right inside your browser!
+Simply `pip install sfdt_ibrahim` and run `yolo explorer` in your terminal to run custom queries and semantic search on your datasets right inside your browser!
 
 !!! warning "Community Note ⚠️"
 
-    As of **`ultralytics>=8.3.10`**, Ultralytics explorer support has been deprecated. But don't worry! You can now access similar and even enhanced functionality through [Ultralytics HUB](https://hub.ultralytics.com/), our intuitive no-code platform designed to streamline your workflow. With Ultralytics HUB, you can continue exploring, visualizing, and managing your data effortlessly, all without writing a single line of code. Make sure to check it out and take advantage of its powerful features!🚀
+    As of **`sfdt_ibrahim>=8.3.10`**, SFDT_Ibrahim explorer support has been deprecated. But don't worry! You can now access similar and even enhanced functionality through [SFDT_Ibrahim HUB](https://hub.sfdt_ibrahim.com/), our intuitive no-code platform designed to streamline your workflow. With SFDT_Ibrahim HUB, you can continue exploring, visualizing, and managing your data effortlessly, all without writing a single line of code. Make sure to check it out and take advantage of its powerful features!🚀
 
 ## Setup
 
-Pip install `ultralytics` and [dependencies](https://github.com/ultralytics/ultralytics/blob/main/pyproject.toml) and check software and hardware.
+Pip install `sfdt_ibrahim` and [dependencies](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/pyproject.toml) and check software and hardware.
 
 ```bash
-%pip install ultralytics[explorer] openai
+%pip install sfdt_ibrahim[explorer] openai
 yolo checks
 ```
 
@@ -72,7 +72,7 @@ One the embeddings table is built, you can get run semantic search in any of the
 
 You get a pandas dataframe with the limit number of most similar data points to the input, along with their distance in the embedding space. You can use this dataset to perform further filtering
 
-![Similarity search table](https://github.com/ultralytics/docs/releases/download/0/similarity-search-table.avif)
+![Similarity search table](https://github.com/sfdt_ibrahim/docs/releases/download/0/similarity-search-table.avif)
 
 ```python
 # Search dataset by index
@@ -82,22 +82,22 @@ similar.head()
 
 You can use the also plot the similar samples directly using the `plot_similar` util
 
-![Similarity search image 1](https://github.com/ultralytics/docs/releases/download/0/similarity-search-image-1.avif)
+![Similarity search image 1](https://github.com/sfdt_ibrahim/docs/releases/download/0/similarity-search-image-1.avif)
 
 ```python
 exp.plot_similar(idx=6500, limit=20)
 exp.plot_similar(idx=[100, 101], limit=10)  # Can also pass list of idxs or imgs
 
-exp.plot_similar(img="https://ultralytics.com/images/bus.jpg", limit=10, labels=False)  # Can also pass external images
+exp.plot_similar(img="https://sfdt_ibrahim.com/images/bus.jpg", limit=10, labels=False)  # Can also pass external images
 ```
 
-![Similarity search image 2](https://github.com/ultralytics/docs/releases/download/0/similarity-search-image-2.avif)
+![Similarity search image 2](https://github.com/sfdt_ibrahim/docs/releases/download/0/similarity-search-image-2.avif)
 
 ## Ask AI: Search or filter with Natural Language
 
 You can prompt the Explorer object with the kind of data points you want to see, and it'll try to return a dataframe with those. Because it is powered by LLMs, it doesn't always get it right. In that case, it'll return None.
 
-![Ask ai table](https://github.com/ultralytics/docs/releases/download/0/ask-ai-nlp-table.avif)
+![Ask ai table](https://github.com/sfdt_ibrahim/docs/releases/download/0/ask-ai-nlp-table.avif)
 
 ```python
 df = exp.ask_ai("show me images containing more than 10 objects with at least 2 persons")
@@ -111,13 +111,13 @@ plt = plot_query_result(exp.ask_ai("show me 10 images containing exactly 2 perso
 Image.fromarray(plt)
 ```
 
-![Ask ai image 1](https://github.com/ultralytics/docs/releases/download/0/ask-ai-nlp-image-1.avif)
+![Ask ai image 1](https://github.com/sfdt_ibrahim/docs/releases/download/0/ask-ai-nlp-image-1.avif)
 
 ```python
 # plot
 from PIL import Image
 
-from ultralytics.data.explorer import plot_query_result
+from sfdt_ibrahim.data.explorer import plot_query_result
 
 plt = plot_query_result(exp.ask_ai("show me 10 images containing exactly 2 persons"))
 Image.fromarray(plt)
@@ -141,7 +141,7 @@ table = exp.sql_query("WHERE labels LIKE '%person, person%' AND labels LIKE '%do
 exp.plot_sql_query("WHERE labels LIKE '%person, person%' AND labels LIKE '%dog%' LIMIT 10", labels=True)
 ```
 
-![SQL queries table](https://github.com/ultralytics/docs/releases/download/0/sql-queries-table.avif)
+![SQL queries table](https://github.com/sfdt_ibrahim/docs/releases/download/0/sql-queries-table.avif)
 
 ```python
 table = exp.sql_query("WHERE labels LIKE '%person, person%' AND labels LIKE '%dog%' LIMIT 10")
@@ -150,7 +150,7 @@ print(table)
 
 Just like similarity search, you also get a util to directly plot the sql queries using `exp.plot_sql_query`
 
-![SQL queries image 1](https://github.com/ultralytics/docs/releases/download/0/sql-query-image-1.avif)
+![SQL queries image 1](https://github.com/sfdt_ibrahim/docs/releases/download/0/sql-query-image-1.avif)
 
 ```python
 exp.plot_sql_query("WHERE labels LIKE '%person, person%' AND labels LIKE '%dog%' LIMIT 10", labels=True)
@@ -177,7 +177,7 @@ Metric In LanceDB, a Metric is the way to describe the distance between a pair o
 - Cosine
 - Dot Explorer's similarity search uses L2 by default. You can run queries on tables directly, or use the lance format to build custom utilities to manage datasets. More details on available LanceDB table ops in the [docs](https://lancedb.github.io/lancedb/)
 
-![Raw-queries-table](https://github.com/ultralytics/docs/releases/download/0/raw-queries-table.avif)
+![Raw-queries-table](https://github.com/sfdt_ibrahim/docs/releases/download/0/raw-queries-table.avif)
 
 ```python
 dummy_img_embedding = [i for i in range(256)]
@@ -206,7 +206,7 @@ embeddings = np.array(embeddings)
 
 One of the preliminary steps in analysing embeddings is by plotting them in 2D space via dimensionality reduction. Let's try an example
 
-![Scatterplot Example](https://github.com/ultralytics/docs/releases/download/0/scatterplot-sql-queries.avif)
+![Scatterplot Example](https://github.com/sfdt_ibrahim/docs/releases/download/0/scatterplot-sql-queries.avif)
 
 ```python
 import matplotlib.pyplot as plt
@@ -244,7 +244,7 @@ sim_idx = exp.similarity_index(max_dist=0.2, top_k=0.01)
 exp.plot_similarity_index(max_dist=0.2, top_k=0.01)
 ```
 
-![Similarity Index](https://github.com/ultralytics/docs/releases/download/0/similarity-index.avif)
+![Similarity Index](https://github.com/sfdt_ibrahim/docs/releases/download/0/similarity-index.avif)
 
 at the plot first
 
@@ -271,7 +271,7 @@ sim_idx["im_file"][sim_count > 30]
 
 You should see something like this
 
-![similarity-index-image](https://github.com/ultralytics/docs/releases/download/0/similarity-index-image.avif)
+![similarity-index-image](https://github.com/sfdt_ibrahim/docs/releases/download/0/similarity-index-image.avif)
 
 ```python
 exp.plot_similar(idx=[7146, 14035])  # Using avg embeddings of 2 images

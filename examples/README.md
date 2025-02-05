@@ -1,8 +1,8 @@
-## Ultralytics Examples
+## SFDT_Ibrahim Examples
 
 This directory features a collection of real-world applications and walkthroughs, provided as either Python files or notebooks. Explore the examples below to see how YOLO can be integrated into various applications.
 
-### Ultralytics YOLO Example Applications
+### SFDT_Ibrahim YOLO Example Applications
 
 | Title                                                                                                                                     | Format             | Contributor                                                                               |
 | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------------- |
@@ -15,8 +15,8 @@ This directory features a collection of real-world applications and walkthroughs
 | [RTDETR ONNXRuntime Python](./RTDETR-ONNXRuntime-Python)                                                                                  | Python/ONNXRuntime | [Semih Demirel](https://github.com/semihhdemirel)                                         |
 | [YOLOv8 ONNXRuntime CPP](./YOLOv8-ONNXRuntime-CPP)                                                                                        | C++/ONNXRuntime    | [DennisJcy](https://github.com/DennisJcy), [Onuralp Sezer](https://github.com/onuralpszr) |
 | [RTDETR ONNXRuntime C#](https://github.com/Kayzwer/yolo-cs/blob/master/RTDETR.cs)                                                         | C#/ONNX            | [Kayzwer](https://github.com/Kayzwer)                                                     |
-| [YOLOv8 SAHI Video Inference](https://github.com/RizwanMunawar/ultralytics/blob/main/examples/YOLOv8-SAHI-Inference-Video/yolov8_sahi.py) | Python             | [Muhammad Rizwan Munawar](https://github.com/RizwanMunawar)                               |
-| [YOLOv8 Region Counter](https://github.com/RizwanMunawar/ultralytics/blob/main/examples/YOLOv8-Region-Counter/yolov8_region_counter.py)   | Python             | [Muhammad Rizwan Munawar](https://github.com/RizwanMunawar)                               |
+| [YOLOv8 SAHI Video Inference](https://github.com/RizwanMunawar/sfdt_ibrahim/blob/main/examples/YOLOv8-SAHI-Inference-Video/yolov8_sahi.py) | Python             | [Muhammad Rizwan Munawar](https://github.com/RizwanMunawar)                               |
+| [YOLOv8 Region Counter](https://github.com/RizwanMunawar/sfdt_ibrahim/blob/main/examples/YOLOv8-Region-Counter/yolov8_region_counter.py)   | Python             | [Muhammad Rizwan Munawar](https://github.com/RizwanMunawar)                               |
 | [YOLOv8 Segmentation ONNXRuntime Python](./YOLOv8-Segmentation-ONNXRuntime-Python)                                                        | Python/ONNXRuntime | [jamjamjon](https://github.com/jamjamjon)                                                 |
 | [YOLOv8 LibTorch CPP](./YOLOv8-LibTorch-CPP-Inference)                                                                                    | C++/LibTorch       | [Myyura](https://github.com/Myyura)                                                       |
 | [YOLOv8 OpenCV INT8 TFLite Python](./YOLOv8-TFLite-Python)                                                                                | Python             | [Wamiq Raza](https://github.com/wamiqraza)                                                |
@@ -30,11 +30,11 @@ We greatly appreciate contributions from the community, including examples, appl
 
 1. **Create a pull request (PR)** with the title prefix `[Example]`, adding your new example folder to the `examples/` directory within the repository.
 2. **Ensure your project adheres to the following standards:**
-   - Makes use of the `ultralytics` package.
+   - Makes use of the `sfdt_ibrahim` package.
    - Includes a `README.md` with clear instructions for setting up and running the example.
    - Avoids adding large files or dependencies unless they are absolutely necessary for the example.
    - Contributors should be willing to provide support for their examples and address related issues.
 
-For more detailed information and guidance on contributing, please visit our [contribution documentation](https://docs.ultralytics.com/help/contributing/).
+For more detailed information and guidance on contributing, please visit our [contribution documentation](https://docs.sfdt_ibrahim.com/help/contributing/).
 
 If you encounter any questions or concerns regarding these guidelines, feel free to open a PR or an issue in the repository, and we will assist you in the contribution process.

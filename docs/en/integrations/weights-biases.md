@@ -1,12 +1,12 @@
 ---
 comments: true
 description: Learn how to enhance YOLO11 experiment tracking and visualization with Weights & Biases for better model performance and management.
-keywords: YOLO11, Weights & Biases, model training, experiment tracking, Ultralytics, machine learning, computer vision, model visualization
+keywords: YOLO11, Weights & Biases, model training, experiment tracking, SFDT_Ibrahim, machine learning, computer vision, model visualization
 ---
 
 # Enhancing YOLO11 Experiment Tracking and Visualization with Weights & Biases
 
-[Object detection](https://www.ultralytics.com/glossary/object-detection) models like [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics) have become integral to many [computer vision](https://www.ultralytics.com/glossary/computer-vision-cv) applications. However, training, evaluating, and deploying these complex models introduce several challenges. Tracking key training metrics, comparing model variants, analyzing model behavior, and detecting issues require significant instrumentation and experiment management.
+[Object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) models like [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim) have become integral to many [computer vision](https://www.sfdt_ibrahim.com/glossary/computer-vision-cv) applications. However, training, evaluating, and deploying these complex models introduce several challenges. Tracking key training metrics, comparing model variants, analyzing model behavior, and detecting issues require significant instrumentation and experiment management.
 
 <p align="center">
   <br>
@@ -16,18 +16,18 @@ keywords: YOLO11, Weights & Biases, model training, experiment tracking, Ultraly
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> How to use Ultralytics YOLO11 with Weights and Biases
+  <strong>Watch:</strong> How to use SFDT_Ibrahim YOLO11 with Weights and Biases
 </p>
 
-This guide showcases Ultralytics YOLO11 integration with Weights & Biases for enhanced experiment tracking, model-checkpointing, and visualization of model performance. It also includes instructions for setting up the integration, training, fine-tuning, and visualizing results using Weights & Biases' interactive features.
+This guide showcases SFDT_Ibrahim YOLO11 integration with Weights & Biases for enhanced experiment tracking, model-checkpointing, and visualization of model performance. It also includes instructions for setting up the integration, training, fine-tuning, and visualizing results using Weights & Biases' interactive features.
 
 ## Weights & Biases
 
 <p align="center">
-  <img width="800" src="https://github.com/ultralytics/docs/releases/download/0/wandb-demo-experiments.avif" alt="Weights & Biases Overview">
+  <img width="800" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/wandb-demo-experiments.avif" alt="Weights & Biases Overview">
 </p>
 
-[Weights & Biases](https://wandb.ai/site) is a cutting-edge MLOps platform designed for tracking, visualizing, and managing [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) experiments. It features automatic logging of training metrics for full experiment reproducibility, an interactive UI for streamlined data analysis, and efficient model management tools for deploying across various environments.
+[Weights & Biases](https://wandb.ai/site) is a cutting-edge MLOps platform designed for tracking, visualizing, and managing [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) experiments. It features automatic logging of training metrics for full experiment reproducibility, an interactive UI for streamlined data analysis, and efficient model management tools for deploying across various environments.
 
 ## YOLO11 Training with Weights & Biases
 
@@ -42,10 +42,10 @@ To install the required packages, run:
     === "CLI"
 
         ```bash
-        # Install the required packages for Ultralytics YOLO and Weights & Biases
-        pip install -U ultralytics wandb
+        # Install the required packages for SFDT_Ibrahim YOLO and Weights & Biases
+        pip install -U sfdt_ibrahim wandb
 
-        # Enable W&B logging for Ultralytics
+        # Enable W&B logging for SFDT_Ibrahim
         yolo settings wandb=True
         ```
 
@@ -79,27 +79,27 @@ Navigate to the Weights & Biases authorization page to create and retrieve your 
 
 ## Usage: Training YOLO11 with Weights & Biases
 
-Before diving into the usage instructions for YOLO11 model training with Weights & Biases, be sure to check out the range of [YOLO11 models offered by Ultralytics](../models/index.md). This will help you choose the most appropriate model for your project requirements.
+Before diving into the usage instructions for YOLO11 model training with Weights & Biases, be sure to check out the range of [YOLO11 models offered by SFDT_Ibrahim](../models/index.md). This will help you choose the most appropriate model for your project requirements.
 
 !!! example "Usage: Training YOLO11 with Weights & Biases"
 
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a YOLO model
         model = YOLO("yolo11n.pt")
 
         # Train and Fine-Tune the Model
-        model.train(data="coco8.yaml", epochs=5, project="ultralytics", name="yolo11n")
+        model.train(data="coco8.yaml", epochs=5, project="sfdt_ibrahim", name="yolo11n")
         ```
 
     === "CLI"
 
         ```bash
         # Train a YOLO11 model with Weights & Biases
-        yolo train data=coco8.yaml epochs=5 project=ultralytics name=yolo11n
+        yolo train data=coco8.yaml epochs=5 project=sfdt_ibrahim name=yolo11n
         ```
 
 ### W&B Arguments
@@ -111,7 +111,7 @@ Before diving into the usage instructions for YOLO11 model training with Weights
 
 !!! tip "Enable or Disable Weights & Biases"
 
-    If you want to enable or disable Weights & Biases logging in Ultralytics, you can use the `yolo settings` command. By default, Weights & Biases logging is disabled.
+    If you want to enable or disable Weights & Biases logging in SFDT_Ibrahim, you can use the `yolo settings` command. By default, Weights & Biases logging is disabled.
 
     === "CLI"
 
@@ -129,8 +129,8 @@ Upon running the usage code snippet above, you can expect the following key outp
 
 - The setup of a new run with its unique ID, indicating the start of the training process.
 - A concise summary of the model's structure, including the number of layers and parameters.
-- Regular updates on important metrics such as box loss, cls loss, dfl loss, [precision](https://www.ultralytics.com/glossary/precision), [recall](https://www.ultralytics.com/glossary/recall), and mAP scores during each training [epoch](https://www.ultralytics.com/glossary/epoch).
-- At the end of training, detailed metrics including the model's inference speed, and overall [accuracy](https://www.ultralytics.com/glossary/accuracy) metrics are displayed.
+- Regular updates on important metrics such as box loss, cls loss, dfl loss, [precision](https://www.sfdt_ibrahim.com/glossary/precision), [recall](https://www.sfdt_ibrahim.com/glossary/recall), and mAP scores during each training [epoch](https://www.sfdt_ibrahim.com/glossary/epoch).
+- At the end of training, detailed metrics including the model's inference speed, and overall [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy) metrics are displayed.
 - Links to the Weights & Biases dashboard for in-depth analysis and visualization of the training process, along with information on local log file locations.
 
 ### Viewing the Weights & Biases Dashboard
@@ -141,7 +141,7 @@ After running the usage code snippet, you can access the Weights & Biases (W&B) 
 
 - **Real-Time Metrics Tracking**: Observe metrics like loss, accuracy, and validation scores as they evolve during the training, offering immediate insights for model tuning. [See how experiments are tracked using Weights & Biases](https://imgur.com/D6NVnmN).
 
-- **Hyperparameter Optimization**: Weights & Biases aids in fine-tuning critical parameters such as [learning rate](https://www.ultralytics.com/glossary/learning-rate), [batch size](https://www.ultralytics.com/glossary/batch-size), and more, enhancing the performance of YOLO11.
+- **Hyperparameter Optimization**: Weights & Biases aids in fine-tuning critical parameters such as [learning rate](https://www.sfdt_ibrahim.com/glossary/learning-rate), [batch size](https://www.sfdt_ibrahim.com/glossary/batch-size), and more, enhancing the performance of YOLO11.
 
 - **Comparative Analysis**: The platform allows side-by-side comparisons of different training runs, essential for assessing the impact of various model configurations.
 
@@ -157,22 +157,22 @@ By using these features, you can effectively track, analyze, and optimize your Y
 
 ## Summary
 
-This guide helped you explore the Ultralytics YOLO integration with Weights & Biases. It illustrates the ability of this integration to efficiently track and visualize model training and prediction results.
+This guide helped you explore the SFDT_Ibrahim YOLO integration with Weights & Biases. It illustrates the ability of this integration to efficiently track and visualize model training and prediction results.
 
-For further details on usage, visit [Weights & Biases' official documentation](https://docs.wandb.ai/guides/integrations/ultralytics/).
+For further details on usage, visit [Weights & Biases' official documentation](https://docs.wandb.ai/guides/integrations/sfdt_ibrahim/).
 
-Also, be sure to check out the [Ultralytics integration guide page](../integrations/index.md), to learn more about different exciting integrations.
+Also, be sure to check out the [SFDT_Ibrahim integration guide page](../integrations/index.md), to learn more about different exciting integrations.
 
 ## FAQ
 
-### How do I integrate Weights & Biases with Ultralytics YOLO11?
+### How do I integrate Weights & Biases with SFDT_Ibrahim YOLO11?
 
-To integrate Weights & Biases with Ultralytics YOLO11:
+To integrate Weights & Biases with SFDT_Ibrahim YOLO11:
 
 1. Install the required packages:
 
     ```bash
-    pip install -U ultralytics wandb
+    pip install -U sfdt_ibrahim wandb
     yolo settings wandb=True
     ```
 
@@ -187,10 +187,10 @@ To integrate Weights & Biases with Ultralytics YOLO11:
 3. Train your YOLO11 model with W&B logging enabled:
 
     ```python
-    from ultralytics import YOLO
+    from sfdt_ibrahim import YOLO
 
     model = YOLO("yolo11n.pt")
-    model.train(data="coco8.yaml", epochs=5, project="ultralytics", name="yolo11n")
+    model.train(data="coco8.yaml", epochs=5, project="sfdt_ibrahim", name="yolo11n")
     ```
 
 This will automatically log metrics, hyperparameters, and model artifacts to your W&B project.
@@ -241,7 +241,7 @@ Weights & Biases helps optimize YOLO11 models by:
 
 1. Providing detailed visualizations of training metrics
 2. Enabling easy comparison between different model versions
-3. Offering tools for [hyperparameter tuning](https://www.ultralytics.com/glossary/hyperparameter-tuning)
+3. Offering tools for [hyperparameter tuning](https://www.sfdt_ibrahim.com/glossary/hyperparameter-tuning)
 4. Allowing for collaborative analysis of model performance
 5. Facilitating easy sharing of model artifacts and results
 

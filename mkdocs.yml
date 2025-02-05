@@ -1,18 +1,18 @@
-# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
 
-# Configuration file for building the Ultralytics YOLO documentation site using MkDocs.
+# Configuration file for building the SFDT_Ibrahim YOLO documentation site using MkDocs.
 # Provides settings to control site metadata, customize the appearance using the
 # Material theme, define the navigation structure, and enable various plugins.
 
 # Site metadata
-site_name: Ultralytics YOLO Docs
-site_description: Explore Ultralytics YOLO, a cutting-edge real-time object detection and image segmentation model for various applications and hardware platforms.
-site_url: https://docs.ultralytics.com
-site_author: Ultralytics
-repo_url: https://github.com/ultralytics/ultralytics
-edit_uri: https://github.com/ultralytics/ultralytics/tree/main/docs/en/
-repo_name: ultralytics/ultralytics
-remote_name: https://github.com/ultralytics/docs
+site_name: SFDT_Ibrahim YOLO Docs
+site_description: Explore SFDT_Ibrahim YOLO, a cutting-edge real-time object detection and image segmentation model for various applications and hardware platforms.
+site_url: https://docs.sfdt_ibrahim.com
+site_author: SFDT_Ibrahim
+repo_url: https://github.com/sfdt_ibrahim/sfdt_ibrahim
+edit_uri: https://github.com/sfdt_ibrahim/sfdt_ibrahim/tree/main/docs/en/
+repo_name: sfdt_ibrahim/sfdt_ibrahim
+remote_name: https://github.com/sfdt_ibrahim/docs
 docs_dir: "docs/en/" # where to find the markdown files
 site_dir: "site/" # where to publish to
 use_directory_urls: true # don't display 'index.html' in slugs
@@ -22,8 +22,8 @@ theme:
   name: material
   language: en
   custom_dir: docs/overrides/
-  logo: https://raw.githubusercontent.com/ultralytics/assets/main/logo/Ultralytics_Logotype_Reverse.svg
-  favicon: https://raw.githubusercontent.com/ultralytics/assets/refs/heads/main/logo/favicon-yolo.png
+  logo: https://raw.githubusercontent.com/sfdt_ibrahim/assets/main/logo/SFDT_Ibrahim_Logotype_Reverse.svg
+  favicon: https://raw.githubusercontent.com/sfdt_ibrahim/assets/refs/heads/main/logo/favicon-yolo.png
   icon:
     repo: fontawesome/brands/github
   # font:  # disabled for faster page load times
@@ -70,9 +70,9 @@ theme:
     - content.tabs.link # all code tabs change simultaneously
 
 # Customization
-copyright: <a href="https://www.ultralytics.com/" target="_blank">© 2025 Ultralytics Inc.</a> All rights reserved.
+copyright: <a href="https://www.sfdt_ibrahim.com/" target="_blank">© 2025 SFDT_Ibrahim Inc.</a> All rights reserved.
 extra: # version:
-  homepage: https://www.ultralytics.com/
+  homepage: https://www.sfdt_ibrahim.com/
   #   provider: mike  #  version drop-down menu
   robots: robots.txt
   analytics:
@@ -80,21 +80,21 @@ extra: # version:
     property: G-2M5EHKC0BH
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/ultralytics
+      link: https://github.com/sfdt_ibrahim
     - icon: fontawesome/brands/linkedin
-      link: https://www.linkedin.com/company/ultralytics/
+      link: https://www.linkedin.com/company/sfdt_ibrahim/
     - icon: fontawesome/brands/x-twitter
-      link: https://twitter.com/ultralytics
+      link: https://twitter.com/sfdt_ibrahim
     - icon: fontawesome/brands/youtube
-      link: https://youtube.com/ultralytics?sub_confirmation=1
+      link: https://youtube.com/sfdt_ibrahim?sub_confirmation=1
     - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/ultralytics/ultralytics/
+      link: https://hub.docker.com/r/sfdt_ibrahim/sfdt_ibrahim/
     - icon: fontawesome/brands/python
-      link: https://pypi.org/project/ultralytics/
+      link: https://pypi.org/project/sfdt_ibrahim/
     - icon: fontawesome/brands/discord
-      link: https://discord.com/invite/ultralytics
+      link: https://discord.com/invite/sfdt_ibrahim
     - icon: fontawesome/brands/reddit
-      link: https://reddit.com/r/ultralytics
+      link: https://reddit.com/r/sfdt_ibrahim
 
 extra_css:
   - stylesheets/style.css
@@ -172,19 +172,19 @@ nav:
           - guides/index.md
       - YOLO11 🚀 NEW: models/yolo11.md # for promotion of new pages
       - Languages:
-          - 🇬🇧&nbsp English: https://ultralytics.com/docs/
-          - 🇨🇳&nbsp 简体中文: https://docs.ultralytics.com/zh/
-          - 🇰🇷&nbsp 한국어: https://docs.ultralytics.com/ko/
-          - 🇯🇵&nbsp 日本語: https://docs.ultralytics.com/ja/
-          - 🇷🇺&nbsp Русский: https://docs.ultralytics.com/ru/
-          - 🇩🇪&nbsp Deutsch: https://docs.ultralytics.com/de/
-          - 🇫🇷&nbsp Français: https://docs.ultralytics.com/fr/
-          - 🇪🇸&nbsp Español: https://docs.ultralytics.com/es/
-          - 🇵🇹&nbsp Português: https://docs.ultralytics.com/pt/
-          - 🇮🇹&nbsp Italiano: https://docs.ultralytics.com/it/
-          - 🇹🇷&nbsp Türkçe: https://docs.ultralytics.com/tr/
-          - 🇻🇳&nbsp Tiếng Việt: https://docs.ultralytics.com/vi/
-          - 🇸🇦&nbsp العربية: https://docs.ultralytics.com/ar/
+          - 🇬🇧&nbsp English: https://sfdt_ibrahim.com/docs/
+          - 🇨🇳&nbsp 简体中文: https://docs.sfdt_ibrahim.com/zh/
+          - 🇰🇷&nbsp 한국어: https://docs.sfdt_ibrahim.com/ko/
+          - 🇯🇵&nbsp 日本語: https://docs.sfdt_ibrahim.com/ja/
+          - 🇷🇺&nbsp Русский: https://docs.sfdt_ibrahim.com/ru/
+          - 🇩🇪&nbsp Deutsch: https://docs.sfdt_ibrahim.com/de/
+          - 🇫🇷&nbsp Français: https://docs.sfdt_ibrahim.com/fr/
+          - 🇪🇸&nbsp Español: https://docs.sfdt_ibrahim.com/es/
+          - 🇵🇹&nbsp Português: https://docs.sfdt_ibrahim.com/pt/
+          - 🇮🇹&nbsp Italiano: https://docs.sfdt_ibrahim.com/it/
+          - 🇹🇷&nbsp Türkçe: https://docs.sfdt_ibrahim.com/tr/
+          - 🇻🇳&nbsp Tiếng Việt: https://docs.sfdt_ibrahim.com/vi/
+          - 🇸🇦&nbsp العربية: https://docs.sfdt_ibrahim.com/ar/
   - Quickstart:
       - quickstart.md
       - Usage:
@@ -659,15 +659,15 @@ plugins:
             show_symbol_type_heading: true # insiders
             show_symbol_type_toc: true # insiders
             show_inheritance_diagram: true # insiders
-  - ultralytics:
+  - sfdt_ibrahim:
       add_desc: False
       add_image: True
       add_authors: True
       add_json_ld: True
       add_share_buttons: True
       add_css: False
-      default_image: https://raw.githubusercontent.com/ultralytics/assets/main/yolov8/banner-yolov8.png
-      default_author: glenn.jocher@ultralytics.com
+      default_image: https://raw.githubusercontent.com/sfdt_ibrahim/assets/main/yolov8/banner-yolov8.png
+      default_author: glenn.jocher@sfdt_ibrahim.com
   - redirects:
       redirect_maps:
         hi/index.md: index.md

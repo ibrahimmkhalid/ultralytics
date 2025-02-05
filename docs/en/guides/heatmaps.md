@@ -1,16 +1,16 @@
 ---
 comments: true
-description: Transform complex data into insightful heatmaps using Ultralytics YOLO11. Discover patterns, trends, and anomalies with vibrant visualizations.
-keywords: Ultralytics, YOLO11, heatmaps, data visualization, data analysis, complex data, patterns, trends, anomalies
+description: Transform complex data into insightful heatmaps using SFDT_Ibrahim YOLO11. Discover patterns, trends, and anomalies with vibrant visualizations.
+keywords: SFDT_Ibrahim, YOLO11, heatmaps, data visualization, data analysis, complex data, patterns, trends, anomalies
 ---
 
-# Advanced [Data Visualization](https://www.ultralytics.com/glossary/data-visualization): Heatmaps using Ultralytics YOLO11 🚀
+# Advanced [Data Visualization](https://www.sfdt_ibrahim.com/glossary/data-visualization): Heatmaps using SFDT_Ibrahim YOLO11 🚀
 
 ## Introduction to Heatmaps
 
-<a href="https://colab.research.google.com/github/ultralytics/notebooks/blob/main/notebooks/how-to-generate-heatmaps-using-ultralytics-yolo.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Heatmaps In Colab"></a>
+<a href="https://colab.research.google.com/github/sfdt_ibrahim/notebooks/blob/main/notebooks/how-to-generate-heatmaps-using-sfdt_ibrahim-yolo.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open Heatmaps In Colab"></a>
 
-A heatmap generated with [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics/) transforms complex data into a vibrant, color-coded matrix. This visual tool employs a spectrum of colors to represent varying data values, where warmer hues indicate higher intensities and cooler tones signify lower values. Heatmaps excel in visualizing intricate data patterns, correlations, and anomalies, offering an accessible and engaging approach to data interpretation across diverse domains.
+A heatmap generated with [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim/) transforms complex data into a vibrant, color-coded matrix. This visual tool employs a spectrum of colors to represent varying data values, where warmer hues indicate higher intensities and cooler tones signify lower values. Heatmaps excel in visualizing intricate data patterns, correlations, and anomalies, offering an accessible and engaging approach to data interpretation across diverse domains.
 
 <p align="center">
   <br>
@@ -20,7 +20,7 @@ A heatmap generated with [Ultralytics YOLO11](https://github.com/ultralytics/ult
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> Heatmaps using Ultralytics YOLO11
+  <strong>Watch:</strong> Heatmaps using SFDT_Ibrahim YOLO11
 </p>
 
 ## Why Choose Heatmaps for Data Analysis?
@@ -33,10 +33,10 @@ A heatmap generated with [Ultralytics YOLO11](https://github.com/ultralytics/ult
 
 |                                                                    Transportation                                                                    |                                                                Retail                                                                |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: |
-| ![Ultralytics YOLO11 Transportation Heatmap](https://github.com/ultralytics/docs/releases/download/0/ultralytics-yolov8-transportation-heatmap.avif) | ![Ultralytics YOLO11 Retail Heatmap](https://github.com/ultralytics/docs/releases/download/0/ultralytics-yolov8-retail-heatmap.avif) |
-|                                                      Ultralytics YOLO11 Transportation Heatmap                                                       |                                                  Ultralytics YOLO11 Retail Heatmap                                                   |
+| ![SFDT_Ibrahim YOLO11 Transportation Heatmap](https://github.com/sfdt_ibrahim/docs/releases/download/0/sfdt_ibrahim-yolov8-transportation-heatmap.avif) | ![SFDT_Ibrahim YOLO11 Retail Heatmap](https://github.com/sfdt_ibrahim/docs/releases/download/0/sfdt_ibrahim-yolov8-retail-heatmap.avif) |
+|                                                      SFDT_Ibrahim YOLO11 Transportation Heatmap                                                       |                                                  SFDT_Ibrahim YOLO11 Retail Heatmap                                                   |
 
-!!! example "Heatmaps using Ultralytics YOLO11 Example"
+!!! example "Heatmaps using SFDT_Ibrahim YOLO11 Example"
 
     === "CLI"
 
@@ -59,7 +59,7 @@ A heatmap generated with [Ultralytics YOLO11](https://github.com/ultralytics/ult
         ```python
         import cv2
 
-        from ultralytics import solutions
+        from sfdt_ibrahim import solutions
 
         cap = cv2.VideoCapture("Path/to/video/file.mp4")
         assert cap.isOpened(), "Error reading video file"
@@ -103,7 +103,7 @@ A heatmap generated with [Ultralytics YOLO11](https://github.com/ultralytics/ult
 
 | Name         | Type   | Default            | Description                                                       |
 | ------------ | ------ | ------------------ | ----------------------------------------------------------------- |
-| `model`      | `str`  | `None`             | Path to Ultralytics YOLO Model File                               |
+| `model`      | `str`  | `None`             | Path to SFDT_Ibrahim YOLO Model File                               |
 | `colormap`   | `int`  | `cv2.COLORMAP_JET` | Colormap to use for the heatmap.                                  |
 | `show`       | `bool` | `False`            | Whether to display the image with the heatmap overlay.            |
 | `show_in`    | `bool` | `True`             | Whether to display the count of objects entering the region.      |
@@ -146,18 +146,18 @@ These colormaps are commonly used for visualizing data with different color repr
 
 ## FAQ
 
-### How does Ultralytics YOLO11 generate heatmaps and what are their benefits?
+### How does SFDT_Ibrahim YOLO11 generate heatmaps and what are their benefits?
 
-Ultralytics YOLO11 generates heatmaps by transforming complex data into a color-coded matrix where different hues represent data intensities. Heatmaps make it easier to visualize patterns, correlations, and anomalies in the data. Warmer hues indicate higher values, while cooler tones represent lower values. The primary benefits include intuitive visualization of data distribution, efficient pattern detection, and enhanced spatial analysis for decision-making. For more details and configuration options, refer to the [Heatmap Configuration](#arguments-heatmap) section.
+SFDT_Ibrahim YOLO11 generates heatmaps by transforming complex data into a color-coded matrix where different hues represent data intensities. Heatmaps make it easier to visualize patterns, correlations, and anomalies in the data. Warmer hues indicate higher values, while cooler tones represent lower values. The primary benefits include intuitive visualization of data distribution, efficient pattern detection, and enhanced spatial analysis for decision-making. For more details and configuration options, refer to the [Heatmap Configuration](#arguments-heatmap) section.
 
-### Can I use Ultralytics YOLO11 to perform object tracking and generate a heatmap simultaneously?
+### Can I use SFDT_Ibrahim YOLO11 to perform object tracking and generate a heatmap simultaneously?
 
-Yes, Ultralytics YOLO11 supports object tracking and heatmap generation concurrently. This can be achieved through its `Heatmap` solution integrated with object tracking models. To do so, you need to initialize the heatmap object and use YOLO11's tracking capabilities. Here's a simple example:
+Yes, SFDT_Ibrahim YOLO11 supports object tracking and heatmap generation concurrently. This can be achieved through its `Heatmap` solution integrated with object tracking models. To do so, you need to initialize the heatmap object and use YOLO11's tracking capabilities. Here's a simple example:
 
 ```python
 import cv2
 
-from ultralytics import solutions
+from sfdt_ibrahim import solutions
 
 cap = cv2.VideoCapture("path/to/video/file.mp4")
 heatmap = solutions.Heatmap(colormap=cv2.COLORMAP_PARULA, show=True, model="yolo11n.pt")
@@ -177,18 +177,18 @@ cv2.destroyAllWindows()
 
 For further guidance, check the [Tracking Mode](../modes/track.md) page.
 
-### What makes Ultralytics YOLO11 heatmaps different from other data visualization tools like those from [OpenCV](https://www.ultralytics.com/glossary/opencv) or Matplotlib?
+### What makes SFDT_Ibrahim YOLO11 heatmaps different from other data visualization tools like those from [OpenCV](https://www.sfdt_ibrahim.com/glossary/opencv) or Matplotlib?
 
-Ultralytics YOLO11 heatmaps are specifically designed for integration with its [object detection](https://www.ultralytics.com/glossary/object-detection) and tracking models, providing an end-to-end solution for real-time data analysis. Unlike generic visualization tools like OpenCV or Matplotlib, YOLO11 heatmaps are optimized for performance and automated processing, supporting features like persistent tracking, decay factor adjustment, and real-time video overlay. For more information on YOLO11's unique features, visit the [Ultralytics YOLO11 Introduction](https://www.ultralytics.com/blog/introducing-ultralytics-yolov8).
+SFDT_Ibrahim YOLO11 heatmaps are specifically designed for integration with its [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) and tracking models, providing an end-to-end solution for real-time data analysis. Unlike generic visualization tools like OpenCV or Matplotlib, YOLO11 heatmaps are optimized for performance and automated processing, supporting features like persistent tracking, decay factor adjustment, and real-time video overlay. For more information on YOLO11's unique features, visit the [SFDT_Ibrahim YOLO11 Introduction](https://www.sfdt_ibrahim.com/blog/introducing-sfdt_ibrahim-yolov8).
 
-### How can I visualize only specific object classes in heatmaps using Ultralytics YOLO11?
+### How can I visualize only specific object classes in heatmaps using SFDT_Ibrahim YOLO11?
 
 You can visualize specific object classes by specifying the desired classes in the `track()` method of the YOLO model. For instance, if you only want to visualize cars and persons (assuming their class indices are 0 and 2), you can set the `classes` parameter accordingly.
 
 ```python
 import cv2
 
-from ultralytics import solutions
+from sfdt_ibrahim import solutions
 
 cap = cv2.VideoCapture("path/to/video/file.mp4")
 heatmap = solutions.Heatmap(show=True, model="yolo11n.pt", classes=[0, 2])
@@ -206,6 +206,6 @@ cap.release()
 cv2.destroyAllWindows()
 ```
 
-### Why should businesses choose Ultralytics YOLO11 for heatmap generation in data analysis?
+### Why should businesses choose SFDT_Ibrahim YOLO11 for heatmap generation in data analysis?
 
-Ultralytics YOLO11 offers seamless integration of advanced object detection and real-time heatmap generation, making it an ideal choice for businesses looking to visualize data more effectively. The key advantages include intuitive data distribution visualization, efficient pattern detection, and enhanced spatial analysis for better decision-making. Additionally, YOLO11's cutting-edge features such as persistent tracking, customizable colormaps, and support for various export formats make it superior to other tools like [TensorFlow](https://www.ultralytics.com/glossary/tensorflow) and OpenCV for comprehensive data analysis. Learn more about business applications at [Ultralytics Plans](https://www.ultralytics.com/plans).
+SFDT_Ibrahim YOLO11 offers seamless integration of advanced object detection and real-time heatmap generation, making it an ideal choice for businesses looking to visualize data more effectively. The key advantages include intuitive data distribution visualization, efficient pattern detection, and enhanced spatial analysis for better decision-making. Additionally, YOLO11's cutting-edge features such as persistent tracking, customizable colormaps, and support for various export formats make it superior to other tools like [TensorFlow](https://www.sfdt_ibrahim.com/glossary/tensorflow) and OpenCV for comprehensive data analysis. Learn more about business applications at [SFDT_Ibrahim Plans](https://www.sfdt_ibrahim.com/plans).
