@@ -45,7 +45,15 @@ from ultralytics.cfg import get_cfg, get_save_dir
 from ultralytics.data import load_inference_source
 from ultralytics.data.augment import LetterBox, classify_transforms
 from ultralytics.nn.autobackend import AutoBackend
-from ultralytics.utils import DEFAULT_CFG, LOGGER, MACOS, WINDOWS, callbacks, colorstr, ops
+from ultralytics.utils import (
+    DEFAULT_CFG,
+    LOGGER,
+    MACOS,
+    WINDOWS,
+    callbacks,
+    colorstr,
+    ops,
+)
 from ultralytics.utils.checks import check_imgsz, check_imshow
 from ultralytics.utils.files import increment_path
 from ultralytics.utils.torch_utils import select_device, smart_inference_mode
@@ -122,10 +130,13 @@ class BasePredictor:
         Args:
             im (torch.Tensor | List(np.ndarray)): BCHW for tensor, [(HWC) x B] for list.
         """
+        print("findme_preprocessor")
         not_tensor = not isinstance(im, torch.Tensor)
         if not_tensor:
             im = np.stack(self.pre_transform(im))
-            im = im[..., ::-1].transpose((0, 3, 1, 2))  # BGR to RGB, BHWC to BCHW, (n, 3, h, w)
+            im = im[..., ::-1].transpose(
+                (0, 3, 1, 2)
+            )  # BGR to RGB, BHWC to BCHW, (n, 3, h, w)
             im = np.ascontiguousarray(im)  # contiguous
             im = torch.from_numpy(im)
 
@@ -142,7 +153,14 @@ class BasePredictor:
             if self.args.visualize and (not self.source_type.tensor)
             else False
         )
-        return self.model(im, augment=self.args.augment, visualize=visualize, embed=self.args.embed, *args, **kwargs)
+        return self.model(
+            im,
+            augment=self.args.augment,
+            visualize=visualize,
+            embed=self.args.embed,
+            *args,
+            **kwargs,
+        )
 
     def pre_transform(self, im):
         """
@@ -154,16 +172,22 @@ class BasePredictor:
         Returns:
             (list): A list of transformed images.
         """
+        print("findme_pretransform")
         same_shapes = len({x.shape for x in im}) == 1
         letterbox = LetterBox(
             self.imgsz,
-            auto=same_shapes and (self.model.pt or (getattr(self.model, "dynamic", False) and not self.model.imx)),
+            auto=same_shapes
+            and (
+                self.model.pt
+                or (getattr(self.model, "dynamic", False) and not self.model.imx)
+            ),
             stride=self.model.stride,
         )
         return [letterbox(image=x) for x in im]
 
     def postprocess(self, preds, img, orig_imgs):
         """Post-processes predictions for an image and returns them."""
+        print("findme_postprocess")
         return preds
 
     def __call__(self, source=None, model=None, stream=False, *args, **kwargs):
@@ -172,7 +196,9 @@ class BasePredictor:
         if stream:
             return self.stream_inference(source, model, *args, **kwargs)
         else:
-            return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Result into one
+            return list(
+                self.stream_inference(source, model, *args, **kwargs)
+            )  # merge list of Result into one
 
     def predict_cli(self, source=None, model=None):
         """
@@ -192,12 +218,16 @@ class BasePredictor:
 
     def setup_source(self, source):
         """Sets up source and inference mode."""
-        self.imgsz = check_imgsz(self.args.imgsz, stride=self.model.stride, min_dim=2)  # check image size
+        self.imgsz = check_imgsz(
+            self.args.imgsz, stride=self.model.stride, min_dim=2
+        )  # check image size
         self.transforms = (
             getattr(
                 self.model.model,
                 "transforms",
-                classify_transforms(self.imgsz[0], crop_fraction=self.args.crop_fraction),
+                classify_transforms(
+                    self.imgsz[0], crop_fraction=self.args.crop_fraction
+                ),
             )
             if self.args.task == "classify"
             else None
@@ -234,11 +264,19 @@ class BasePredictor:
 
             # Check if save_dir/ label file exists
             if self.args.save or self.args.save_txt:
-                (self.save_dir / "labels" if self.args.save_txt else self.save_dir).mkdir(parents=True, exist_ok=True)
+                (
+                    self.save_dir / "labels" if self.args.save_txt else self.save_dir
+                ).mkdir(parents=True, exist_ok=True)
 
             # Warmup model
             if not self.done_warmup:
-                self.model.warmup(imgsz=(1 if self.model.pt or self.model.triton else self.dataset.bs, 3, *self.imgsz))
+                self.model.warmup(
+                    imgsz=(
+                        1 if self.model.pt or self.model.triton else self.dataset.bs,
+                        3,
+                        *self.imgsz,
+                    )
+                )
                 self.done_warmup = True
 
             self.seen, self.windows, self.batch = 0, [], None
@@ -260,7 +298,9 @@ class BasePredictor:
                 with profilers[1]:
                     preds = self.inference(im, *args, **kwargs)
                     if self.args.embed:
-                        yield from [preds] if isinstance(preds, torch.Tensor) else preds  # yield embedding tensors
+                        yield from (
+                            [preds] if isinstance(preds, torch.Tensor) else preds
+                        )  # yield embedding tensors
                         continue
 
                 # Postprocess
@@ -277,7 +317,12 @@ class BasePredictor:
                         "inference": profilers[1].dt * 1e3 / n,
                         "postprocess": profilers[2].dt * 1e3 / n,
                     }
-                    if self.args.verbose or self.args.save or self.args.save_txt or self.args.show:
+                    if (
+                        self.args.verbose
+                        or self.args.save
+                        or self.args.save_txt
+                        or self.args.show
+                    ):
                         s[i] += self.write_results(i, Path(paths[i]), im, s)
 
                 # Print batch results
@@ -301,7 +346,11 @@ class BasePredictor:
             )
         if self.args.save or self.args.save_txt or self.args.save_crop:
             nl = len(list(self.save_dir.glob("labels/*.txt")))  # number of labels
-            s = f"\n{nl} label{'s' * (nl > 1)} saved to {self.save_dir / 'labels'}" if self.args.save_txt else ""
+            s = (
+                f"\n{nl} label{'s' * (nl > 1)} saved to {self.save_dir / 'labels'}"
+                if self.args.save_txt
+                else ""
+            )
             LOGGER.info(f"Results saved to {colorstr('bold', self.save_dir)}{s}")
         self.run_callbacks("on_predict_end")
 
@@ -327,14 +376,22 @@ class BasePredictor:
         string = ""  # print string
         if len(im.shape) == 3:
             im = im[None]  # expand for batch dim
-        if self.source_type.stream or self.source_type.from_img or self.source_type.tensor:  # batch_size >= 1
+        if (
+            self.source_type.stream
+            or self.source_type.from_img
+            or self.source_type.tensor
+        ):  # batch_size >= 1
             string += f"{i}: "
             frame = self.dataset.count
         else:
             match = re.search(r"frame (\d+)/", s[i])
             frame = int(match[1]) if match else None  # 0 if frame undetermined
 
-        self.txt_path = self.save_dir / "labels" / (p.stem + ("" if self.dataset.mode == "image" else f"_{frame}"))
+        self.txt_path = (
+            self.save_dir
+            / "labels"
+            / (p.stem + ("" if self.dataset.mode == "image" else f"_{frame}"))
+        )
         string += "{:g}x{:g} ".format(*im.shape[2:])
         result = self.results[i]
         result.save_dir = self.save_dir.__str__()  # used in other locations
@@ -354,7 +411,9 @@ class BasePredictor:
         if self.args.save_txt:
             result.save_txt(f"{self.txt_path}.txt", save_conf=self.args.save_conf)
         if self.args.save_crop:
-            result.save_crop(save_dir=self.save_dir / "crops", file_name=self.txt_path.stem)
+            result.save_crop(
+                save_dir=self.save_dir / "crops", file_name=self.txt_path.stem
+            )
         if self.args.show:
             self.show(str(p))
         if self.args.save:
@@ -373,7 +432,11 @@ class BasePredictor:
             if save_path not in self.vid_writer:  # new video
                 if self.args.save_frames:
                     Path(frames_path).mkdir(parents=True, exist_ok=True)
-                suffix, fourcc = (".mp4", "avc1") if MACOS else (".avi", "WMV2") if WINDOWS else (".avi", "MJPG")
+                suffix, fourcc = (
+                    (".mp4", "avc1")
+                    if MACOS
+                    else (".avi", "WMV2") if WINDOWS else (".avi", "MJPG")
+                )
                 self.vid_writer[save_path] = cv2.VideoWriter(
                     filename=str(Path(save_path).with_suffix(suffix)),
                     fourcc=cv2.VideoWriter_fourcc(*fourcc),
@@ -388,14 +451,18 @@ class BasePredictor:
 
         # Save images
         else:
-            cv2.imwrite(str(Path(save_path).with_suffix(".jpg")), im)  # save to JPG for best support
+            cv2.imwrite(
+                str(Path(save_path).with_suffix(".jpg")), im
+            )  # save to JPG for best support
 
     def show(self, p=""):
         """Display an image in a window using the OpenCV imshow function."""
         im = self.plotted_img
         if platform.system() == "Linux" and p not in self.windows:
             self.windows.append(p)
-            cv2.namedWindow(p, cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO)  # allow window resize (Linux)
+            cv2.namedWindow(
+                p, cv2.WINDOW_NORMAL | cv2.WINDOW_KEEPRATIO
+            )  # allow window resize (Linux)
             cv2.resizeWindow(p, im.shape[1], im.shape[0])  # (width, height)
         cv2.imshow(p, im)
         cv2.waitKey(300 if self.dataset.mode == "image" else 1)  # 1 millisecond
