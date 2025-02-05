@@ -127,7 +127,9 @@ class Model(torch.nn.Module):
         self.session = None  # HUB session
         self.task = task  # task type
         model = str(model).strip()
+        print("findme_model")
         print(model)
+        print("findme_model")
 
         # Check if Ultralytics HUB model from https://hub.ultralytics.com
         if self.is_hub_model(model):
