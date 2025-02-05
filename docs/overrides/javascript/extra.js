@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
           integrationId: "cm1shscmm00y26sj83lgxzvkw",
           organizationId: "org_e3869az6hQZ0mXdF",
           primaryBrandColor: "#E1FF25",
-          organizationDisplayName: "Ultralytics",
+          organizationDisplayName: "SFDT_Ibrahim",
           theme: {
             stylesheetUrls: ["/stylesheets/style.css"],
           },
@@ -101,32 +101,32 @@ document.addEventListener("DOMContentLoaded", () => {
           placeholder: "Search",
         },
         aiChatSettings: {
-          chatSubjectName: "Ultralytics",
+          chatSubjectName: "SFDT_Ibrahim",
           botAvatarSrcUrl:
-            "https://storage.googleapis.com/organization-image-assets/ultralytics-botAvatarSrcUrl-1729379860806.svg",
+            "https://storage.googleapis.com/organization-image-assets/sfdt_ibrahim-botAvatarSrcUrl-1729379860806.svg",
           quickQuestions: [
-            "What's new in Ultralytics YOLO11?",
-            "How can I get started with Ultralytics HUB?",
-            "How does Ultralytics Enterprise Licensing work?",
+            "What's new in SFDT_Ibrahim YOLO11?",
+            "How can I get started with SFDT_Ibrahim HUB?",
+            "How does SFDT_Ibrahim Enterprise Licensing work?",
           ],
           getHelpCallToActions: [
             {
-              name: "Ask on Ultralytics GitHub",
-              url: "https://github.com/ultralytics/ultralytics",
+              name: "Ask on SFDT_Ibrahim GitHub",
+              url: "https://github.com/sfdt_ibrahim/sfdt_ibrahim",
               icon: {
                 builtIn: "FaGithub",
               },
             },
             {
-              name: "Ask on Ultralytics Discourse",
-              url: "https://community.ultralytics.com/",
+              name: "Ask on SFDT_Ibrahim Discourse",
+              url: "https://community.sfdt_ibrahim.com/",
               icon: {
                 builtIn: "FaDiscourse",
               },
             },
             {
-              name: "Ask on Ultralytics Discord",
-              url: "https://discord.com/invite/ultralytics",
+              name: "Ask on SFDT_Ibrahim Discord",
+              url: "https://discord.com/invite/sfdt_ibrahim",
               icon: {
                 builtIn: "FaDiscord",
               },

@@ -1,52 +1,52 @@
 ---
-description: Learn about Ultralytics transformer encoder, layer, MLP block, LayerNorm2d and the deformable transformer decoder layer. Expand your understanding of these crucial AI modules.
-keywords: Ultralytics, Ultralytics documentation, TransformerEncoderLayer, TransformerLayer, MLPBlock, LayerNorm2d, DeformableTransformerDecoderLayer
+description: Learn about SFDT_Ibrahim transformer encoder, layer, MLP block, LayerNorm2d and the deformable transformer decoder layer. Expand your understanding of these crucial AI modules.
+keywords: SFDT_Ibrahim, SFDT_Ibrahim documentation, TransformerEncoderLayer, TransformerLayer, MLPBlock, LayerNorm2d, DeformableTransformerDecoderLayer
 ---
 
-# Reference for `ultralytics/nn/modules/transformer.py`
+# Reference for `sfdt_ibrahim/nn/modules/transformer.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/nn/modules/transformer.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/nn/modules/transformer.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/nn/modules/transformer.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/nn/modules/transformer.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/nn/modules/transformer.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/nn/modules/transformer.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.nn.modules.transformer.TransformerEncoderLayer
+## ::: sfdt_ibrahim.nn.modules.transformer.TransformerEncoderLayer
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.AIFI
+## ::: sfdt_ibrahim.nn.modules.transformer.AIFI
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.TransformerLayer
+## ::: sfdt_ibrahim.nn.modules.transformer.TransformerLayer
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.TransformerBlock
+## ::: sfdt_ibrahim.nn.modules.transformer.TransformerBlock
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.MLPBlock
+## ::: sfdt_ibrahim.nn.modules.transformer.MLPBlock
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.MLP
+## ::: sfdt_ibrahim.nn.modules.transformer.MLP
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.LayerNorm2d
+## ::: sfdt_ibrahim.nn.modules.transformer.LayerNorm2d
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.MSDeformAttn
+## ::: sfdt_ibrahim.nn.modules.transformer.MSDeformAttn
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.DeformableTransformerDecoderLayer
+## ::: sfdt_ibrahim.nn.modules.transformer.DeformableTransformerDecoderLayer
 
 <br><br><hr><br>
 
-## ::: ultralytics.nn.modules.transformer.DeformableTransformerDecoder
+## ::: sfdt_ibrahim.nn.modules.transformer.DeformableTransformerDecoder
 
 <br><br>

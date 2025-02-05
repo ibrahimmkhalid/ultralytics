@@ -1,18 +1,18 @@
 ---
 comments: true
-description: Learn how to set up and use MLflow logging with Ultralytics YOLO for enhanced experiment tracking, model reproducibility, and performance improvements.
-keywords: MLflow, Ultralytics YOLO, machine learning, experiment tracking, metrics logging, parameter logging, artifact logging
+description: Learn how to set up and use MLflow logging with SFDT_Ibrahim YOLO for enhanced experiment tracking, model reproducibility, and performance improvements.
+keywords: MLflow, SFDT_Ibrahim YOLO, machine learning, experiment tracking, metrics logging, parameter logging, artifact logging
 ---
 
-# MLflow Integration for Ultralytics YOLO
+# MLflow Integration for SFDT_Ibrahim YOLO
 
-<img width="1024" src="https://github.com/ultralytics/docs/releases/download/0/mlflow-integration-ultralytics-yolo.avif" alt="MLflow ecosystem">
+<img width="1024" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/mlflow-integration-sfdt_ibrahim-yolo.avif" alt="MLflow ecosystem">
 
 ## Introduction
 
-Experiment logging is a crucial aspect of [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) workflows that enables tracking of various metrics, parameters, and artifacts. It helps to enhance model reproducibility, debug issues, and improve model performance. [Ultralytics](https://www.ultralytics.com/) YOLO, known for its real-time [object detection](https://www.ultralytics.com/glossary/object-detection) capabilities, now offers integration with [MLflow](https://mlflow.org/), an open-source platform for complete machine learning lifecycle management.
+Experiment logging is a crucial aspect of [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) workflows that enables tracking of various metrics, parameters, and artifacts. It helps to enhance model reproducibility, debug issues, and improve model performance. [SFDT_Ibrahim](https://www.sfdt_ibrahim.com/) YOLO, known for its real-time [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) capabilities, now offers integration with [MLflow](https://mlflow.org/), an open-source platform for complete machine learning lifecycle management.
 
-This documentation page is a comprehensive guide to setting up and utilizing the MLflow logging capabilities for your Ultralytics YOLO project.
+This documentation page is a comprehensive guide to setting up and utilizing the MLflow logging capabilities for your SFDT_Ibrahim YOLO project.
 
 ## What is MLflow?
 
@@ -32,15 +32,15 @@ Ensure MLflow is installed. If not, install it using pip:
 pip install mlflow
 ```
 
-Make sure that MLflow logging is enabled in Ultralytics settings. Usually, this is controlled by the settings `mflow` key. See the [settings](../quickstart.md#ultralytics-settings) page for more info.
+Make sure that MLflow logging is enabled in SFDT_Ibrahim settings. Usually, this is controlled by the settings `mflow` key. See the [settings](../quickstart.md#sfdt_ibrahim-settings) page for more info.
 
-!!! example "Update Ultralytics MLflow Settings"
+!!! example "Update SFDT_Ibrahim MLflow Settings"
 
     === "Python"
 
         Within the Python environment, call the `update` method on the `settings` object to change your settings:
         ```python
-        from ultralytics import settings
+        from sfdt_ibrahim import settings
 
         # Update a setting
         settings.update({"mlflow": True})
@@ -102,9 +102,9 @@ The logging is taken care of by the `on_pretrain_routine_end`, `on_fit_epoch_end
 
 1. **Logging Custom Metrics**: You can add custom metrics to be logged by modifying the `trainer.metrics` dictionary before `on_fit_epoch_end` is called.
 
-2. **View Experiment**: To view your logs, navigate to your MLflow server (usually http://127.0.0.1:5000) and select your experiment and run. <img width="1024" src="https://github.com/ultralytics/docs/releases/download/0/yolo-mlflow-experiment.avif" alt="YOLO MLflow Experiment">
+2. **View Experiment**: To view your logs, navigate to your MLflow server (usually http://127.0.0.1:5000) and select your experiment and run. <img width="1024" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/yolo-mlflow-experiment.avif" alt="YOLO MLflow Experiment">
 
-3. **View Run**: Runs are individual models inside an experiment. Click on a Run and see the Run details, including uploaded artifacts and model weights. <img width="1024" src="https://github.com/ultralytics/docs/releases/download/0/yolo-mlflow-run.avif" alt="YOLO MLflow Run">
+3. **View Run**: Runs are individual models inside an experiment. Click on a Run and see the Run details, including uploaded artifacts and model weights. <img width="1024" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/yolo-mlflow-run.avif" alt="YOLO MLflow Run">
 
 ## Disabling MLflow
 
@@ -116,26 +116,26 @@ yolo settings mlflow=False
 
 ## Conclusion
 
-MLflow logging integration with Ultralytics YOLO offers a streamlined way to keep track of your machine learning experiments. It empowers you to monitor performance metrics and manage artifacts effectively, thus aiding in robust model development and deployment. For further details please visit the MLflow [official documentation](https://mlflow.org/docs/latest/index.html).
+MLflow logging integration with SFDT_Ibrahim YOLO offers a streamlined way to keep track of your machine learning experiments. It empowers you to monitor performance metrics and manage artifacts effectively, thus aiding in robust model development and deployment. For further details please visit the MLflow [official documentation](https://mlflow.org/docs/latest/index.html).
 
 ## FAQ
 
-### How do I set up MLflow logging with Ultralytics YOLO?
+### How do I set up MLflow logging with SFDT_Ibrahim YOLO?
 
-To set up MLflow logging with Ultralytics YOLO, you first need to ensure MLflow is installed. You can install it using pip:
+To set up MLflow logging with SFDT_Ibrahim YOLO, you first need to ensure MLflow is installed. You can install it using pip:
 
 ```bash
 pip install mlflow
 ```
 
-Next, enable MLflow logging in Ultralytics settings. This can be controlled using the `mlflow` key. For more information, see the [settings guide](../quickstart.md#ultralytics-settings).
+Next, enable MLflow logging in SFDT_Ibrahim settings. This can be controlled using the `mlflow` key. For more information, see the [settings guide](../quickstart.md#sfdt_ibrahim-settings).
 
-!!! example "Update Ultralytics MLflow Settings"
+!!! example "Update SFDT_Ibrahim MLflow Settings"
 
     === "Python"
 
         ```python
-        from ultralytics import settings
+        from sfdt_ibrahim import settings
 
         # Update a setting
         settings.update({"mlflow": True})
@@ -160,29 +160,29 @@ Finally, start a local MLflow server for tracking:
 mlflow server --backend-store-uri runs/mlflow
 ```
 
-### What metrics and parameters can I log using MLflow with Ultralytics YOLO?
+### What metrics and parameters can I log using MLflow with SFDT_Ibrahim YOLO?
 
-Ultralytics YOLO with MLflow supports logging various metrics, parameters, and artifacts throughout the training process:
+SFDT_Ibrahim YOLO with MLflow supports logging various metrics, parameters, and artifacts throughout the training process:
 
-- **Metrics Logging**: Tracks metrics at the end of each [epoch](https://www.ultralytics.com/glossary/epoch) and upon training completion.
+- **Metrics Logging**: Tracks metrics at the end of each [epoch](https://www.sfdt_ibrahim.com/glossary/epoch) and upon training completion.
 - **Parameter Logging**: Logs all parameters used in the training process.
 - **Artifacts Logging**: Saves model artifacts like weights and configuration files after training.
 
-For more detailed information, visit the [Ultralytics YOLO tracking documentation](#features).
+For more detailed information, visit the [SFDT_Ibrahim YOLO tracking documentation](#features).
 
 ### Can I disable MLflow logging once it is enabled?
 
-Yes, you can disable MLflow logging for Ultralytics YOLO by updating the settings. Here's how you can do it using the CLI:
+Yes, you can disable MLflow logging for SFDT_Ibrahim YOLO by updating the settings. Here's how you can do it using the CLI:
 
 ```bash
 yolo settings mlflow=False
 ```
 
-For further customization and resetting settings, refer to the [settings guide](../quickstart.md#ultralytics-settings).
+For further customization and resetting settings, refer to the [settings guide](../quickstart.md#sfdt_ibrahim-settings).
 
-### How can I start and stop an MLflow server for Ultralytics YOLO tracking?
+### How can I start and stop an MLflow server for SFDT_Ibrahim YOLO tracking?
 
-To start an MLflow server for tracking your experiments in Ultralytics YOLO, use the following command:
+To start an MLflow server for tracking your experiments in SFDT_Ibrahim YOLO, use the following command:
 
 ```bash
 mlflow server --backend-store-uri runs/mlflow
@@ -196,12 +196,12 @@ ps aux | grep 'mlflow' | grep -v 'grep' | awk '{print $2}' | xargs kill -9
 
 Refer to the [commands section](#commands) for more command options.
 
-### What are the benefits of integrating MLflow with Ultralytics YOLO for experiment tracking?
+### What are the benefits of integrating MLflow with SFDT_Ibrahim YOLO for experiment tracking?
 
-Integrating MLflow with Ultralytics YOLO offers several benefits for managing your machine learning experiments:
+Integrating MLflow with SFDT_Ibrahim YOLO offers several benefits for managing your machine learning experiments:
 
 - **Enhanced Experiment Tracking**: Easily track and compare different runs and their outcomes.
 - **Improved Model Reproducibility**: Ensure that your experiments are reproducible by logging all parameters and artifacts.
 - **Performance Monitoring**: Visualize performance metrics over time to make data-driven decisions for model improvements.
 
-For an in-depth look at setting up and leveraging MLflow with Ultralytics YOLO, explore the [MLflow Integration for Ultralytics YOLO](#introduction) documentation.
+For an in-depth look at setting up and leveraging MLflow with SFDT_Ibrahim YOLO, explore the [MLflow Integration for SFDT_Ibrahim YOLO](#introduction) documentation.

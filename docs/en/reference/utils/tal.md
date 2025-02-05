@@ -1,36 +1,36 @@
 ---
-description: Explore the TaskAlignedAssigner in Ultralytics YOLO. Learn about the TaskAlignedMetric and its applications in object detection.
-keywords: Ultralytics, YOLO, TaskAlignedAssigner, object detection, machine learning, AI, Tal.py, PyTorch
+description: Explore the TaskAlignedAssigner in SFDT_Ibrahim YOLO. Learn about the TaskAlignedMetric and its applications in object detection.
+keywords: SFDT_Ibrahim, YOLO, TaskAlignedAssigner, object detection, machine learning, AI, Tal.py, PyTorch
 ---
 
-# Reference for `ultralytics/utils/tal.py`
+# Reference for `sfdt_ibrahim/utils/tal.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/tal.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/tal.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/utils/tal.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/tal.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/tal.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/utils/tal.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.utils.tal.TaskAlignedAssigner
+## ::: sfdt_ibrahim.utils.tal.TaskAlignedAssigner
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.tal.RotatedTaskAlignedAssigner
+## ::: sfdt_ibrahim.utils.tal.RotatedTaskAlignedAssigner
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.tal.make_anchors
+## ::: sfdt_ibrahim.utils.tal.make_anchors
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.tal.dist2bbox
+## ::: sfdt_ibrahim.utils.tal.dist2bbox
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.tal.bbox2dist
+## ::: sfdt_ibrahim.utils.tal.bbox2dist
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.tal.dist2rbox
+## ::: sfdt_ibrahim.utils.tal.dist2rbox
 
 <br><br>

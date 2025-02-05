@@ -1,14 +1,14 @@
 ---
 comments: true
-description: Master hyperparameter tuning for Ultralytics YOLO to optimize model performance with our comprehensive guide. Elevate your machine learning models today!.
-keywords: Ultralytics YOLO, hyperparameter tuning, machine learning, model optimization, genetic algorithms, learning rate, batch size, epochs
+description: Master hyperparameter tuning for SFDT_Ibrahim YOLO to optimize model performance with our comprehensive guide. Elevate your machine learning models today!.
+keywords: SFDT_Ibrahim YOLO, hyperparameter tuning, machine learning, model optimization, genetic algorithms, learning rate, batch size, epochs
 ---
 
-# Ultralytics YOLO [Hyperparameter Tuning](https://www.ultralytics.com/glossary/hyperparameter-tuning) Guide
+# SFDT_Ibrahim YOLO [Hyperparameter Tuning](https://www.sfdt_ibrahim.com/glossary/hyperparameter-tuning) Guide
 
 ## Introduction
 
-Hyperparameter tuning is not just a one-time set-up but an iterative process aimed at optimizing the [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) model's performance metrics, such as accuracy, precision, and recall. In the context of Ultralytics YOLO, these hyperparameters could range from learning rate to architectural details, such as the number of layers or types of activation functions used.
+Hyperparameter tuning is not just a one-time set-up but an iterative process aimed at optimizing the [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) model's performance metrics, such as accuracy, precision, and recall. In the context of SFDT_Ibrahim YOLO, these hyperparameters could range from learning rate to architectural details, such as the number of layers or types of activation functions used.
 
 <p align="center">
   <br>
@@ -23,25 +23,25 @@ Hyperparameter tuning is not just a one-time set-up but an iterative process aim
 
 ### What are Hyperparameters?
 
-Hyperparameters are high-level, structural settings for the algorithm. They are set prior to the training phase and remain constant during it. Here are some commonly tuned hyperparameters in Ultralytics YOLO:
+Hyperparameters are high-level, structural settings for the algorithm. They are set prior to the training phase and remain constant during it. Here are some commonly tuned hyperparameters in SFDT_Ibrahim YOLO:
 
-- **Learning Rate** `lr0`: Determines the step size at each iteration while moving towards a minimum in the [loss function](https://www.ultralytics.com/glossary/loss-function).
-- **[Batch Size](https://www.ultralytics.com/glossary/batch-size)** `batch`: Number of images processed simultaneously in a forward pass.
-- **Number of [Epochs](https://www.ultralytics.com/glossary/epoch)** `epochs`: An epoch is one complete forward and backward pass of all the training examples.
+- **Learning Rate** `lr0`: Determines the step size at each iteration while moving towards a minimum in the [loss function](https://www.sfdt_ibrahim.com/glossary/loss-function).
+- **[Batch Size](https://www.sfdt_ibrahim.com/glossary/batch-size)** `batch`: Number of images processed simultaneously in a forward pass.
+- **Number of [Epochs](https://www.sfdt_ibrahim.com/glossary/epoch)** `epochs`: An epoch is one complete forward and backward pass of all the training examples.
 - **Architecture Specifics**: Such as channel counts, number of layers, types of activation functions, etc.
 
 <p align="center">
-  <img width="640" src="https://github.com/ultralytics/docs/releases/download/0/hyperparameter-tuning-visual.avif" alt="Hyperparameter Tuning Visual">
+  <img width="640" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/hyperparameter-tuning-visual.avif" alt="Hyperparameter Tuning Visual">
 </p>
 
 For a full list of augmentation hyperparameters used in YOLO11 please refer to the [configurations page](../usage/cfg.md#augmentation-settings).
 
 ### Genetic Evolution and Mutation
 
-Ultralytics YOLO uses genetic algorithms to optimize hyperparameters. Genetic algorithms are inspired by the mechanism of natural selection and genetics.
+SFDT_Ibrahim YOLO uses genetic algorithms to optimize hyperparameters. Genetic algorithms are inspired by the mechanism of natural selection and genetics.
 
-- **Mutation**: In the context of Ultralytics YOLO, mutation helps in locally searching the hyperparameter space by applying small, random changes to existing hyperparameters, producing new candidates for evaluation.
-- **Crossover**: Although crossover is a popular genetic algorithm technique, it is not currently used in Ultralytics YOLO for hyperparameter tuning. The focus is mainly on mutation for generating new hyperparameter sets.
+- **Mutation**: In the context of SFDT_Ibrahim YOLO, mutation helps in locally searching the hyperparameter space by applying small, random changes to existing hyperparameters, producing new candidates for evaluation.
+- **Crossover**: Although crossover is a popular genetic algorithm technique, it is not currently used in SFDT_Ibrahim YOLO for hyperparameter tuning. The focus is mainly on mutation for generating new hyperparameter sets.
 
 ## Preparing for Hyperparameter Tuning
 
@@ -54,7 +54,7 @@ Before you begin the tuning process, it's important to:
 
 ### Initialize Hyperparameters
 
-Start with a reasonable set of initial hyperparameters. This could either be the default hyperparameters set by Ultralytics YOLO or something based on your domain knowledge or previous experiments.
+Start with a reasonable set of initial hyperparameters. This could either be the default hyperparameters set by SFDT_Ibrahim YOLO or something based on your domain knowledge or previous experiments.
 
 ### Mutate Hyperparameters
 
@@ -113,7 +113,7 @@ Here's how to define a search space and use the `model.tune()` method to utilize
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Initialize the YOLO model
         model = YOLO("yolo11n.pt")
@@ -173,10 +173,10 @@ This YAML file contains the best-performing hyperparameters found during the tun
 
     ```yaml
     # 558/900 iterations complete ✅ (45536.81s)
-    # Results saved to /usr/src/ultralytics/runs/detect/tune
+    # Results saved to /usr/src/sfdt_ibrahim/runs/detect/tune
     # Best fitness=0.64297 observed at iteration 498
     # Best fitness metrics are {'metrics/precision(B)': 0.87247, 'metrics/recall(B)': 0.71387, 'metrics/mAP50(B)': 0.79106, 'metrics/mAP50-95(B)': 0.62651, 'val/box_loss': 2.79884, 'val/cls_loss': 2.72386, 'val/dfl_loss': 0.68503, 'fitness': 0.64297}
-    # Best fitness model is /usr/src/ultralytics/runs/detect/train498
+    # Best fitness model is /usr/src/sfdt_ibrahim/runs/detect/train498
     # Best fitness hyperparameters are printed below.
 
     lr0: 0.00269
@@ -211,12 +211,12 @@ This is a plot displaying fitness (typically a performance metric like AP50) aga
 - **Usage**: Performance visualization
 
 <p align="center">
-  <img width="640" src="https://github.com/ultralytics/docs/releases/download/0/best-fitness.avif" alt="Hyperparameter Tuning Fitness vs Iteration">
+  <img width="640" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/best-fitness.avif" alt="Hyperparameter Tuning Fitness vs Iteration">
 </p>
 
 #### tune_results.csv
 
-A CSV file containing detailed results of each iteration during the tuning. Each row in the file represents one iteration, and it includes metrics like fitness score, [precision](https://www.ultralytics.com/glossary/precision), [recall](https://www.ultralytics.com/glossary/recall), as well as the hyperparameters used.
+A CSV file containing detailed results of each iteration during the tuning. Each row in the file represents one iteration, and it includes metrics like fitness score, [precision](https://www.sfdt_ibrahim.com/glossary/precision), [recall](https://www.sfdt_ibrahim.com/glossary/recall), as well as the hyperparameters used.
 
 - **Format**: CSV
 - **Usage**: Per-iteration results tracking.
@@ -236,12 +236,12 @@ This file contains scatter plots generated from `tune_results.csv`, helping you 
 - **Usage**: Exploratory data analysis
 
 <p align="center">
-  <img width="1000" src="https://github.com/ultralytics/docs/releases/download/0/tune-scatter-plots.avif" alt="Hyperparameter Tuning Scatter Plots">
+  <img width="1000" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/tune-scatter-plots.avif" alt="Hyperparameter Tuning Scatter Plots">
 </p>
 
 #### weights/
 
-This directory contains the saved [PyTorch](https://www.ultralytics.com/glossary/pytorch) models for the last and the best iterations during the hyperparameter tuning process.
+This directory contains the saved [PyTorch](https://www.sfdt_ibrahim.com/glossary/pytorch) models for the last and the best iterations during the hyperparameter tuning process.
 
 - **`last.pt`**: The last.pt are the weights from the last epoch of training.
 - **`best.pt`**: The best.pt weights for the iteration that achieved the best fitness score.
@@ -250,7 +250,7 @@ Using these results, you can make more informed decisions for your future model 
 
 ## Conclusion
 
-The hyperparameter tuning process in Ultralytics YOLO is simplified yet powerful, thanks to its genetic algorithm-based approach focused on mutation. Following the steps outlined in this guide will assist you in systematically tuning your model to achieve better performance.
+The hyperparameter tuning process in SFDT_Ibrahim YOLO is simplified yet powerful, thanks to its genetic algorithm-based approach focused on mutation. Following the steps outlined in this guide will assist you in systematically tuning your model to achieve better performance.
 
 ### Further Reading
 
@@ -258,20 +258,20 @@ The hyperparameter tuning process in Ultralytics YOLO is simplified yet powerful
 2. [YOLOv5 Hyperparameter Evolution Guide](../yolov5/tutorials/hyperparameter_evolution.md)
 3. [Efficient Hyperparameter Tuning with Ray Tune and YOLO11](../integrations/ray-tune.md)
 
-For deeper insights, you can explore the `Tuner` class source code and accompanying documentation. Should you have any questions, feature requests, or need further assistance, feel free to reach out to us on [GitHub](https://github.com/ultralytics/ultralytics/issues/new/choose) or [Discord](https://discord.com/invite/ultralytics).
+For deeper insights, you can explore the `Tuner` class source code and accompanying documentation. Should you have any questions, feature requests, or need further assistance, feel free to reach out to us on [GitHub](https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues/new/choose) or [Discord](https://discord.com/invite/sfdt_ibrahim).
 
 ## FAQ
 
-### How do I optimize the [learning rate](https://www.ultralytics.com/glossary/learning-rate) for Ultralytics YOLO during hyperparameter tuning?
+### How do I optimize the [learning rate](https://www.sfdt_ibrahim.com/glossary/learning-rate) for SFDT_Ibrahim YOLO during hyperparameter tuning?
 
-To optimize the learning rate for Ultralytics YOLO, start by setting an initial learning rate using the `lr0` parameter. Common values range from `0.001` to `0.01`. During the hyperparameter tuning process, this value will be mutated to find the optimal setting. You can utilize the `model.tune()` method to automate this process. For example:
+To optimize the learning rate for SFDT_Ibrahim YOLO, start by setting an initial learning rate using the `lr0` parameter. Common values range from `0.001` to `0.01`. During the hyperparameter tuning process, this value will be mutated to find the optimal setting. You can utilize the `model.tune()` method to automate this process. For example:
 
 !!! example
 
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Initialize the YOLO model
         model = YOLO("yolo11n.pt")
@@ -280,11 +280,11 @@ To optimize the learning rate for Ultralytics YOLO, start by setting an initial 
         model.tune(data="coco8.yaml", epochs=30, iterations=300, optimizer="AdamW", plots=False, save=False, val=False)
         ```
 
-For more details, check the [Ultralytics YOLO configuration page](../usage/cfg.md#augmentation-settings).
+For more details, check the [SFDT_Ibrahim YOLO configuration page](../usage/cfg.md#augmentation-settings).
 
 ### What are the benefits of using genetic algorithms for hyperparameter tuning in YOLO11?
 
-Genetic algorithms in Ultralytics YOLO11 provide a robust method for exploring the hyperparameter space, leading to highly optimized model performance. Key benefits include:
+Genetic algorithms in SFDT_Ibrahim YOLO11 provide a robust method for exploring the hyperparameter space, leading to highly optimized model performance. Key benefits include:
 
 - **Efficient Search**: Genetic algorithms like mutation can quickly explore a large set of hyperparameters.
 - **Avoiding Local Minima**: By introducing randomness, they help in avoiding local minima, ensuring better global optimization.
@@ -292,9 +292,9 @@ Genetic algorithms in Ultralytics YOLO11 provide a robust method for exploring t
 
 To see how genetic algorithms can optimize hyperparameters, check out the [hyperparameter evolution guide](../yolov5/tutorials/hyperparameter_evolution.md).
 
-### How long does the hyperparameter tuning process take for Ultralytics YOLO?
+### How long does the hyperparameter tuning process take for SFDT_Ibrahim YOLO?
 
-The time required for hyperparameter tuning with Ultralytics YOLO largely depends on several factors such as the size of the dataset, the complexity of the model architecture, the number of iterations, and the computational resources available. For instance, tuning YOLO11n on a dataset like COCO8 for 30 epochs might take several hours to days, depending on the hardware.
+The time required for hyperparameter tuning with SFDT_Ibrahim YOLO largely depends on several factors such as the size of the dataset, the complexity of the model architecture, the number of iterations, and the computational resources available. For instance, tuning YOLO11n on a dataset like COCO8 for 30 epochs might take several hours to days, depending on the hardware.
 
 To effectively manage tuning time, define a clear tuning budget beforehand ([internal section link](#preparing-for-hyperparameter-tuning)). This helps in balancing resource allocation and optimization goals.
 
@@ -304,12 +304,12 @@ When evaluating model performance during hyperparameter tuning in YOLO, you can 
 
 - **AP50**: The average precision at IoU threshold of 0.50.
 - **F1-Score**: The harmonic mean of precision and recall.
-- **Precision and Recall**: Individual metrics indicating the model's [accuracy](https://www.ultralytics.com/glossary/accuracy) in identifying true positives versus false positives and false negatives.
+- **Precision and Recall**: Individual metrics indicating the model's [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy) in identifying true positives versus false positives and false negatives.
 
-These metrics help you understand different aspects of your model's performance. Refer to the [Ultralytics YOLO performance metrics](../guides/yolo-performance-metrics.md) guide for a comprehensive overview.
+These metrics help you understand different aspects of your model's performance. Refer to the [SFDT_Ibrahim YOLO performance metrics](../guides/yolo-performance-metrics.md) guide for a comprehensive overview.
 
-### Can I use Ultralytics HUB for hyperparameter tuning of YOLO models?
+### Can I use SFDT_Ibrahim HUB for hyperparameter tuning of YOLO models?
 
-Yes, you can use Ultralytics HUB for hyperparameter tuning of YOLO models. The HUB offers a no-code platform to easily upload datasets, train models, and perform hyperparameter tuning efficiently. It provides real-time tracking and visualization of tuning progress and results.
+Yes, you can use SFDT_Ibrahim HUB for hyperparameter tuning of YOLO models. The HUB offers a no-code platform to easily upload datasets, train models, and perform hyperparameter tuning efficiently. It provides real-time tracking and visualization of tuning progress and results.
 
-Explore more about using Ultralytics HUB for hyperparameter tuning in the [Ultralytics HUB Cloud Training](../hub/cloud-training.md) documentation.
+Explore more about using SFDT_Ibrahim HUB for hyperparameter tuning in the [SFDT_Ibrahim HUB Cloud Training](../hub/cloud-training.md) documentation.

@@ -1,44 +1,44 @@
 ---
-description: Explore detailed documentation on Ultralytics data loaders including SourceTypes, LoadStreams, and more. Enhance your ML workflows with our comprehensive guides.
-keywords: Ultralytics, data loaders, SourceTypes, LoadStreams, LoadScreenshots, LoadImagesAndVideos, LoadPilAndNumpy, LoadTensor, ML workflows
+description: Explore detailed documentation on SFDT_Ibrahim data loaders including SourceTypes, LoadStreams, and more. Enhance your ML workflows with our comprehensive guides.
+keywords: SFDT_Ibrahim, data loaders, SourceTypes, LoadStreams, LoadScreenshots, LoadImagesAndVideos, LoadPilAndNumpy, LoadTensor, ML workflows
 ---
 
-# Reference for `ultralytics/data/loaders.py`
+# Reference for `sfdt_ibrahim/data/loaders.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/data/loaders.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/data/loaders.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/data/loaders.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/data/loaders.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/data/loaders.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/data/loaders.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.data.loaders.SourceTypes
+## ::: sfdt_ibrahim.data.loaders.SourceTypes
 
 <br><br><hr><br>
 
-## ::: ultralytics.data.loaders.LoadStreams
+## ::: sfdt_ibrahim.data.loaders.LoadStreams
 
 <br><br><hr><br>
 
-## ::: ultralytics.data.loaders.LoadScreenshots
+## ::: sfdt_ibrahim.data.loaders.LoadScreenshots
 
 <br><br><hr><br>
 
-## ::: ultralytics.data.loaders.LoadImagesAndVideos
+## ::: sfdt_ibrahim.data.loaders.LoadImagesAndVideos
 
 <br><br><hr><br>
 
-## ::: ultralytics.data.loaders.LoadPilAndNumpy
+## ::: sfdt_ibrahim.data.loaders.LoadPilAndNumpy
 
 <br><br><hr><br>
 
-## ::: ultralytics.data.loaders.LoadTensor
+## ::: sfdt_ibrahim.data.loaders.LoadTensor
 
 <br><br><hr><br>
 
-## ::: ultralytics.data.loaders.autocast_list
+## ::: sfdt_ibrahim.data.loaders.autocast_list
 
 <br><br><hr><br>
 
-## ::: ultralytics.data.loaders.get_best_youtube_url
+## ::: sfdt_ibrahim.data.loaders.get_best_youtube_url
 
 <br><br>

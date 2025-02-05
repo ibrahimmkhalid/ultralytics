@@ -1,35 +1,35 @@
 ---
 comments: true
-description: Experience real-time object detection on Android with Ultralytics. Leverage YOLO models for efficient and fast object identification. Download now!.
-keywords: Ultralytics, Android app, real-time object detection, YOLO models, TensorFlow Lite, FP16 quantization, INT8 quantization, hardware delegates, mobile AI, download app
+description: Experience real-time object detection on Android with SFDT_Ibrahim. Leverage YOLO models for efficient and fast object identification. Download now!.
+keywords: SFDT_Ibrahim, Android app, real-time object detection, YOLO models, TensorFlow Lite, FP16 quantization, INT8 quantization, hardware delegates, mobile AI, download app
 ---
 
-# Ultralytics Android App: Real-time [Object Detection](https://www.ultralytics.com/glossary/object-detection) with YOLO Models
+# SFDT_Ibrahim Android App: Real-time [Object Detection](https://www.sfdt_ibrahim.com/glossary/object-detection) with YOLO Models
 
-<a href="https://www.ultralytics.com/hub" target="_blank">
-  <img width="100%" src="https://github.com/ultralytics/docs/releases/download/0/ultralytics-android-app-detection.avif" alt="Ultralytics HUB preview image"></a>
+<a href="https://www.sfdt_ibrahim.com/hub" target="_blank">
+  <img width="100%" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/sfdt_ibrahim-android-app-detection.avif" alt="SFDT_Ibrahim HUB preview image"></a>
 <br>
 <div align="center">
-  <a href="https://github.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-github.png" width="3%" alt="Ultralytics GitHub"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://www.linkedin.com/company/ultralytics/"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-linkedin.png" width="3%" alt="Ultralytics LinkedIn"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://twitter.com/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-twitter.png" width="3%" alt="Ultralytics Twitter"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://youtube.com/ultralytics?sub_confirmation=1"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-youtube.png" width="3%" alt="Ultralytics YouTube"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://www.tiktok.com/@ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-tiktok.png" width="3%" alt="Ultralytics TikTok"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://ultralytics.com/bilibili"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-bilibili.png" width="3%" alt="Ultralytics BiliBili"></a>
-  <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
-  <a href="https://discord.com/invite/ultralytics"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="3%" alt="Ultralytics Discord"></a>
+  <a href="https://github.com/sfdt_ibrahim"><img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-social-github.png" width="3%" alt="SFDT_Ibrahim GitHub"></a>
+  <img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://www.linkedin.com/company/sfdt_ibrahim/"><img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-social-linkedin.png" width="3%" alt="SFDT_Ibrahim LinkedIn"></a>
+  <img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://twitter.com/sfdt_ibrahim"><img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-social-twitter.png" width="3%" alt="SFDT_Ibrahim Twitter"></a>
+  <img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://youtube.com/sfdt_ibrahim?sub_confirmation=1"><img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-social-youtube.png" width="3%" alt="SFDT_Ibrahim YouTube"></a>
+  <img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://www.tiktok.com/@sfdt_ibrahim"><img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-social-tiktok.png" width="3%" alt="SFDT_Ibrahim TikTok"></a>
+  <img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://sfdt_ibrahim.com/bilibili"><img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-social-bilibili.png" width="3%" alt="SFDT_Ibrahim BiliBili"></a>
+  <img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
+  <a href="https://discord.com/invite/sfdt_ibrahim"><img src="https://github.com/sfdt_ibrahim/assets/raw/main/social/logo-social-discord.png" width="3%" alt="SFDT_Ibrahim Discord"></a>
   <br>
   <br>
-  <a href="https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app" style="text-decoration:none;">
-    <img src="https://raw.githubusercontent.com/ultralytics/assets/master/app/google-play.svg" width="15%" alt="Google Play store"></a>&nbsp;
+  <a href="https://play.google.com/store/apps/details?id=com.sfdt_ibrahim.sfdt_ibrahim_app" style="text-decoration:none;">
+    <img src="https://raw.githubusercontent.com/sfdt_ibrahim/assets/master/app/google-play.svg" width="15%" alt="Google Play store"></a>&nbsp;
 </div>
 
-The Ultralytics Android App is a powerful tool that allows you to run YOLO models directly on your Android device for real-time object detection. This app utilizes [TensorFlow](https://www.ultralytics.com/glossary/tensorflow) Lite for model optimization and various hardware delegates for acceleration, enabling fast and efficient object detection.
+The SFDT_Ibrahim Android App is a powerful tool that allows you to run YOLO models directly on your Android device for real-time object detection. This app utilizes [TensorFlow](https://www.sfdt_ibrahim.com/glossary/tensorflow) Lite for model optimization and various hardware delegates for acceleration, enabling fast and efficient object detection.
 
 <p align="center">
   <br>
@@ -39,12 +39,12 @@ The Ultralytics Android App is a powerful tool that allows you to run YOLO model
     allowfullscreen>
   </iframe>
   <br>
-  <strong>Watch:</strong> Getting Started with the Ultralytics HUB App (IOS & Android)
+  <strong>Watch:</strong> Getting Started with the SFDT_Ibrahim HUB App (IOS & Android)
 </p>
 
 ## Quantization and Acceleration
 
-To achieve real-time performance on your Android device, YOLO models are quantized to either FP16 or INT8 [precision](https://www.ultralytics.com/glossary/precision). Quantization is a process that reduces the numerical precision of the model's weights and biases, thus reducing the model's size and the amount of computation required. This results in faster inference times without significantly affecting the model's [accuracy](https://www.ultralytics.com/glossary/accuracy).
+To achieve real-time performance on your Android device, YOLO models are quantized to either FP16 or INT8 [precision](https://www.sfdt_ibrahim.com/glossary/precision). Quantization is a process that reduces the numerical precision of the model's weights and biases, thus reducing the model's size and the amount of computation required. This results in faster inference times without significantly affecting the model's [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy).
 
 ### FP16 Quantization
 
@@ -52,7 +52,7 @@ FP16 (or half-precision) quantization converts the model's 32-bit floating-point
 
 ### INT8 Quantization
 
-INT8 (or 8-bit integer) quantization further reduces the model's size and computation requirements by converting its 32-bit floating-point numbers to 8-bit integers. This quantization method can result in a significant speedup, but it may lead to a slight reduction in [mean average precision](https://www.ultralytics.com/glossary/mean-average-precision-map) (mAP) due to the lower numerical precision.
+INT8 (or 8-bit integer) quantization further reduces the model's size and computation requirements by converting its 32-bit floating-point numbers to 8-bit integers. This quantization method can result in a significant speedup, but it may lead to a slight reduction in [mean average precision](https://www.sfdt_ibrahim.com/glossary/mean-average-precision-map) (mAP) due to the lower numerical precision.
 
 !!! tip "mAP Reduction in INT8 Models"
 
@@ -65,7 +65,7 @@ Different delegates are available on Android devices to accelerate model inferen
 1. **CPU**: The default option, with reasonable performance on most devices.
 2. **GPU**: Utilizes the device's GPU for faster inference. It can provide a significant performance boost on devices with powerful GPUs.
 3. **Hexagon**: Leverages Qualcomm's Hexagon DSP for faster and more efficient processing. This option is available on devices with Qualcomm Snapdragon processors.
-4. **NNAPI**: The Android [Neural Networks](https://www.ultralytics.com/glossary/neural-network-nn) API (NNAPI) serves as an abstraction layer for running ML models on Android devices. NNAPI can utilize various hardware accelerators, such as CPU, GPU, and dedicated AI chips (e.g., Google's Edge TPU, or the Pixel Neural Core).
+4. **NNAPI**: The Android [Neural Networks](https://www.sfdt_ibrahim.com/glossary/neural-network-nn) API (NNAPI) serves as an abstraction layer for running ML models on Android devices. NNAPI can utilize various hardware accelerators, such as CPU, GPU, and dedicated AI chips (e.g., Google's Edge TPU, or the Pixel Neural Core).
 
 Here's a table showing the primary vendors, their product lines, popular devices, and supported delegates:
 
@@ -81,13 +81,13 @@ Please note that the list of devices mentioned is not exhaustive and may vary de
 
 Keep in mind that the choice of delegate can affect performance and model compatibility. For example, some models may not work with certain delegates, or a delegate may not be available on a specific device. As such, it's essential to test your model and the chosen delegate on your target devices for the best results.
 
-## Getting Started with the Ultralytics Android App
+## Getting Started with the SFDT_Ibrahim Android App
 
-To get started with the Ultralytics Android App, follow these steps:
+To get started with the SFDT_Ibrahim Android App, follow these steps:
 
-1. Download the Ultralytics App from the [Google Play Store](https://play.google.com/store/apps/details?id=com.ultralytics.ultralytics_app).
+1. Download the SFDT_Ibrahim App from the [Google Play Store](https://play.google.com/store/apps/details?id=com.sfdt_ibrahim.sfdt_ibrahim_app).
 
-2. Launch the app on your Android device and sign in with your Ultralytics account. If you don't have an account yet, create one [here](https://hub.ultralytics.com/).
+2. Launch the app on your Android device and sign in with your SFDT_Ibrahim account. If you don't have an account yet, create one [here](https://hub.sfdt_ibrahim.com/).
 
 3. Once signed in, you will see a list of your trained YOLO models. Select a model to use for object detection.
 
@@ -97,4 +97,4 @@ To get started with the Ultralytics Android App, follow these steps:
 
 6. Explore the app's settings to adjust the detection threshold, enable or disable specific object classes, and more.
 
-With the Ultralytics Android App, you now have the power of real-time object detection using YOLO models right at your fingertips. Enjoy exploring the app's features and optimizing its settings to suit your specific use cases.
+With the SFDT_Ibrahim Android App, you now have the power of real-time object detection using YOLO models right at your fingertips. Enjoy exploring the app's features and optimizing its settings to suit your specific use cases.

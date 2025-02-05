@@ -1,7 +1,7 @@
-# Ultralytics 🚀 AGPL-3.0 License - https://ultralytics.com/license
+# SFDT_Ibrahim 🚀 AGPL-3.0 License - https://sfdt_ibrahim.com/license
 
 # Overview:
-# This pyproject.toml file manages the build, packaging, and distribution of the Ultralytics library.
+# This pyproject.toml file manages the build, packaging, and distribution of the SFDT_Ibrahim library.
 # It defines essential project metadata, dependencies, and settings used to develop and deploy the library.
 
 # Key Sections:
@@ -11,12 +11,12 @@
 # - [tool.*]: Configures settings for various tools (pytest, yapf, etc.) used in the project.
 
 # Installation:
-# The Ultralytics library can be installed using the command: 'pip install ultralytics'
+# The SFDT_Ibrahim library can be installed using the command: 'pip install sfdt_ibrahim'
 # For development purposes, you can install the package in editable mode with: 'pip install -e .'
 # This approach allows for real-time code modifications without the need for re-installation.
 
 # Documentation:
-# For comprehensive documentation and usage instructions, visit: https://docs.ultralytics.com
+# For comprehensive documentation and usage instructions, visit: https://docs.sfdt_ibrahim.com
 
 [build-system]
 requires = ["setuptools>=70.0.0", "wheel"]
@@ -24,19 +24,19 @@ build-backend = "setuptools.build_meta"
 
 # Project settings -----------------------------------------------------------------------------------------------------
 [project]
-name = "ultralytics"
+name = "sfdt_ibrahim"
 dynamic = ["version"]
-description = "Ultralytics YOLO 🚀 for SOTA object detection, multi-object tracking, instance segmentation, pose estimation and image classification."
+description = "SFDT_Ibrahim YOLO 🚀 for SOTA object detection, multi-object tracking, instance segmentation, pose estimation and image classification."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { "text" = "AGPL-3.0" }
-keywords = ["machine-learning", "deep-learning", "computer-vision", "ML", "DL", "AI", "YOLO", "YOLOv3", "YOLOv5", "YOLOv8", "YOLOv9", "YOLOv10", "YOLO11", "HUB", "Ultralytics"]
+keywords = ["machine-learning", "deep-learning", "computer-vision", "ML", "DL", "AI", "YOLO", "YOLOv3", "YOLOv5", "YOLOv8", "YOLOv9", "YOLOv10", "YOLO11", "HUB", "SFDT_Ibrahim"]
 authors = [
-    { name = "Glenn Jocher", email = "glenn.jocher@ultralytics.com" },
-    { name = "Jing Qiu", email = "jing.qiu@ultralytics.com" },
+    { name = "Glenn Jocher", email = "glenn.jocher@sfdt_ibrahim.com" },
+    { name = "Jing Qiu", email = "jing.qiu@sfdt_ibrahim.com" },
 ]
 maintainers = [
-    { name = "Ultralytics", email = "hello@ultralytics.com" },
+    { name = "SFDT_Ibrahim", email = "hello@sfdt_ibrahim.com" },
 ]
 classifiers = [
     "Development Status :: 4 - Beta",
@@ -61,7 +61,7 @@ classifiers = [
 
 # Required dependencies ------------------------------------------------------------------------------------------------
 dependencies = [
-    "numpy>=1.23.0,<=2.1.1", # OpenVINO and TFLite errors on '--slow' CI Tests https://github.com/ultralytics/ultralytics/pull/18943
+    "numpy>=1.23.0,<=2.1.1", # OpenVINO and TFLite errors on '--slow' CI Tests https://github.com/sfdt_ibrahim/sfdt_ibrahim/pull/18943
     "matplotlib>=3.3.0",
     "opencv-python>=4.6.0",
     "pillow>=7.1.2",
@@ -69,14 +69,14 @@ dependencies = [
     "requests>=2.23.0",
     "scipy>=1.4.1",
     "torch>=1.8.0",
-    "torch>=1.8.0,!=2.4.0; sys_platform == 'win32'", # Windows CPU errors w/ 2.4.0 https://github.com/ultralytics/ultralytics/issues/15049
+    "torch>=1.8.0,!=2.4.0; sys_platform == 'win32'", # Windows CPU errors w/ 2.4.0 https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues/15049
     "torchvision>=0.9.0",
     "tqdm>=4.64.0", # progress bars
     "psutil", # system utilization
     "py-cpuinfo", # display CPU info
     "pandas>=1.1.4",
     "seaborn>=0.11.0", # plotting
-    "ultralytics-thop>=2.0.0", # FLOPs computation https://github.com/ultralytics/thop
+    "sfdt_ibrahim-thop>=2.0.0", # FLOPs computation https://github.com/sfdt_ibrahim/thop
 ]
 
 # Optional dependencies ------------------------------------------------------------------------------------------------
@@ -87,11 +87,11 @@ dev = [
     "pytest-cov",
     "coverage[toml]",
     "mkdocs>=1.6.0",
-    "beautifulsoup4<=4.12.3",  # For docs https://github.com/ultralytics/ultralytics/pull/19067
+    "beautifulsoup4<=4.12.3",  # For docs https://github.com/sfdt_ibrahim/sfdt_ibrahim/pull/19067
     "mkdocs-material>=9.5.9",
     "mkdocstrings[python]",
     "mkdocs-redirects", # 301 redirects
-    "mkdocs-ultralytics-plugin>=0.1.16", # for meta descriptions and images, dates and authors
+    "mkdocs-sfdt_ibrahim-plugin>=0.1.16", # for meta descriptions and images, dates and authors
     "mkdocs-macros-plugin>=1.0.5"  # duplicating content (i.e. export tables) in multiple places
 ]
 export = [
@@ -99,7 +99,7 @@ export = [
     "coremltools>=7.0; platform_system != 'Windows' and python_version <= '3.11'", # CoreML supported on macOS and Linux
     "scikit-learn>=1.3.2; platform_system != 'Windows' and python_version <= '3.11'", # CoreML k-means quantization
     "openvino>=2024.0.0", # OpenVINO export
-    "tensorflow>=2.0.0", # TF bug https://github.com/ultralytics/ultralytics/issues/5161
+    "tensorflow>=2.0.0", # TF bug https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues/5161
     "tensorflowjs>=3.9.0", # TF.js export, automatically installs tensorflow
     "tensorstore>=0.1.63; platform_machine == 'aarch64' and python_version >= '3.9'", # for TF Raspberry Pi exports
     "keras", # not installed automatically by tensorflow>=2.16
@@ -111,35 +111,35 @@ solutions = [
     "streamlit",    # for live inference on web browser i.e `yolo streamlit-predict`
 ]
 logging = [
-    "comet", # https://docs.ultralytics.com/integrations/comet/
+    "comet", # https://docs.sfdt_ibrahim.com/integrations/comet/
     "tensorboard>=2.13.0",
     "dvclive>=2.12.0",
 ]
 extra = [
-    "hub-sdk>=0.0.12", # Ultralytics HUB
+    "hub-sdk>=0.0.12", # SFDT_Ibrahim HUB
     "ipython", # interactive notebook
     "albumentations>=1.4.6", # training augmentations
     "pycocotools>=2.0.7", # COCO mAP
 ]
 
 [project.urls]
-"Homepage" = "https://ultralytics.com"
-"Source" = "https://github.com/ultralytics/ultralytics"
-"Documentation" = "https://docs.ultralytics.com"
-"Bug Reports" = "https://github.com/ultralytics/ultralytics/issues"
-"Changelog" = "https://github.com/ultralytics/ultralytics/releases"
+"Homepage" = "https://sfdt_ibrahim.com"
+"Source" = "https://github.com/sfdt_ibrahim/sfdt_ibrahim"
+"Documentation" = "https://docs.sfdt_ibrahim.com"
+"Bug Reports" = "https://github.com/sfdt_ibrahim/sfdt_ibrahim/issues"
+"Changelog" = "https://github.com/sfdt_ibrahim/sfdt_ibrahim/releases"
 
 [project.scripts]
-yolo = "ultralytics.cfg:entrypoint"
-ultralytics = "ultralytics.cfg:entrypoint"
+yolo = "sfdt_ibrahim.cfg:entrypoint"
+sfdt_ibrahim = "sfdt_ibrahim.cfg:entrypoint"
 
 # Tools settings -------------------------------------------------------------------------------------------------------
 [tool.setuptools]  # configuration specific to the `setuptools` build backend.
-packages = { find = { where = ["."], include = ["ultralytics", "ultralytics.*"] } }
-package-data = { "ultralytics" = ["**/*.yaml", "../tests/*.py"], "ultralytics.assets" = ["*.jpg"] }
+packages = { find = { where = ["."], include = ["sfdt_ibrahim", "sfdt_ibrahim.*"] } }
+package-data = { "sfdt_ibrahim" = ["**/*.yaml", "../tests/*.py"], "sfdt_ibrahim.assets" = ["*.jpg"] }
 
 [tool.setuptools.dynamic]
-version = { attr = "ultralytics.__version__" }
+version = { attr = "sfdt_ibrahim.__version__" }
 
 [tool.pytest.ini_options]
 addopts = "--doctest-modules --durations=30 --color=yes"
@@ -149,9 +149,9 @@ markers = [
 norecursedirs = [".git", "dist", "build"]
 
 [tool.coverage.run]
-source = ["ultralytics/"]
+source = ["sfdt_ibrahim/"]
 data_file = "tests/.coverage"
-omit = ["ultralytics/utils/callbacks/*"]
+omit = ["sfdt_ibrahim/utils/callbacks/*"]
 
 [tool.isort]
 line_length = 120

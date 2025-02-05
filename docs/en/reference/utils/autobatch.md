@@ -1,20 +1,20 @@
 ---
-description: Discover how to automatically estimate the best YOLO batch size for optimal CUDA memory usage in PyTorch using Ultralytics' autobatch utility.
-keywords: YOLO batch size, CUDA memory, PyTorch autobatch, Ultralytics, machine learning, optimal batch size, training batch size, YOLO model
+description: Discover how to automatically estimate the best YOLO batch size for optimal CUDA memory usage in PyTorch using SFDT_Ibrahim' autobatch utility.
+keywords: YOLO batch size, CUDA memory, PyTorch autobatch, SFDT_Ibrahim, machine learning, optimal batch size, training batch size, YOLO model
 ---
 
-# Reference for `ultralytics/utils/autobatch.py`
+# Reference for `sfdt_ibrahim/utils/autobatch.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/autobatch.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/utils/autobatch.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/utils/autobatch.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/autobatch.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/utils/autobatch.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/utils/autobatch.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.utils.autobatch.check_train_batch_size
+## ::: sfdt_ibrahim.utils.autobatch.check_train_batch_size
 
 <br><br><hr><br>
 
-## ::: ultralytics.utils.autobatch.autobatch
+## ::: sfdt_ibrahim.utils.autobatch.autobatch
 
 <br><br>

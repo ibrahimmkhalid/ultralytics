@@ -1,16 +1,16 @@
 ---
 comments: true
 description: Learn how to efficiently train object detection models using YOLO11 with comprehensive instructions on settings, augmentation, and hardware utilization.
-keywords: Ultralytics, YOLO11, model training, deep learning, object detection, GPU training, dataset augmentation, hyperparameter tuning, model performance, apple silicon training
+keywords: SFDT_Ibrahim, YOLO11, model training, deep learning, object detection, GPU training, dataset augmentation, hyperparameter tuning, model performance, apple silicon training
 ---
 
-# Model Training with Ultralytics YOLO
+# Model Training with SFDT_Ibrahim YOLO
 
-<img width="1024" src="https://github.com/ultralytics/docs/releases/download/0/ultralytics-yolov8-ecosystem-integrations.avif" alt="Ultralytics YOLO ecosystem and integrations">
+<img width="1024" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/sfdt_ibrahim-yolov8-ecosystem-integrations.avif" alt="SFDT_Ibrahim YOLO ecosystem and integrations">
 
 ## Introduction
 
-Training a [deep learning](https://www.ultralytics.com/glossary/deep-learning-dl) model involves feeding it data and adjusting its parameters so that it can make accurate predictions. Train mode in Ultralytics YOLO11 is engineered for effective and efficient training of object detection models, fully utilizing modern hardware capabilities. This guide aims to cover all the details you need to get started with training your own models using YOLO11's robust set of features.
+Training a [deep learning](https://www.sfdt_ibrahim.com/glossary/deep-learning-dl) model involves feeding it data and adjusting its parameters so that it can make accurate predictions. Train mode in SFDT_Ibrahim YOLO11 is engineered for effective and efficient training of object detection models, fully utilizing modern hardware capabilities. This guide aims to cover all the details you need to get started with training your own models using YOLO11's robust set of features.
 
 <p align="center">
   <br>
@@ -23,7 +23,7 @@ Training a [deep learning](https://www.ultralytics.com/glossary/deep-learning-dl
   <strong>Watch:</strong> How to Train a YOLO model on Your Custom Dataset in Google Colab.
 </p>
 
-## Why Choose Ultralytics YOLO for Training?
+## Why Choose SFDT_Ibrahim YOLO for Training?
 
 Here are some compelling reasons to opt for YOLO11's Train mode:
 
@@ -47,7 +47,7 @@ The following are some notable features of YOLO11's Train mode:
 
 ## Usage Examples
 
-Train YOLO11n on the COCO8 dataset for 100 [epochs](https://www.ultralytics.com/glossary/epoch) at image size 640. The training device can be specified using the `device` argument. If no argument is passed GPU `device=0` will be used if available, otherwise `device='cpu'` will be used. See Arguments section below for a full list of training arguments.
+Train YOLO11n on the COCO8 dataset for 100 [epochs](https://www.sfdt_ibrahim.com/glossary/epoch) at image size 640. The training device can be specified using the `device` argument. If no argument is passed GPU `device=0` will be used if available, otherwise `device='cpu'` will be used. See Arguments section below for a full list of training arguments.
 
 !!! warning "Windows Multi-Processing Error"
 
@@ -60,7 +60,7 @@ Train YOLO11n on the COCO8 dataset for 100 [epochs](https://www.ultralytics.com/
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a model
         model = YOLO("yolo11n.yaml")  # build a new model from YAML
@@ -95,7 +95,7 @@ Multi-GPU training allows for more efficient utilization of available hardware r
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a model
         model = YOLO("yolo11n.pt")  # load a pretrained model (recommended for training)
@@ -113,7 +113,7 @@ Multi-GPU training allows for more efficient utilization of available hardware r
 
 ### Apple Silicon MPS Training
 
-With the support for Apple silicon chips integrated in the Ultralytics YOLO models, it's now possible to train your models on devices utilizing the powerful Metal Performance Shaders (MPS) framework. The MPS offers a high-performance way of executing computation and image processing tasks on Apple's custom silicon.
+With the support for Apple silicon chips integrated in the SFDT_Ibrahim YOLO models, it's now possible to train your models on devices utilizing the powerful Metal Performance Shaders (MPS) framework. The MPS offers a high-performance way of executing computation and image processing tasks on Apple's custom silicon.
 
 To enable training on Apple silicon chips, you should specify 'mps' as your device when initiating the training process. Below is an example of how you could do this in Python and via the command line:
 
@@ -122,7 +122,7 @@ To enable training on Apple silicon chips, you should specify 'mps' as your devi
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a model
         model = YOLO("yolo11n.pt")  # load a pretrained model (recommended for training)
@@ -144,9 +144,9 @@ While leveraging the computational power of the Apple silicon chips, this enable
 
 Resuming training from a previously saved state is a crucial feature when working with deep learning models. This can come in handy in various scenarios, like when the training process has been unexpectedly interrupted, or when you wish to continue training a model with new data or for more epochs.
 
-When training is resumed, Ultralytics YOLO loads the weights from the last saved model and also restores the optimizer state, [learning rate](https://www.ultralytics.com/glossary/learning-rate) scheduler, and the epoch number. This allows you to continue the training process seamlessly from where it was left off.
+When training is resumed, SFDT_Ibrahim YOLO loads the weights from the last saved model and also restores the optimizer state, [learning rate](https://www.sfdt_ibrahim.com/glossary/learning-rate) scheduler, and the epoch number. This allows you to continue the training process seamlessly from where it was left off.
 
-You can easily resume training in Ultralytics YOLO by setting the `resume` argument to `True` when calling the `train` method, and specifying the path to the `.pt` file containing the partially trained model weights.
+You can easily resume training in SFDT_Ibrahim YOLO by setting the `resume` argument to `True` when calling the `train` method, and specifying the path to the `.pt` file containing the partially trained model weights.
 
 Below is an example of how to resume an interrupted training using Python and via the command line:
 
@@ -155,7 +155,7 @@ Below is an example of how to resume an interrupted training using Python and vi
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a model
         model = YOLO("path/to/last.pt")  # load a partially trained model
@@ -177,7 +177,7 @@ Remember that checkpoints are saved at the end of every epoch by default, or at 
 
 ## Train Settings
 
-The training settings for YOLO models encompass various hyperparameters and configurations used during the training process. These settings influence the model's performance, speed, and [accuracy](https://www.ultralytics.com/glossary/accuracy). Key training settings include batch size, learning rate, momentum, and weight decay. Additionally, the choice of optimizer, [loss function](https://www.ultralytics.com/glossary/loss-function), and training dataset composition can impact the training process. Careful tuning and experimentation with these settings are crucial for optimizing performance.
+The training settings for YOLO models encompass various hyperparameters and configurations used during the training process. These settings influence the model's performance, speed, and [accuracy](https://www.sfdt_ibrahim.com/glossary/accuracy). Key training settings include batch size, learning rate, momentum, and weight decay. Additionally, the choice of optimizer, [loss function](https://www.sfdt_ibrahim.com/glossary/loss-function), and training dataset composition can impact the training process. Careful tuning and experimentation with these settings are crucial for optimizing performance.
 
 {% include "macros/train-args.md" %}
 
@@ -185,13 +185,13 @@ The training settings for YOLO models encompass various hyperparameters and conf
 
     The `batch` argument can be configured in three ways:
 
-    - **Fixed [Batch Size](https://www.ultralytics.com/glossary/batch-size)**: Set an integer value (e.g., `batch=16`), specifying the number of images per batch directly.
+    - **Fixed [Batch Size](https://www.sfdt_ibrahim.com/glossary/batch-size)**: Set an integer value (e.g., `batch=16`), specifying the number of images per batch directly.
     - **Auto Mode (60% GPU Memory)**: Use `batch=-1` to automatically adjust batch size for approximately 60% CUDA memory utilization.
     - **Auto Mode with Utilization Fraction**: Set a fraction value (e.g., `batch=0.70`) to adjust batch size based on the specified fraction of GPU memory usage.
 
 ## Augmentation Settings and Hyperparameters
 
-Augmentation techniques are essential for improving the robustness and performance of YOLO models by introducing variability into the [training data](https://www.ultralytics.com/glossary/training-data), helping the model generalize better to unseen data. The following table outlines the purpose and effect of each augmentation argument:
+Augmentation techniques are essential for improving the robustness and performance of YOLO models by introducing variability into the [training data](https://www.sfdt_ibrahim.com/glossary/training-data), helping the model generalize better to unseen data. The following table outlines the purpose and effect of each augmentation argument:
 
 {% include "macros/augmentation-args.md" %}
 
@@ -203,7 +203,7 @@ These settings can be adjusted to meet the specific requirements of the dataset 
 
 ## Logging
 
-In training a YOLO11 model, you might find it valuable to keep track of the model's performance over time. This is where logging comes into play. Ultralytics' YOLO provides support for three types of loggers - Comet, ClearML, and TensorBoard.
+In training a YOLO11 model, you might find it valuable to keep track of the model's performance over time. This is where logging comes into play. SFDT_Ibrahim' YOLO provides support for three types of loggers - Comet, ClearML, and TensorBoard.
 
 To use a logger, select it from the dropdown menu in the code snippet above and run it. The chosen logger will be installed and initialized.
 
@@ -247,9 +247,9 @@ After running this script, you will need to sign in to your ClearML account on t
 
 ### TensorBoard
 
-[TensorBoard](https://www.tensorflow.org/tensorboard) is a visualization toolkit for [TensorFlow](https://www.ultralytics.com/glossary/tensorflow). It allows you to visualize your TensorFlow graph, plot quantitative metrics about the execution of your graph, and show additional data like images that pass through it.
+[TensorBoard](https://www.tensorflow.org/tensorboard) is a visualization toolkit for [TensorFlow](https://www.sfdt_ibrahim.com/glossary/tensorflow). It allows you to visualize your TensorFlow graph, plot quantitative metrics about the execution of your graph, and show additional data like images that pass through it.
 
-To use TensorBoard in [Google Colab](https://colab.research.google.com/github/ultralytics/ultralytics/blob/main/examples/tutorial.ipynb):
+To use TensorBoard in [Google Colab](https://colab.research.google.com/github/sfdt_ibrahim/sfdt_ibrahim/blob/main/examples/tutorial.ipynb):
 
 !!! example
 
@@ -257,7 +257,7 @@ To use TensorBoard in [Google Colab](https://colab.research.google.com/github/ul
 
         ```bash
         load_ext tensorboard
-        tensorboard --logdir ultralytics/runs  # replace with 'runs' directory
+        tensorboard --logdir sfdt_ibrahim/runs  # replace with 'runs' directory
         ```
 
 To use TensorBoard locally run the below command and view results at http://localhost:6006/.
@@ -267,7 +267,7 @@ To use TensorBoard locally run the below command and view results at http://loca
     === "CLI"
 
         ```bash
-        tensorboard --logdir ultralytics/runs  # replace with 'runs' directory
+        tensorboard --logdir sfdt_ibrahim/runs  # replace with 'runs' directory
         ```
 
 This will load TensorBoard and direct it to the directory where your training logs are saved.
@@ -276,16 +276,16 @@ After setting up your logger, you can then proceed with your model training. All
 
 ## FAQ
 
-### How do I train an [object detection](https://www.ultralytics.com/glossary/object-detection) model using Ultralytics YOLO11?
+### How do I train an [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) model using SFDT_Ibrahim YOLO11?
 
-To train an object detection model using Ultralytics YOLO11, you can either use the Python API or the CLI. Below is an example for both:
+To train an object detection model using SFDT_Ibrahim YOLO11, you can either use the Python API or the CLI. Below is an example for both:
 
 !!! example "Single-GPU and CPU Training Example"
 
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a model
         model = YOLO("yolo11n.pt")  # load a pretrained model (recommended for training)
@@ -302,9 +302,9 @@ To train an object detection model using Ultralytics YOLO11, you can either use 
 
 For more details, refer to the [Train Settings](#train-settings) section.
 
-### What are the key features of Ultralytics YOLO11's Train mode?
+### What are the key features of SFDT_Ibrahim YOLO11's Train mode?
 
-The key features of Ultralytics YOLO11's Train mode include:
+The key features of SFDT_Ibrahim YOLO11's Train mode include:
 
 - **Automatic Dataset Download:** Automatically downloads standard datasets like COCO, VOC, and ImageNet.
 - **Multi-GPU Support:** Scale training across multiple GPUs for faster processing.
@@ -313,7 +313,7 @@ The key features of Ultralytics YOLO11's Train mode include:
 
 These features make training efficient and customizable to your needs. For more details, see the [Key Features of Train Mode](#key-features-of-train-mode) section.
 
-### How do I resume training from an interrupted session in Ultralytics YOLO11?
+### How do I resume training from an interrupted session in SFDT_Ibrahim YOLO11?
 
 To resume training from an interrupted session, set the `resume` argument to `True` and specify the path to the last saved checkpoint.
 
@@ -322,7 +322,7 @@ To resume training from an interrupted session, set the `resume` argument to `Tr
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load the partially trained model
         model = YOLO("path/to/last.pt")
@@ -341,14 +341,14 @@ Check the section on [Resuming Interrupted Trainings](#resuming-interrupted-trai
 
 ### Can I train YOLO11 models on Apple silicon chips?
 
-Yes, Ultralytics YOLO11 supports training on Apple silicon chips utilizing the Metal Performance Shaders (MPS) framework. Specify 'mps' as your training device.
+Yes, SFDT_Ibrahim YOLO11 supports training on Apple silicon chips utilizing the Metal Performance Shaders (MPS) framework. Specify 'mps' as your training device.
 
 !!! example "MPS Training Example"
 
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load a pretrained model
         model = YOLO("yolo11n.pt")
@@ -367,7 +367,7 @@ For more details, refer to the [Apple Silicon MPS Training](#apple-silicon-mps-t
 
 ### What are the common training settings, and how do I configure them?
 
-Ultralytics YOLO11 allows you to configure a variety of training settings such as batch size, learning rate, epochs, and more through arguments. Here's a brief overview:
+SFDT_Ibrahim YOLO11 allows you to configure a variety of training settings such as batch size, learning rate, epochs, and more through arguments. Here's a brief overview:
 
 | Argument | Default | Description                                                            |
 | -------- | ------- | ---------------------------------------------------------------------- |

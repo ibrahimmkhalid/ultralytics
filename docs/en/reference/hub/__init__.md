@@ -1,40 +1,40 @@
 ---
-description: Explore Ultralytics HUB API functions for login, logout, model reset, export, and dataset checks. Enhance your YOLO workflows with these essential utilities.
-keywords: Ultralytics HUB API, login, logout, reset model, export model, check dataset, YOLO, machine learning
+description: Explore SFDT_Ibrahim HUB API functions for login, logout, model reset, export, and dataset checks. Enhance your YOLO workflows with these essential utilities.
+keywords: SFDT_Ibrahim HUB API, login, logout, reset model, export model, check dataset, YOLO, machine learning
 ---
 
-# Reference for `ultralytics/hub/__init__.py`
+# Reference for `sfdt_ibrahim/hub/__init__.py`
 
 !!! note
 
-    This file is available at [https://github.com/ultralytics/ultralytics/blob/main/ultralytics/hub/\_\_init\_\_.py](https://github.com/ultralytics/ultralytics/blob/main/ultralytics/hub/__init__.py). If you spot a problem please help fix it by [contributing](https://docs.ultralytics.com/help/contributing/) a [Pull Request](https://github.com/ultralytics/ultralytics/edit/main/ultralytics/hub/__init__.py) 🛠️. Thank you 🙏!
+    This file is available at [https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/hub/\_\_init\_\_.py](https://github.com/sfdt_ibrahim/sfdt_ibrahim/blob/main/sfdt_ibrahim/hub/__init__.py). If you spot a problem please help fix it by [contributing](https://docs.sfdt_ibrahim.com/help/contributing/) a [Pull Request](https://github.com/sfdt_ibrahim/sfdt_ibrahim/edit/main/sfdt_ibrahim/hub/__init__.py) 🛠️. Thank you 🙏!
 
 <br>
 
-## ::: ultralytics.hub.login
+## ::: sfdt_ibrahim.hub.login
 
 <br><br><hr><br>
 
-## ::: ultralytics.hub.logout
+## ::: sfdt_ibrahim.hub.logout
 
 <br><br><hr><br>
 
-## ::: ultralytics.hub.reset_model
+## ::: sfdt_ibrahim.hub.reset_model
 
 <br><br><hr><br>
 
-## ::: ultralytics.hub.export_fmts_hub
+## ::: sfdt_ibrahim.hub.export_fmts_hub
 
 <br><br><hr><br>
 
-## ::: ultralytics.hub.export_model
+## ::: sfdt_ibrahim.hub.export_model
 
 <br><br><hr><br>
 
-## ::: ultralytics.hub.get_export
+## ::: sfdt_ibrahim.hub.get_export
 
 <br><br><hr><br>
 
-## ::: ultralytics.hub.check_dataset
+## ::: sfdt_ibrahim.hub.check_dataset
 
 <br><br>

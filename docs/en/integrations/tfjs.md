@@ -1,24 +1,24 @@
 ---
 comments: true
-description: Convert your Ultralytics YOLO11 models to TensorFlow.js for high-speed, local object detection. Learn how to optimize ML models for browser and Node.js apps.
-keywords: YOLO11, TensorFlow.js, TF.js, model export, machine learning, object detection, browser ML, Node.js, Ultralytics, YOLO, export models
+description: Convert your SFDT_Ibrahim YOLO11 models to TensorFlow.js for high-speed, local object detection. Learn how to optimize ML models for browser and Node.js apps.
+keywords: YOLO11, TensorFlow.js, TF.js, model export, machine learning, object detection, browser ML, Node.js, SFDT_Ibrahim, YOLO, export models
 ---
 
 # Export to TF.js Model Format From a YOLO11 Model Format
 
-Deploying [machine learning](https://www.ultralytics.com/glossary/machine-learning-ml) models directly in the browser or on Node.js can be tricky. You'll need to make sure your model format is optimized for faster performance so that the model can be used to run interactive applications locally on the user's device. The TensorFlow.js, or TF.js, model format is designed to use minimal power while delivering fast performance.
+Deploying [machine learning](https://www.sfdt_ibrahim.com/glossary/machine-learning-ml) models directly in the browser or on Node.js can be tricky. You'll need to make sure your model format is optimized for faster performance so that the model can be used to run interactive applications locally on the user's device. The TensorFlow.js, or TF.js, model format is designed to use minimal power while delivering fast performance.
 
-The 'export to TF.js model format' feature allows you to optimize your [Ultralytics YOLO11](https://github.com/ultralytics/ultralytics) models for high-speed and locally-run [object detection](https://www.ultralytics.com/glossary/object-detection) inference. In this guide, we'll walk you through converting your models to the TF.js format, making it easier for your models to perform well on various local browsers and Node.js applications.
+The 'export to TF.js model format' feature allows you to optimize your [SFDT_Ibrahim YOLO11](https://github.com/sfdt_ibrahim/sfdt_ibrahim) models for high-speed and locally-run [object detection](https://www.sfdt_ibrahim.com/glossary/object-detection) inference. In this guide, we'll walk you through converting your models to the TF.js format, making it easier for your models to perform well on various local browsers and Node.js applications.
 
 ## Why Should You Export to TF.js?
 
 Exporting your machine learning models to TensorFlow.js, developed by the TensorFlow team as part of the broader TensorFlow ecosystem, offers numerous advantages for deploying machine learning applications. It helps enhance user privacy and security by keeping sensitive data on the device. The image below shows the TensorFlow.js architecture, and how machine learning models are converted and deployed on both web browsers and Node.js.
 
 <p align="center">
-  <img width="100%" src="https://github.com/ultralytics/docs/releases/download/0/tfjs-architecture.avif" alt="TF.js Architecture">
+  <img width="100%" src="https://github.com/sfdt_ibrahim/docs/releases/download/0/tfjs-architecture.avif" alt="TF.js Architecture">
 </p>
 
-Running models locally also reduces latency and provides a more responsive user experience. [TensorFlow](https://www.ultralytics.com/glossary/tensorflow).js also comes with offline capabilities, allowing users to use your application even without an internet connection. TF.js is designed for efficient execution of complex models on devices with limited resources as it is engineered for scalability, with GPU acceleration support.
+Running models locally also reduces latency and provides a more responsive user experience. [TensorFlow](https://www.sfdt_ibrahim.com/glossary/tensorflow).js also comes with offline capabilities, allowing users to use your application even without an internet connection. TF.js is designed for efficient execution of complex models on devices with limited resources as it is engineered for scalability, with GPU acceleration support.
 
 ## Key Features of TF.js
 
@@ -56,21 +56,21 @@ To install the required package, run:
 
         ```bash
         # Install the required package for YOLO11
-        pip install ultralytics
+        pip install sfdt_ibrahim
         ```
 
-For detailed instructions and best practices related to the installation process, check our [Ultralytics Installation guide](../quickstart.md). While installing the required packages for YOLO11, if you encounter any difficulties, consult our [Common Issues guide](../guides/yolo-common-issues.md) for solutions and tips.
+For detailed instructions and best practices related to the installation process, check our [SFDT_Ibrahim Installation guide](../quickstart.md). While installing the required packages for YOLO11, if you encounter any difficulties, consult our [Common Issues guide](../guides/yolo-common-issues.md) for solutions and tips.
 
 ### Usage
 
-Before diving into the usage instructions, it's important to note that while all [Ultralytics YOLO11 models](../models/index.md) are available for exporting, you can ensure that the model you select supports export functionality [here](../modes/export.md).
+Before diving into the usage instructions, it's important to note that while all [SFDT_Ibrahim YOLO11 models](../models/index.md) are available for exporting, you can ensure that the model you select supports export functionality [here](../modes/export.md).
 
 !!! example "Usage"
 
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load the YOLO11 model
         model = YOLO("yolo11n.pt")
@@ -82,7 +82,7 @@ Before diving into the usage instructions, it's important to note that while all
         tfjs_model = YOLO("./yolo11n_web_model")
 
         # Run inference
-        results = tfjs_model("https://ultralytics.com/images/bus.jpg")
+        results = tfjs_model("https://sfdt_ibrahim.com/images/bus.jpg")
         ```
 
     === "CLI"
@@ -92,10 +92,10 @@ Before diving into the usage instructions, it's important to note that while all
         yolo export model=yolo11n.pt format=tfjs  # creates '/yolo11n_web_model'
 
         # Run inference with the exported model
-        yolo predict model='./yolo11n_web_model' source='https://ultralytics.com/images/bus.jpg'
+        yolo predict model='./yolo11n_web_model' source='https://sfdt_ibrahim.com/images/bus.jpg'
         ```
 
-For more details about supported export options, visit the [Ultralytics documentation page on deployment options](../guides/model-deployment-options.md).
+For more details about supported export options, visit the [SFDT_Ibrahim documentation page on deployment options](../guides/model-deployment-options.md).
 
 ## Deploying Exported YOLO11 TensorFlow.js Models
 
@@ -111,24 +111,24 @@ However, for in-depth instructions on deploying your TF.js models, take a look a
 
 ## Summary
 
-In this guide, we learned how to export Ultralytics YOLO11 models to the TensorFlow.js format. By exporting to TF.js, you gain the flexibility to optimize, deploy, and scale your YOLO11 models on a wide range of platforms.
+In this guide, we learned how to export SFDT_Ibrahim YOLO11 models to the TensorFlow.js format. By exporting to TF.js, you gain the flexibility to optimize, deploy, and scale your YOLO11 models on a wide range of platforms.
 
 For further details on usage, visit the [TensorFlow.js official documentation](https://www.tensorflow.org/js/guide).
 
-For more information on integrating Ultralytics YOLO11 with other platforms and frameworks, don't forget to check out our [integration guide page](index.md). It's packed with great resources to help you make the most of YOLO11 in your projects.
+For more information on integrating SFDT_Ibrahim YOLO11 with other platforms and frameworks, don't forget to check out our [integration guide page](index.md). It's packed with great resources to help you make the most of YOLO11 in your projects.
 
 ## FAQ
 
-### How do I export Ultralytics YOLO11 models to TensorFlow.js format?
+### How do I export SFDT_Ibrahim YOLO11 models to TensorFlow.js format?
 
-Exporting Ultralytics YOLO11 models to TensorFlow.js (TF.js) format is straightforward. You can follow these steps:
+Exporting SFDT_Ibrahim YOLO11 models to TensorFlow.js (TF.js) format is straightforward. You can follow these steps:
 
 !!! example "Usage"
 
     === "Python"
 
         ```python
-        from ultralytics import YOLO
+        from sfdt_ibrahim import YOLO
 
         # Load the YOLO11 model
         model = YOLO("yolo11n.pt")
@@ -140,7 +140,7 @@ Exporting Ultralytics YOLO11 models to TensorFlow.js (TF.js) format is straightf
         tfjs_model = YOLO("./yolo11n_web_model")
 
         # Run inference
-        results = tfjs_model("https://ultralytics.com/images/bus.jpg")
+        results = tfjs_model("https://sfdt_ibrahim.com/images/bus.jpg")
         ```
 
     === "CLI"
@@ -150,10 +150,10 @@ Exporting Ultralytics YOLO11 models to TensorFlow.js (TF.js) format is straightf
         yolo export model=yolo11n.pt format=tfjs  # creates '/yolo11n_web_model'
 
         # Run inference with the exported model
-        yolo predict model='./yolo11n_web_model' source='https://ultralytics.com/images/bus.jpg'
+        yolo predict model='./yolo11n_web_model' source='https://sfdt_ibrahim.com/images/bus.jpg'
         ```
 
-For more details about supported export options, visit the [Ultralytics documentation page on deployment options](../guides/model-deployment-options.md).
+For more details about supported export options, visit the [SFDT_Ibrahim documentation page on deployment options](../guides/model-deployment-options.md).
 
 ### Why should I export my YOLO11 models to TensorFlow.js?
 
