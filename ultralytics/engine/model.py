@@ -260,7 +260,10 @@ class Model(torch.nn.Module):
             >>> model = Model()
             >>> model._new("yolo11n.yaml", task="detect", verbose=True)
         """
+        print("findme_modelinit")
+        print(cfg)
         cfg_dict = yaml_model_load(cfg)
+        print(cfg_dict)
         self.cfg = cfg
         self.task = task or guess_model_task(cfg_dict)
         self.model = (model or self._smart_load("model"))(
@@ -276,6 +279,16 @@ class Model(torch.nn.Module):
         }  # combine default and model args (prefer model args)
         self.model.task = self.task
         self.model_name = cfg
+        print(
+            self.cfg,
+            self.task,
+            self.model,
+            self.overrides,
+            self.model.args,
+            self.model.task,
+            self.model_name,
+        )
+        print("findme_modelinit")
 
     def _load(self, weights: str, task=None) -> None:
         """
