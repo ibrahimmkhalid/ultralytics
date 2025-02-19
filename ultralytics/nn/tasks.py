@@ -1054,6 +1054,7 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
             print(args)
             for x in f:
                 print(x)
+            print(ch)
             args.append([ch[x] for x in f])
             if m is Segment:
                 args[2] = make_divisible(min(args[2], max_channels) * width, 8)
