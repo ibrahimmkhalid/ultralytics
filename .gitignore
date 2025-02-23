@@ -175,3 +175,4 @@ pnnx*
 calibration_*.npy
 .project_env
 test.py
+.nvim.lua
