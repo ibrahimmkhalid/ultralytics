@@ -1008,6 +1008,7 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
         }
     )
     for i, (f, n, m, args) in enumerate(d["backbone"] + d["head"]):  # from, number, module, args
+        print(args)
         m = (
             getattr(torch.nn, m[3:])
             if "nn." in m
@@ -1051,10 +1052,6 @@ def parse_model(d, ch, verbose=True):  # model_dict, input_channels(3)
         elif m is Concat:
             c2 = sum(ch[x] for x in f)
         elif m in frozenset({Detect, WorldDetect, Segment, Pose, OBB, ImagePoolingAttn, v10Detect}):
-            print(args)
-            for x in f:
-                print(x)
-            print(ch)
             args.append([ch[x] for x in f])
             if m is Segment:
                 args[2] = make_divisible(min(args[2], max_channels) * width, 8)
